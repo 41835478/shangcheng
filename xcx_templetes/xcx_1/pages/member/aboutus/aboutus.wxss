@@ -1,0 +1,15 @@
+page{min-height:100%;color:#444444;font-size:32rpx;}
+
+.tc { text-align: center; }
+.p15 { padding: 30rpx; }
+.f16 { font-size: 32rpx; }
+.wraperh{padding-top: 20rpx;padding-bottom: 20rpx;}
+.iblock{display: inline-block;vertical-align: middle;}
+.mr5 { margin-right: 10rpx; }
+.weui-flex{display:-webkit-box;display:-webkit-flex;display:flex}
+.weui-flex__item{-webkit-box-flex:1;-webkit-flex:1;flex:1}
+.ico34{width:34rpx;height:34rpx;}
+.infolist .ico34{
+	position: relative;
+	top: 8rpx;
+}

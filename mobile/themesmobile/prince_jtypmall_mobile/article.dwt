@@ -1,0 +1,147 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{$page_title}</title>
+  <meta name="Keywords" content="{$keywords}" />
+  <meta name="Description" content="{$description}" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+<link rel="stylesheet" href="themesmobile/prince_jtypmall_mobile/css/article.css">
+<link rel="stylesheet" href="themesmobile/prince_jtypmall_mobile/css/article_extend.css?v=1.0.1">
+
+<link rel="stylesheet" href="themesmobile/prince_jtypmall_mobile/css/main.css">
+
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+{insert_scripts files='common.js'}
+	</head>
+<body >
+{insert name='share'}{insert name='add_url_uid'}
+
+<!----------------------------------header----------------------------------->
+<div class="header">
+    <h2><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></h2>
+    <ul>
+    <li>文章详情</li>
+     </ul>
+    <dl>
+      <dd class="top_bar" style="background:none; line-height:40px;font-size:14px;" >
+        <a style="background:none; line-height:40px;font-size:14px;"  href="article_cat_list.php" class="list">列表</a>
+      </dd>
+    </dl>
+</div>
+<!----------------------------------header----------------------------------->
+
+<div class="page-service-exchange wrapper aoyunlan-wrapper">
+  <div class="page-header">
+      <h2 class='title'>{$article.title|escape:html} </h2>
+      <div class="from">
+        <span class="author">{$article.author}</span>
+        <span class="addtime">{$article.add_time}</span>
+        <span class="clicktimes"> {$article.click_count}&nbsp;次浏览</span>
+      </div>
+  </div>
+  <style>
+  .pagecontent img{ width:100%!important; height:auto!important;}
+  </style>
+  <div class="pagecontent">
+               {if $article.content}
+  			{$article.content}
+  			{else}
+  			{$lang.content_empty}
+  			{/if}
+  </div>
+
+  <div align='center'>
+    <a href="article.php?act=zan&article_id={$article.article_id}">
+
+      <img src="themesmobile/prince_jtypmall_mobile/images/icon_zan{if $article.is_zan eq 1}2{/if}.png" align='top'>
+      <i>{if $article.is_zan eq 1}已{/if}赞 ({if $article.zan_num neq 0}{$article.zan_num}{else}0{/if})</i>
+    </a>
+  </div>
+  <br><br>
+
+ 
+
+      <div class="module module-margin module-padding">
+        <div class="module-t">
+          <h3 ><a href="javascript:void(0);">文章评论</a></a>
+            
+          </h3>
+        </div>
+        <br>
+        <form action="article.php?act=comment&article_id={$article.article_id}" method="post">
+          <table width="100%">
+            <tr><td align="center">
+              <textarea name="content" style="width:70%;height:100px"></textarea>
+            </td></tr>
+            <tr><td align="center">
+              <input type="submit" value="发表" class="article-comment"/>
+            </td></tr>
+          </table>
+        </form>
+        <br>
+<!--{foreach from=$comments item=co}-->
+<div class="main-div">
+  <table width="100%">
+    <tr>
+      <td>
+        <span style="padding-left:20px">{$co.user_name}&nbsp;&nbsp;&nbsp;{$co.add_time}</span>
+      </td>
+    </tr>
+    <tr>
+      <td><hr color="#dadada" size="1"></td>
+    </tr>
+    <tr>
+      <td>
+        <span style="overflow:hidden; word-break:break-all; padding-left:20px;">{$co.content}</span>
+      </td>
+    </tr>
+          <!--{if $co.child}-->
+            <!--{foreach from=$co.child key=key item=ch}--> 
+            <tr><td><div style="color:#aaa; padding-left:20px">
+              {$lang.shopman_reply}:
+              {$ch.content}
+            </div></td></tr>
+            <!--{/foreach}--> 
+          <!--{/if}-->
+  </table>
+</div>
+<!--{/foreach}-->
+      </div>
+
+
+ <div class="module module-margin module-padding">
+  <div class="module-t">
+          <h3 ><a href="javascript:void(0);">相关文章</a></a>
+            
+          </h3>
+        </div>
+      
+        <div class="module-cleft8 top5">
+        <ul class="pic-list">
+
+          <!--{foreach from=$article_link item=article}-->
+              <li>
+                <div class="news-link">
+                  <a href="{$article.url}">{$article.title}</a>
+
+                  <div class="news-des">
+                    <p >{$article.description}</p>
+                  </div>
+                </div>
+              </li>
+            <!-- {/foreach} -->
+          </ul>
+        </div>
+    </div>
+  </div>
+<script>
+document.body.addEventListener('touchstart', function () { }); 
+</script>
+
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->
+</body>
+
+</html>

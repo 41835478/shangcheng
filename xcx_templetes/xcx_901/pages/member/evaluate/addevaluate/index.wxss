@@ -1,0 +1,306 @@
+page{
+	background: #ffffff;
+}
+.parent{
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+}
+.search{
+	width: 100%;
+	height: 100rpx;
+	border-bottom: 3rpx solid #e3e3e3;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: #f8f8f8;
+}
+
+.search-content{
+	margin-left: 20rpx;
+	width: 620rpx;
+	height: 70rpx;
+	background: #e3e3e3;
+	border-radius: 10rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.search-content image{
+	width: 44rpx;
+	height: 44rpx;
+	margin-left: 20rpx;
+}
+
+.input_search{
+	flex-grow: 2;
+	margin-left: 15rpx;
+	color: #999;
+    font-size:28rpx;
+	
+	
+}
+
+
+.search text{
+    font-size: 28rpx;
+	color: #5a5a5a;
+	width: 80rpx;
+	margin-right: 10rpx;
+	text-align: start;
+}
+
+/*总菜单容器*/
+.menu {
+ 	display: block;
+	height: 38px;
+}
+
+/*一级菜单*/
+/*border-right: 1px solid #d2d2d2;*/
+/*border-bottom: 1px solid #d2d2d2;*/
+.menu dt {
+	font-size: 15px;
+	float: left;
+	/*hack*/
+	width: 25%;
+	height: 80rpx;
+	
+	
+	text-align: center;
+	background-color: #f4f4f4;
+	color: #5a5a5a;
+	line-height: 80rpx;
+}
+
+/*二级菜单外部容器样式*/
+.menu dd{
+	position: absolute;
+	width: 100%;
+	/*hack*/
+	top:180rpx;
+	left:0;
+	z-index:999;
+}
+
+/*二级菜单普通样式*/
+.menu li{
+	font-size: 14px;
+	line-height: 34px;
+	color: #575757;
+	height: 34px;
+	display: block;
+	padding-left: 8px;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+/*二级菜单高亮样式*/
+.menu li.highlight{
+	background-color: #f4f4f4;
+	color: #48C23D;
+}
+
+/* 显示与隐藏 */
+.show {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+/*商品列表*/
+.goodsList {
+	/*hack*/
+	margin-top:2px;
+/*	border: 2px dashed red;
+	height: 400px;
+	background-color: orange;
+	opacity: 0.5;*/
+	z-index:1;
+}
+
+/*销量与好评*/
+.goods-score {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.goods-score text {
+	display: block;
+	width: 100px;
+	font-size: 12px;
+	color: #999;
+	margin: 8px 4px;
+}
+
+/*整体列表*/
+.carts-list {
+	display: flex;
+	flex-direction: column;
+	padding: 0 40rpx;
+	margin-bottom: 80rpx;
+}
+
+/*每行单元格*/
+.carts-item {
+	display: flex;
+	flex-direction: row;
+	height:170rpx;
+	/*width属性解决标题文字太短而缩略图偏移*/
+	width:710rpx;
+	border-bottom: 3rpx solid #e3e3e3;
+	padding: 30rpx 0 0 0;
+}
+
+/*左部图片*/
+.carts-image {
+	width:150rpx;
+	height:150rpx;
+	margin-left: 25rpx;
+}
+
+
+/*右部描述*/
+.carts-text {
+	margin-left: 10rpx;
+	width: 550rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/*右上部分标题*/
+.carts-title {
+	font-size: 30rpx;
+	color: #444;
+	height: 81rpx;
+	display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+	
+}
+
+/*右下部分价格与数量*/
+.carts-subtitle {
+	
+	font-size: 25rpx;
+	color:darkgray;
+	padding: 0 20rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+/*价格*/
+.carts-price {
+	color: #f60;
+	font-size:29rpx;
+	line-height: 22px;
+	margin-top: 6rpx;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300rpx;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rpx;
+}
+
+.tt-evaluate{
+    width: 90%;
+    height: 270rpx;
+    font-size: 31rpx;
+    color: #BEBEBE;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BEBEBE;
+    border-radius: 6rpx;
+    padding-top: 12rpx;
+    padding-left: 16rpx;
+}
+
+.tt-place-evaluate{
+    font-size: 31rpx;
+    color: #BEBEBE;
+}
+/*一级菜单高亮的颜色：eeeeee*/
+/*还需要一个三角形，动画旋转，下拉时背景渐渐变暗*/
+/*左边一条灰边，右边还有空缺，是由于33%的缘故*/
+
+
+.content{
+    margin-top: 20rpx;
+    margin-left: 28rpx;
+    display:flex;
+    flex-direction: column;
+    height: 240rpx;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text-pf{
+    font-size: 32rpx;
+    color: black;
+}
+
+.v-xx{
+    height: 65rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.v-xx text{
+    font-size: 31rpx;
+    color: #999;
+}
+.v-xx image{
+	width: 225rpx;
+	height: 40rpx;
+}
+
+.text-save{
+  width: 680rpx;
+  align-self: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  color: #ffffff;
+  text-align: center;
+  height: 70rpx;
+  border-radius: 9rpx;
+  background: #3aa0b7;
+  line-height: 70rpx;
+  
+}
+
+.view-tint{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70rpx;
+}
+.view-tint image{
+   width: 412rpx;
+   height: 312rpx;
+   margin-left: 100rpx;
+}
+
+.view-tint text{
+   color: #888888;
+   font-size: 33rpx;
+   margin-top: 30rpx;
+}

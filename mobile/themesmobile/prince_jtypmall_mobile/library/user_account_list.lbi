@@ -1,0 +1,67 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!---------账户明细----------->
+<!--{if $action eq "account_raply" || $action eq "account_log" || $action eq "account_deposit" || $action eq "account_detail"} -->
+<script type="text/javascript">
+	{foreach from=$lang.account_js item=item key=key}
+		var {$key} = "{$item}";
+	{/foreach}
+</script>
+<!-- {/if}--> 
+
+<ul class="order_listtop">
+<li><a href="user.php?act=account_detail" {if $type eq 0}class="on"{/if}>全部</a></li>
+<li><a href="user.php?act=account_detail&type=1" {if $type eq 1}class="on"{/if}>可用资金</a></li>
+<li><a href="user.php?act=account_detail&type=2" {if $type eq 2}class="on"{/if}>冻结资金</a></li>
+<li><a href="user.php?act=account_detail&type=3" {if $type eq 3}class="on"{/if}>成长值</a></li>
+<li><a href="user.php?act=account_detail&type=4" {if $type eq 4}class="on"{/if}>积分</a></li>
+</ul>
+
+<div class="user_account_title"><h2><em>可用资金：</em><span>{$user_money}</span><em>&nbsp;冻结资金：</em><span>{$frozen_money}</span><em>&nbsp;成长值：</em><span>{$rank_points}</span><em>&nbsp;积分：</em><span>{$pay_points}</span></h2></div>
+<!--{if $account_log}-->
+<!-- {if $action eq "account_detail"} -->
+<div style=" background:#FFF">
+<div class="Fund">
+  <ul>
+  <!--{foreach from=$account_log item=item name=name}-->
+    <li class="Funds_li" {if $smarty.foreach.name.last} style=" border:0"{/if}>
+    	<span class="icon<!--{if $smarty.foreach.name.first}--> on<!--{/if}-->"></span>
+        {if $type eq 0 or $type eq 1 }{if $item.user_money neq 0}<span>可用资金<em>{if $item.user_money gt 0}+{/if}{$item.user_money}</em></span>{/if}{/if}
+        {if $type eq 0 or $type eq 2 }{if $item.frozen_money neq 0}<span>冻结资金<em>{if $item.frozen_money gt 0}+{/if}{$item.frozen_money}</em></span>{/if}{/if}
+        {if $type eq 0 or $type eq 3 }{if $item.rank_points neq 0}<span>成长值<em>{if $item.rank_points gt 0}+{/if}{$item.rank_points}</em></span>{/if}{/if}
+        {if $type eq 0 or $type eq 4 }{if $item.pay_points neq 0}<span>积分<em>{if $item.pay_points gt 0}+{/if}{$item.pay_points}</em></span>{/if}{/if}
+        <span>{$item.change_time}</span>
+        <span>{$item.short_change_desc}</span>
+    </li>
+  <!--{/foreach}-->
+  </ul>
+</div>
+</div>
+<!-- {/if} -->
+{else}
+  <div class="dotm_no">
+  <dl>
+    <dd>您没有任何资金的变动哦！</dd>
+  </dl>
+</div>
+
+<!-- {/if} -->
+
+
+
+
+
+<!---返回顶部-->
+<script>
+function goTop(){
+	$('html,body').animate({'scrollTop':0},600);
+}
+</script>
+<a href="javascript:goTop();" class="gotop"><img src="themesmobile/prince_jtypmall_mobile/images/topup.png"></a> 
+<script type="text/javascript">
+{foreach from=$lang.account_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+</script>
+
+
+

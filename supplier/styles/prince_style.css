@@ -1,0 +1,18 @@
+
+/*
+今/天/优/品/多/商/户/系/统-采集 mod on 20160808 by prince  qq 1/2/0/0/2/9/1/2/1-begin
+采集样式表
+*/
+div, input, th ,td, select{font-family:'微软雅黑';}
+th,td{padding: 4px 0;}
+th{text-align:right}
+input, select{height: 23px;padding: 0 4px;vertical-align: middle;}
+#caij_btns a{display:block;width:117px; height:35px; text-align:center;background:#FF8800;line-height:35px; font-size:16px; color:#FFFFFF;  color:#FFFFFF;text-decoration:none;}
+#caij_btns a:hover{ text-decoration:none;background:#F00;}
+.shuoming{  margin:5px 5px 20px 5px; overflow:hidden; background:#FFFFFF; padding:10px; border:1px solid #FF9900; color: #339933; }
+.tab-div{width: 915px;}
+.tbbg{background: #FFFDEA!important;}
+.albg{background: #FFEAEA!important;}
+/*
+今/天/优/品/多/商/户/系/统-采集 mod on 20160808 by prince  qq 1/2/0/0/2/9/1/2/1-end
+*/

@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{if $lucky_buy_goods}
+
+<section class="floor_body">
+  <h4><span>云购活动</span><i><a href="lucky_buy.php">更多</a></i></h4>
+    <div id="scroll_extpintuan" style=" background:#eeeeee">
+        <ul>
+          {foreach from=$lucky_buy_goods item=goods name=lucky_buy_goods key=key}
+          <li>
+            
+             <div class="index_pro"> 
+              <div class="products_kuang">
+              
+               <a href="{$goods.url}" title="{$goods.name|escape:html}"> <img src="{$option.static_path}{$goods.thumb}"></a>
+                </div>
+              <div class="goods_name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name}</a></div>
+              <div class="price">
+              <a href="#" class="btns">
+                  <img src="themesmobile/prince_jtypmall_mobile/images/lucky_buy_logo.jpg"></a>
+                  
+                  <span>1.00</span><em>{if $goods.market_price}{$goods.market_price}{else}{$goods.shop_price}{/if}</em>
+              </div>  
+</div>
+
+          </li>
+      <!--{if $smarty.foreach.lucky_buy_goods.iteration%3 eq 0 && $smarty.foreach.lucky_buy_goods.iteration neq $smarty.foreach.lucky_buy_goods.total}--> </ul>
+        <ul>
+          <!--{/if}-->
+          
+          {/foreach}
+</div>
+  </section>
+{/if}

@@ -1,0 +1,222 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>{$page_title}</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/index.css"/>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/TouchSlide.1.1.js"></script>
+<style>
+#category-head{width:100%;display: inline;white-space: nowrap;overflow-x:scroll;float:left;overflow-y:hidden;  text-align:center;
+border-top:#EEE solid 1px;}
+#category-head li{display:inline-block;height:40px; line-height:40px;padding-left:5px;padding-right:5px; }
+#category-head li a{ font-size:18px;}
+#category-head li .bot{ border-bottom:#FF0 2px solid}
+
+
+/*====================商品列表(小图)======================= */
+.best_phone{height:20px; position:absolute; top:0px;right:0; font-size:12px; line-height:20px; color:#FFF; padding-left:8px; padding-right:8px; background:#FF6600;}
+.touchweb-com_searchListBox{ width:100%; overflow:hidden; margin:auto;}
+.touchweb-com_searchListBox.hide { display: none;}
+.touchweb-com_searchListBox li { width:100%; float:left; overflow:hidden; margin-bottom:2px; position:relative}
+.touchweb-com_searchListBox .item { display:block; width:100%; overflow:hidden; margin:auto; background:#FFF; position:relative}
+.touchweb-com_searchListBox li .pic_box{ width:40px; height:40px; position:absolute; top:0; left:0px; z-index:9}
+.touchweb-com_searchListBox li .pic_box span{ display:block; width:40px; height:34px; background:url(../images/HOT.png) no-repeat;background-size: auto 100px;text-indent:-9999px; z-index:1;}
+
+
+.touchweb-com_searchListBox li .goods_images{ display:block; width:30%; overflow:hidden; float:left; position:relative}
+.touchweb-com_searchListBox li .goods_images span{ display:block; position:absolute; height:15px; padding-left:23px; padding-right:10px; bottom:2px; right:2px; font-size:12px; line-height:140%; color:#FFF;border-radius:20px; background:#000 url(../images/category/shou.png) no-repeat 5px center;background-size: auto 15px;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+.touchweb-com_searchListBox li .goods_images img{ display:block; width:100%; height:auto}
+
+.touchweb-com_searchListBox li dl{ width:65%;margin:auto; margin-top:3px; overflow:hidden; float:right; }
+
+.touchweb-com_searchListBox li dl dt{font-size:14px; width:100%; margin:auto; height:40px; overflow:hidden;
+text-align:left; line-height:20px; }
+
+.touchweb-com_searchListBox li dl dt a{font-size:14px; line-height:20px; color:#333;}
+.touchweb-com_searchListBox li dd{width:100%;margin:auto; overflow:hidden}
+.touchweb-com_searchListBox li dd i{display:block; float:left; font-size:16px; line-height:30px; color:#F00; font-style:normal}
+.touchweb-com_searchListBox li dd em{ display:block; float:left; font-size:10px; line-height:30px; color:#999; padding-left:8px;text-decoration:line-through;}
+
+.touchweb-com_searchListBox li .goods_number{ position:absolute; width:150px;overflow:hidden; background:#FFF; bottom:5px; left:32%;}
+.touchweb-com_searchListBox li .goods_number .ui-number {border: 1px solid #ddd9da; overflow: hidden; height: 25px; display: block; width: 92px;margin-left:8px;}
+.touchweb-com_searchListBox .decrease { display: inline-block; font-size: 24px; line-height: 25px; border: 0; width: 25px; float: left; height: 25px; color: #F8849C; border-right: 1px solid #ddd9da; text-indent: -9999px; background: url(../images/flow/shop-cart.png) no-repeat 5px -26px; background-size: 60px; }
+.touchweb-com_searchListBox .increase{display:inline-block;background:none;border:0;border-left:1px solid #ddd9da;float:left; width:25px; height:25px;font-size:24px; line-height:25px;color:#F8849C;background: url(../images/flow/shop-cart.png) no-repeat -25px -26px; background-size: 60px;text-indent:-9999px}
+.touchweb-com_searchListBox .ui-number .num { display: inline-block; border: 0; width: 40px; height: 25px; float: left; text-align: center; font-size: 14px; line-height: 25px; color: #666; text-align: center }
+.bug_car { display:block;width: 30px; height:30px; position: absolute; bottom:5px; right:10px; z-index: 2;  background:#E71F19; border-radius: 50%;}
+.bug_car img {display: block; width:30px; height:30px }
+</style>
+</head>
+<body>
+{insert name='share'}
+<div class="body_bj">
+
+
+
+<!--网站头部-->
+<header id="newheader" style="background:#FFF; height:85px; border-bottom:#EEE solid 3px;"> 
+<a href="catalog.php" class="top_bt" style="background:none; line-height:40px; color:#98225C; ">搜索</a>
+<a href="flow.php" id='user_btn' class='user_btn' style="background:url(themesmobile/prince_jtypmall_mobile/images/pub_flow_new.png) no-repeat;background-size: auto 160px;background-position:0 -38px"></a>
+<div class="new_index_search_mid" style="background:#EEE;"> <a href="searchindex.php" > <em style="color:#999;">请输入关键词</em> <span><img src="themesmobile/prince_jtypmall_mobile/images/icosousuo.png"></span> </a> </div>
+
+<ul class="flex-layout category-head" id="category-head" style="">
+       <li class="flex" {if $cat_id eq 0 }style="border-bottom:#E7DC78 5px solid;"{/if} id="brand_cat" searchtype="brand"><a href="index.php" >推荐</a></li>
+       {foreach from=$category item=cat name=cat}
+       <li class="flex" {if $cat_id eq $cat.cat_id }style="border-bottom:#E7DC78 5px solid;"{/if} data-ic="1" searchtype="goods"><a href="index.php?cat_id={$cat.cat_id}" >{$cat.cat_name}</a></li>
+       {/foreach}
+</ul>
+</header>
+
+
+{if $cat_goods}
+<section class="touchweb-com_searchListBox {if $pager.display == 'grid'}openList{/if}" id="goods_list" style="margin-top:85px;">
+          {foreach from=$cat_goods item=goods name=new_goods}
+          		<li>
+                <div class="item">
+                    <!--div class="pic_box">
+                    {if $goods.is_best == 1}
+                    <span style=" background-position:0px -70px">精品</span>
+                    {elseif $goods.is_new == 1}
+                    <span style=" background-position:0px -36px">新品</span>
+                    {elseif $goods.is_hot == 1}
+                    <span style=" background-position:0px 0px">热卖</span>
+                    {/if}
+                    </div-->
+                	<div class="goods_images"><a href="{$goods.url}"><img src="{$option.static_path}{$goods.goods_thumb}"> </a></div>
+                    <dl>
+                    <dt><a href="{$goods.url}" title="{$goods.goods_name|escape:html}">{$goods.goods_name}</a></dt>
+                    <dd><i style="font-size:12px; color:#999;">{$goods.ghost_count}人已抢</i>
+                    </dd>
+                    <dd><i style="color:#98225C;">会员价:¥{if $goods.final_price}{$goods.final_price}{elseif  $goods.promote_price}{$goods.promote_price}{else}{$goods.org_price}{/if}</i>
+                    </dd>
+                    </dl>
+                </div>
+                </li>
+          {/foreach}
+</section>
+{/if}
+
+
+{if $new_goods}
+<section class="touchweb-com_searchListBox {if $pager.display == 'grid'}openList{/if}" id="goods_list" style="margin-top:85px;">
+	<h4>  
+          {foreach from=$wap_index_ad item=ad name=wap_index_ad}
+          {if $smarty.foreach.wap_index_ad.iteration eq 1}<a href="{$ad.url}"><img src="{$ad.image}" width="100%" /></a>
+          {/if}
+          {/foreach}
+    </h4>
+          {foreach from=$new_goods item=goods name=new_goods}
+          		<li>
+                <div class="item">
+                    <div class="pic_box">
+                    {if $goods.is_best == 1}
+                    <span style=" background-position:0px -70px">精品</span>
+                    {elseif $goods.is_new == 1}
+                    <span style=" background-position:0px -36px">新品</span>
+                    {elseif $goods.is_hot == 1}
+                    <span style=" background-position:0px 0px">热卖</span>
+                    {/if}
+                    </div>
+                	<div class="goods_images"><a href="{$goods.url}"><img src="{$option.static_path}{$goods.thumb}"> </a></div>
+                    <dl>
+                    <dt><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name}</a></dt>
+                    <dd><i style="font-size:12px; color:#999;">{$goods.ghost_count}人已抢</i>
+                    </dd>
+                    <dd><i style="color:#98225C;">会员价:¥{if $goods.final_price}{$goods.final_price}{elseif  $goods.promote_price}{$goods.promote_price}{else}{$goods.org_price}{/if}</i>
+                    </dd>
+                    </dl>
+                </div>
+                </li>
+          {/foreach}
+</section>
+{/if}
+
+
+{if $hot_goods}
+<section class="touchweb-com_searchListBox {if $pager.display == 'grid'}openList{/if}" id="goods_list" style="margin-top:5px;">
+	<h4>  
+          {foreach from=$wap_index_ad item=ad name=wap_index_ad}
+          {if $smarty.foreach.wap_index_ad.iteration eq 2}<a href="{$ad.url}"><img src="{$ad.image}" width="100%" /></a>
+          {/if}
+          {/foreach}
+    </h4>
+          {foreach from=$hot_goods item=goods name=new_goods}
+          		<li>
+                <div class="item">
+                    <div class="pic_box">
+                    {if $goods.is_best == 1}
+                    <span style=" background-position:0px -70px">精品</span>
+                    {elseif $goods.is_new == 1}
+                    <span style=" background-position:0px -36px">新品</span>
+                    {elseif $goods.is_hot == 1}
+                    <span style=" background-position:0px 0px">热卖</span>
+                    {/if}
+                    </div>
+                	<div class="goods_images"><a href="{$goods.url}"><img src="{$option.static_path}{$goods.thumb}"> </a></div>
+                    <dl>
+                    <dt><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name}</a></dt>
+                    <dd><i style="font-size:12px; color:#999;">{$goods.ghost_count}人已抢</i>
+                    </dd>
+                    <dd><i style="color:#98225C;">会员价:¥{if $goods.final_price}{$goods.final_price}{elseif  $goods.promote_price}{$goods.promote_price}{else}{$goods.org_price}{/if}</i>
+                    </dd>
+                    </dl>
+                </div>
+                </li>
+          {/foreach}
+</section>
+{/if}
+
+
+{if $best_goods}
+<section class="touchweb-com_searchListBox {if $pager.display == 'grid'}openList{/if}" id="goods_list" style="margin-top:5px;" >
+	<h4>  
+          {foreach from=$wap_index_ad item=ad name=wap_index_ad}
+          {if $smarty.foreach.wap_index_ad.iteration eq 3}<a href="{$ad.url}"><img src="{$ad.image}" width="100%" /></a>
+          {/if}
+          {/foreach}
+    </h4>
+          {foreach from=$best_goods item=goods name=new_goods}
+          		<li>
+                <div class="item">
+                    <div class="pic_box">
+                    {if $goods.is_best == 1}
+                    <span style=" background-position:0px -70px">精品</span>
+                    {elseif $goods.is_new == 1}
+                    <span style=" background-position:0px -36px">新品</span>
+                    {elseif $goods.is_hot == 1}
+                    <span style=" background-position:0px 0px">热卖</span>
+                    {/if}
+                    </div>
+                	<div class="goods_images"><a href="{$goods.url}"><img src="{$option.static_path}{$goods.thumb}"> </a></div>
+                    <dl>
+                    <dt><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name}</a></dt>
+                    <dd><i style="font-size:12px; color:#999;">{$goods.ghost_count}人已抢</i>
+                    </dd>
+                    <dd><i style="color:#98225C;">会员价:¥{if $goods.final_price}{$goods.final_price}{elseif  $goods.promote_price}{$goods.promote_price}{else}{$goods.org_price}{/if}</i>
+                    </dd>
+                    </dl>
+                </div>
+                </li>
+          {/foreach}
+</section>
+{/if}
+
+
+
+
+
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --> <!-- #EndLibraryItem --> 
+<!---返回顶部-->
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+{insert_scripts files='jquery.json.js,transport.js'}
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/touchslider.dev.js"></script>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.more.js"></script>
+{insert_scripts files='common.js'}
+
+</div> 
+</body>
+</html>

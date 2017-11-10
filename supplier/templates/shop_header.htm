@@ -1,0 +1,94 @@
+<!-- $Id: shop_config.htm 16865 2009-12-10 06:05:32Z jtypmall $ -->
+<!-- 修改 by demo.coolhong.com 今 天 优 品 多 商 户 系 统 q q 1 2 0 0 2 9 1 2 1 百度编辑器 begin -->
+{include file="pageheader_bd.htm"}
+{insert_scripts files="../js/utils.js,selectzone_bd.js,validator.js"}
+<!-- 修改 by demo.coolhong.com 今 天 优 品 多 商 户 系 统 q q 1 2 0 0 2 9 1 2 1 百度编辑器 end -->
+<link href="styles/jquery.bigcolorpicker.css" rel="stylesheet" type="text/css" />
+{insert_scripts files="../js/utils.js,../js/region.js"}
+{insert_scripts files="jquery-1.6.1.js,jquery.bigcolorpicker.js"}
+
+<script type="text/javascript"></script>
+<script type="text/javascript">
+		$(function(){
+			$("#demo1Text").bigColorpicker();
+			$("#demo2Text").bigColorpicker();
+			
+		})
+	</script>
+
+  <!-- tab bar -->
+  <!-- tab body -->
+  <div id="tabbody-div">
+    <form enctype="multipart/form-data" name="theForm" action="?act=post" method="post">
+    <table width="90%" id="detail-table">
+	  <tr>
+	    <td>定义电脑端菜单条颜色：</td><td><input name="shop_header_color" type="text" value="{$color}" id="demo1Text" size="40" /></td>
+	  </tr>
+	  <tr>
+	  <td>定义电脑端头部：</td><td><input type="file" name="goods_img"  value="选择" />（建议图片宽度：1920px，高度不限 内容向中间靠拢）</td>
+	  </tr>
+	  <tr>
+	  <td colspan="2">{if $picture neq "请上传logo和banner" or  ""}<div  style="margin: 0 auto; padding: 15px 0; text-align: center;">  <img src="../{$picture}" width="900px" height="auto;" />   {/if}</div></td>
+	  </tr>
+	  <tr>
+	  <tr>
+	    <td>定义手机端头部背景颜色：</td><td><input name="mobile_shop_header_color" type="text" value="{$mobile_color}" id="demo2Text" size="40" /></td>
+	  </tr>
+	  <td>定义手机端头部背景图：</td><td><input type="file" name="mobile_goods_img"  value="选择" />（建议图片宽度：600px，高度180 内容向中间靠拢   背景色建议与手机端头部背景颜色一致）</td>
+	  </tr>
+	  <tr>
+	  <td colspan="2">{if $mobile_header_picture }<div  style="margin: 0 auto; padding: 15px 0; text-align: center;">  <img src="../{$mobile_header_picture}" width="600px" height="auto;"/>   {/if}</div></td>
+	  </tr>
+	</table>
+	    <div class="button-div">
+      <input name="submit" type="submit" value="{$lang.button_submit}" class="button" />
+      <input name="reset" type="reset" value="{$lang.button_reset}" class="button" />
+    </div>
+    </form>
+  </div>
+
+
+
+{insert_scripts files="tab.js,validator.js"}
+{literal}
+<script language="JavaScript">
+
+
+region.isAdmin = true;
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+var ReWriteSelected = null;
+var ReWriteRadiobox = document.getElementsByName("value[209]");
+
+for (var i=0; i<ReWriteRadiobox.length; i++)
+{
+  if (ReWriteRadiobox[i].checked)
+  {
+    ReWriteSelected = ReWriteRadiobox[i];
+  }
+}
+
+function ReWriterConfirm(sender)
+{
+  if (sender == ReWriteSelected) return true;
+  var res = true;
+  if (sender != ReWriteRadiobox[0]) {
+    var res = confirm('{$rewrite_confirm}');
+  }
+
+  if (res==false)
+  {
+      ReWriteSelected.checked = true;
+  }
+  else
+  {
+    ReWriteSelected = sender;
+  }
+  return res;
+}
+</script>
+{/literal}
+{include file="pagefooter.htm"}

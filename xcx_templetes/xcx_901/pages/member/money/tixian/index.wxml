@@ -1,0 +1,65 @@
+<!--pages/member/money/tixian/index.wxml-->
+<view class="parent">
+<form bindsubmit="formSubmit" bindreset="formReset">  
+<view class="view-row">
+<text >提现金额</text>
+
+<input type="digit" placeholder-class="input-placeholder" name="money" placeholder="请输入" />  
+</view>
+
+<view class="class-line"></view>
+
+<view class="view-row">
+<text >真实姓名</text>
+<input type="text"  placeholder-class="input-placeholder" name="user_name" placeholder="请输入"/>
+</view>
+
+<view class="class-line"></view>
+
+<view class="view-row">
+            <text>账号类型</text>
+            <view class='form-group'>  
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">  
+                   
+                        <input type="hidden" placeholder-class="input-placeholder" disabled="true" name="account_type" value="{{array[index]}}"/>  
+                 
+                </picker>  
+            </view>  
+        </view> 
+
+
+<view class="class-line"></view>
+
+<view class="view-row">
+<text >收款账号</text>
+
+<input wx:if="{{index}}"  type="text" placeholder-class="input-placeholder" name="account" placeholder="请输入"/>
+<input wx:else  type="text"  placeholder-class="input-placeholder" name="account"  placeholder="{{nickname}}" value="{{nickname}}"/>
+
+</view>
+
+
+
+
+<view class="class-line"></view>
+
+
+<view class="view-row">
+<text >手机号码</text>
+<input type="number" placeholder-class="input-placeholder" name="mobile_phone" placeholder="请输入"/>
+</view>
+
+<view class="class-line"></view>
+
+<view class="view-row">
+<text >会员备注</text>
+<input type="text" placeholder-class="input-placeholder" name="user_note" placeholder="请输入"/>
+</view>
+
+<view class="class-line"></view>
+
+
+<button formType="submit" class="text-save">提交申请</button>
+</form>    
+</view>
+

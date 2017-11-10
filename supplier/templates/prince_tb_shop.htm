@@ -1,0 +1,150 @@
+{include file="pageheader.htm"}
+<link href="styles/prince_style.css" rel="stylesheet" type="text/css" />
+<div class="tab-div">
+  <div id="tabbody-div" class="tbbg" >
+    <form enctype="multipart/form-data" action="prince_shops.php?act=getAlmmshop" method="post" name="theForm" >
+      <table width="90%" id="general-table" >
+        <div class="shuoming"> 
+		  1、打开某个店铺的商品宝贝列表（一般是点击：所有分类），全选页面（按Ctrl-A），复制页面全部图文内容粘贴进来即可<br />
+          2、目前只提供店铺“页面采集”方式，暂不支持输入店铺链接来采集<br />
+          3、每次采集一个页面的商品（约60个商品），如需采集整页商品，请在“采集数量”栏输入大于该页商品的数量</div>
+        <tr>
+          <th width="150">采集方式：</th>
+          <td><input type="radio" name="col_type" value="2" checked/>
+            <span>页面采集</span><span style="color:#FF0000">&nbsp;
+            (打开店铺商品分类列表，全选页面，复制页面全部图文内容粘贴进来即可。)</span> </td>
+        </tr>
+        <tr id="dpurl" style="display:none">
+          <th width="150"><div id="dpurl">
+            店铺地址：</th>
+          <td><textarea name="content" cols="80" rows="4" wrap="VIRTUAL"></textarea>
+            <br />
+            <span>&nbsp;
+            (把要采集的淘宝店铺网址粘贴即可，如：http://new-modle.taobao.com/index.htm)</span> 
+        </tr>
+        <tr id="webcode">
+          <th width="150">
+            页面内容：</th>
+          <td> {$FCKeditor} <br />
+          </td>
+        </tr>
+        <tr style="display:none">
+          <th>关键字：</th>
+          <td><input type="text" value="{$user_setting.keyword}" class="textinput" name="keyword" size="20"></td>
+        </tr>
+        <tr>
+          <th>采集数量：</th>
+          <td><input type="text" value="{$user_setting.conum}" class="textinput" name="conum" size="4"></td>
+        </tr>
+        <tr>
+          <th>采集评论：</th>
+          <td><input name="checkbox" type="checkbox" value="1" {if $user_setting.ratetag} checked="checked" {/if} />
+            <span>&nbsp;(评论为10~50间的随机数)</span> </td>
+        </tr>
+        </tr>
+        <tr>
+          <th>放到产品分类：</th>
+          <td><select name="cat_id" id="cat_id">
+              <option value="0">产品分类</option>
+              {$cat_list}
+              </select>
+            <span>&nbsp;(平台产品分类，必选)</span> </td>
+        </tr>
+		{if $is_sup eq 'supplier'}
+		<tr>
+          <th>放到店内分类：</th>
+          <td><select name="seller_cat_id" id="seller_cat_id">
+              <option value="0">店内分类</option>
+              {$seller_cat_list}
+            
+            </select>
+            <span>&nbsp;(您的店内分类，必选)</span> </td>
+        </tr>
+		{/if}
+        <tr>
+          <th>放到属性类型：</th>
+          <td><select name="goods_type_id">
+              
+					    {foreach from=$goods_type_arr item=goods_type}
+						
+              <option value="{$goods_type.cat_id}" {if $goods_type_id eq $goods_type.cat_id} selected="selected"{/if}>{$goods_type.cat_name}</option>
+              
+					    {/foreach}
+
+					
+            </select>
+            <span>&nbsp;(选择商品属性的类型，自动采集商品属性放入此类型中，默认类型：采集属性)</span> </td>
+        </tr>
+		{if $supplier_list and $is_sup neq 'supplier'}
+		<tr>
+          <th>分配入驻商：</th>
+          <td>
+		  <select name="supplier_id" id="supplier_id" onchange="changed_sup()">
+			<option value="">请选择入驻商</option>
+			{foreach name=sln from=$supplier_list item=sl}
+			  <option value="{$sl.supplier_id}">{$sl.supplier_name}</option>
+			{/foreach}
+		  </select>
+		  <select name="sup_cat_id" id="sup_cat_id">
+              {$cat_list_sup}
+            </select>
+            <span>&nbsp;(入驻商店内分类，默认为第一个类别)</span> </td>
+        </tr>
+		{/if}
+		{if $priv_ru eq 1}
+		<tr>
+          <th>商家品牌：</th>
+          <td>
+            <input style="display:none" name="search_brand" type="button" id="search_brand" value=" 搜索 " class="button" onclick="searchBrand()">
+            <select name="mbt_brand_id" id="mbt_brand_id" onchange="hideBrandDiv()" >
+              {html_options options=$mbt_brand_id_list selected=$user_setting.mbt_brand_id}
+            </select>
+          </td>
+        </tr>
+		{/if}
+        <tr class="act">
+          <th>&nbsp;</th>
+          <td><input name="itemlist" type="checkbox" value="1" {if $user_setting.itemlist} checked="checked" {/if}/><font color="#FF0000">选择性采集</font></td>
+
+        </tr>
+        <tr class="act">
+          <th>&nbsp;</th>
+          <td><div id="caij_btns" style="width:100%;"> <a class="caiji" href="javascript:colltaobao();" >立即采集</a> </div></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+function colltaobao()
+{
+	cat_id=document.getElementById('cat_id').value;
+	if(cat_id==0){
+		alert('请选择平台分类！');
+	}
+	seller_cat_id=document.getElementById('seller_cat_id').value;
+	if(seller_cat_id==0){
+		alert('请选择店内分类！');
+	}
+	if(cat_id >0 && seller_cat_id>0 ){
+		document.getElementById('caij_btns').innerHTML = '正在采集：<img src="https://img.alicdn.com/imgextra/i1/619666972/TB2PCZjjVXXXXXxXpXXXXXXXXXX-619666972.gif" />';
+		var targetForm = document.forms[ "theForm" ];
+		targetForm.submit();
+	}
+}
+function changed_sup()
+{
+	supplier_id=document.forms['theForm'].elements['supplier_id'].value;
+	if(supplier_id=='')
+	{
+		alert('请选择入驻商！');
+		return false;
+	}
+	Ajax.call('prince_shops.php?is_ajax=1&act=changed_sup', "supplier_id="+supplier_id, changed_supResponse, "GET", "JSON");
+}
+function changed_supResponse(result)
+{
+	  document.forms[ "theForm" ].elements['sup_cat_id'].innerHTML=result.content.cat_list_sup
+}
+</script>
+{include file="pagefooter.htm"} 

@@ -1,0 +1,109 @@
+<view >
+<view  class="userinfo">
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" ></image>
+	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+	<button wx:if="{{xcxConfig.show_getmobile == 1}}" type="primary" class="getPhoneNumber-button" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" >{{mobile_phone}}</button>
+</view>
+<view class="order-area">
+	<view bindtap="navigateToOrder" data-cid="WAITPAY" class="order">
+		<image src="../../../images/icon_order.png" />
+		<text>待付款</text>
+	</view>
+	<view bindtap="navigateToOrder" data-cid="WAITSEND" class="order">
+		<image src="../../../images/icon_order.png" />
+		<text>待发货</text>
+	</view>
+	<view bindtap="navigateToOrder" data-cid="FINISH" class="order">
+		<image src="../../../images/icon_order.png" />
+		<text>已完成</text>
+	</view>
+</view>
+<view wx:if="{{xcxConfig.show_balance == 1}}" bindtap="navigateToMoney" class="tableviewcell">
+	<image src="../../../images/Icon1.png" />
+	<text>我的钱包</text>
+</view>
+<view wx:if="{{xcxConfig.show_point == 1}}" bindtap="navigateToPoint" class="tableviewcell">
+	<image src="../../../images/Icon4.png" />
+	<text>我的积分</text>
+</view>
+<view wx:if="{{xcxConfig.show_coupon == 1}}"bindtap="navigateToCoupon" class="tableviewcell">
+	<image src="../../../images/Icon3.png" />
+	<text>我的优惠劵</text>
+</view>
+<view bindtap="navigateToOrder" data-cid="NO" class="tableviewcell">
+	<image src="../../../images/Icon9.png" />
+	<text>全部订单</text>
+</view>
+
+<view wx:if="{{xcxConfig.show_fenxiao == 1}}" bindtap="navigateToFenxiao" class="tableviewcell">
+	<image src="../../../images/Icon11.png" />
+	<text>分销中心</text>
+</view>
+<view wx:if="{{xcxConfig.show_evaluate == 1}}" bindtap="navigateToEvaluate" class="tableviewcell">
+	<image src="../../../images/Icon5.png" />
+	<text>我的评价</text>
+</view>
+<view bindtap="navigateToCollect" class="tableviewcell">
+	<image src="../../../images/Icon2.png" />
+	<text>我的收藏</text>
+</view>
+
+<view bindtap="navigateToAddress" class="tableviewcell">
+	<image src="../../../images/Icon7.png" />
+	<text>地址管理</text>
+</view>
+
+
+<view bindtap="navigateToAddressAboutus" class="tableviewcell">
+	<image src="../../../images/Icon10.png" />
+	<text>联系我们</text>
+</view>
+
+<view wx:if="{{xcxConfig.show_wxkf == 1}}"class="tableviewcell">
+	<image src="../../../images/Icon12.png" />
+	<text>在线客服</text>
+  <contact-button style="opacity:0;position:absolute;left: 50rpx;" size="100" session-from="user_center"></contact-button>
+  <contact-button style="opacity:0;position:absolute;left: 100rpx;" size="100" session-from="user_center"></contact-button>
+  <contact-button style="opacity:0;position:absolute;left: 150rpx;" size="100" session-from="user_center"></contact-button>
+  <contact-button style="opacity:0;position:absolute;left: 200rpx;" size="100" session-from="user_center"></contact-button>
+</view>
+
+<!--view bindtap="logout" class="tableviewcell">
+	<image src="../../../images/Icon5.png" />
+	<text>免费入驻</text>
+</view-->
+
+<!--<button bindtap="logout" type="warn" class="logout">退出</button>-->
+</view>
+
+<!--
+
+<view wx:else class="wx-view_login" style="height:{{height}}px;">
+
+    <view class="view_logup_form">
+        <view class="wx-view_log_item" >
+            <input placeholder-style="color:#999999" class="c-block wx_input" placeholder="请输入11位手机号" type="number" bindinput="getPhoneNum"/>
+            <view class="btn_getnum" catchtap="getnum">
+			{{time}}
+            </view>
+        </view>
+        <view class="wx-view_log_item" style="border-bottom-style: none;">
+            <input placeholder-style="color:#999999" class="c-block c-fullwidth wx_input"  placeholder="请输入验证码" type="number" bindinput="inputNum"/>
+        </view>
+    </view>
+    <button class="wx-button_logup"  bindtap="quick_login_phone" data-id="{{phoneNum}}" hover-class="button-hover" size="default" type="warn" >
+        登录
+    </button>
+	 <button class="wx-button_register"  bindtap="quick_reguster_phone" data-id="{{phoneNum}}" hover-class="button-hover" size="default"  >
+        注册
+    </button>
+</view>
+
+
+-->
+
+
+<view class="page_footer" wx:if="{{xcxConfig.copyright}}">
+      <text>{{xcxConfig.copyright}}</text>
+</view>
+

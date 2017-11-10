@@ -1,0 +1,138 @@
+<view class="class-tab">
+  <text bindtap="tabClick" data-index="0" class="{{tabClasss[0]}}">商品</text>
+  <text bindtap="tabClick" data-index="1" class="{{tabClasss[1]}}">详情</text>
+  <text bindtap="tabClick" data-index="2" class="{{tabClasss[2]}}">评价</text>
+</view>
+<view class="parent" wx:if="{{tab == 0}}">
+  <swiper class="images" indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:{{galleryHeight}}px;">
+    <block wx:for="{{goods.gallery}}" wx:key="">
+      <swiper-item>
+        <image src="{{item.image_url}}" mode="aspectFill" class="swiper-image" bindtap="previewImage" data-current="{{index}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <view class="view-class-title">
+    <view class="summary">
+      <text class="title">{{goods.goods.goods_name}}</text>
+    </view>
+    <view class="class-line">
+    </view>
+    <view bindtap="addCollect" data-id="{{goods.goods.goods_id}}" class="class-collect">
+      <image src="/images/collect.png"></image>
+    </view>
+  </view>
+  
+  <view class="view-price">
+    <text class="text-red">￥{{goods.goods.promote_price}}</text>
+    <!--
+    <text class="text-price">价格: ￥{{goods.goods.market_price}} 
+    </text>-->
+     <text wx:if="{{groupInfo.promote_status == 0}}" class="btn-red">活动即将开始</text> <text wx:else class="btn-red">秒杀</text>
+  </view>
+<view class="view-price">
+    <text class="text-endtime">开始时间:{{groupInfo.promote_start_date}}</text>
+</view>
+<view class="view-price">
+    <text class="text-endtime">截止日期:{{groupInfo.end_time}}</text>
+</view>
+
+  <view class="view-other-info">
+    <text>库存:{{goods.goods.goods_number}}</text>
+    <text>{{goods.goods.comment_count}}人评价</text>
+    <text>{{goods.goods.ghost_count}}人已购买</text>
+  </view>
+  <view wx:if="{{groupInfo.promote_status == 1}}">
+  <text class="text-prop">选择商品属性</text>
+  <view class="rowline">
+  </view> 
+  <view wx:for-index="pos" wx:for="{{goods.goods.goods_spec_list}}" class="view-sub-prop">
+    <text class="text-prop">{{item[0].spec_name}}</text>
+    <view  class="view-btns">
+      <text bindtap="propClick" data-index="{{pos}}" data-pos="{{index}}" class="{{textStates[item.isClick]}}" wx:for="{{item}}">{{item.item}}</text>
+      
+    </view>
+  </view>
+ 
+  <view class="rowline">
+  </view>
+  
+  <text class="text-prop">购买数量</text>
+  <view class="rowline">
+  </view>
+
+  <!-- 数量加减 -->
+  <view>
+    <view class="stepper">
+
+      <!-- 减号 -->
+      <text class="normal" data-index="{{index}}" bindtap="bindMinus">-</text>
+
+      <!-- 数值 -->
+      <input type="number" data-index="{{index}}" bindchange="bindManual" value="{{goods_num}}" />
+
+      <!-- 加号 -->
+      <text class="normal" data-index="{{index}}" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+
+   </view>
+  <view style="width:100%;height:30px;">
+  </view>
+  <view class="detail">
+    <image wx:for="{{goods.detail}}" src="{{item}}" wx:key="" mode="widthFix"></image>
+  </view>
+</view>
+<view class="parent" wx:if="{{tab == 1}}">
+
+  <!--<swiper class="images" indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" style="height:{{galleryHeight}}px;">-->
+  <block wx:for="{{goods.gallery}}" wx:key="">
+    <image src="{{item.image_url}}" mode="widthFix" class="xq-image" bindtap="previewImage" data-current="{{index}}" />
+  </block>
+
+  <!--</swiper>-->
+  <text class="text-desc-title">商品信息</text>
+  <view class="rowline">
+  </view>
+  <text wx:for="{{goods.goods.goods_attr_list}}" class="text-propdesc">{{item.attr_name}}:{{item.attr_value}}</text>
+  
+  <view style="width:100%;height:100px;">
+  </view>
+</view>
+<view class="parent" wx:if="{{tab == 2}}">
+  <view class="container carts-list">
+    <view wx:for="{{goods.comment}}" wx:key="index" class="carts-item">
+      <view class="carts-userinfo">
+
+        <!-- 缩略图 -->
+        <image class="carts-image" src="/images/user.jpg" mode="aspectFill" />
+        <text class="text-username">{{item.username}}</text>
+      </view>
+      <view class="carts-text">
+        <text class="text-username">{{item.content}}</text>
+        <view calss="carts_bottom">
+
+          <image wx:if="{{item.service_rank == 0}}" class="stars" src="/images/stars0.gif"></image>
+          <image wx:elif="{{item.service_rank == 1}}" class="stars" src="/images/stars1.gif"></image>
+          <image wx:elif="{{item.service_rank == 2}}" class="stars" src="/images/stars2.gif"></image>
+          <image wx:elif="{{item.service_rank == 3}}" class="stars" src="/images/stars3.gif"></image>
+          <image wx:elif="{{item.service_rank == 4}}" class="stars" src="/images/stars4.gif"></image>
+          <image wx:elif="{{item.service_rank == 5}}" class="stars" src="/images/stars5.gif"></image>
+          <text class="text-username">{{item.add_time}}</text>
+        </view>
+      </view>
+      <view class="carts-right">
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{groupInfo.promote_status == 1}}" class="footer">
+
+  <!--<view class="favor">
+    <image src="../../../images/favor.png" class="favor-image" />
+    <text class="favor-text">收藏</text>
+  </view>-->
+  <button class="btn-bug" bindtap="bug">立即购买</button>
+  <button class="add-cart" bindtap="addCart">加入购物车</button>
+</view>

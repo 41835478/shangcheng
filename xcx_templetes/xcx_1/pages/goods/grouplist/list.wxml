@@ -1,0 +1,38 @@
+ <view class="class-tab">
+  <text bindtap="tabClick" data-index="0" class="{{tabClasss[0]}}">正在抢购</text>
+  <text bindtap="tabClick" data-index="1" class="{{tabClasss[1]}}">即将开始</text>
+ 
+</view>
+
+	<view  class="goodsList carts-list">
+	<view wx:for="{{goods}}" wx:key="objectId" class="carts-item" data-object-id="{{item.goods_id}}" bindtap="tapGoods">
+		<view>
+		<!-- 缩略图 -->
+		  <image class="carts-image" src="{{item.image}}" mode="aspectFill"/>
+		</view>
+      <view class="carts-text">
+      	<!-- 商品标题 -->
+        <text class="carts-title">{{item.goods_name}}</text>
+      <view class="goods-price">
+			<text class="text-redbtn">{{item.rebate}}折</text>
+			
+			<text class="market-price">￥{{item.price}}元</text>
+      <text class="goodsprice">￥{{item.goods_price}}元</text>
+		</view>
+
+		<view class="goods-score">
+			<text wx:if="{{item.ctype == 0}}">已售{{item.virtual_num}}件</text>
+			<text wx:else>开始时间:{{item.promote_start_date}}</text>
+		</view>
+		<view class="goods-score">
+			<text>截止日期:{{item.end_time}}</text>
+			
+		</view>
+      </view>
+    </view>
+  </view>
+
+<view wx:if="{{goods.length == 0}}"class="view-tint">
+<image src="/images/icon_empty.png"></image>
+<text>亲,没有数据</text>
+</view>

@@ -1,0 +1,129 @@
+{if $full_page eq 1}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content="{$description}" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>{$ur_here}</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/zalert.css" rel="stylesheet" type="text/css" />
+    <link href="styles/zprogress.css" rel="stylesheet" type="text/css" />
+    <link href='styles/intimidatetime.css' rel="stylesheet" type="text/css" />
+    <link href='styles/zscrolltotop.css' rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript" src='js/goods_main.js'></script>
+    
+    <script type='text/javascript'>
+
+    </script>
+
+	{insert_scripts files="../js/jquery-1.6.2.min.js,jquery.json.js,../js/transport.js"}
+	{insert_scripts files="../js/utils.js,listtable.js"}
+    <script type="text/javascript">
+      function search_stock()
+       {
+         if(check_form_empty('searchForm'))
+         {
+           $.zalert.add('输入不能为空！',1)
+         }
+         else
+         {
+           $.zcontent.set('goods_name',$('#goods_name').val());
+           search();
+         }
+         return false;
+       }
+    </script>
+    
+	<script type="text/javascript">
+	  {literal}
+      listTable.recordCount = {$record_count};
+      listTable.pageCount = {$page_count};
+    
+      {foreach from=$filter item=item key=key}
+      listTable.filter.{$key} = '{$item}';
+      {/foreach}
+	  {/literal}
+	</script>
+    
+	<link href="styles/goods.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="listDiv">
+    <div id='container'>
+      {/if}
+      {include file='page_header.htm'}
+      <section>
+        {include file='goods_menu_list.htm'}
+        <div class="order_con" id="con_order_manage_2" style="display:none">
+          <div class="order_pd">
+            <div class="order order_t">
+              <form name="searchForm" method="post" action="" class="order_search" >
+                <table width="100%" border="0">
+                  <tr>
+                    <td>
+                      <input type="text" name="keyword" id='goods_name' class="inputBg" placeholder="请输入商品名称或货号" {if $filter.keyword}value='{$filter.keyword}'{/if}/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="submit" class="button2" value="查找"/>
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+		  
+        </div>
+        <div class="order_pd goods_pd"  id="con_order_manage_1">
+          <div class="goods">
+            <ul class="goods_list">
+              {foreach from=$goods_list item=item}
+              <li class="goods_list_info" >
+                <div style="width: 20%;float: left;font-size:10px;">
+                 	<img style="display: block;width: 90%;float: left;" src="{if strpos($item.goods_thumb,'http')===false}../../{$item.goods_thumb}{else}{$item.goods_thumb}{/if}">
+                    <br />ID:{$item.goods_id}
+                </div>
+                <div style="width: 60%;float: left;overflow: hidden;">
+                    <p style="font-size:10px; line-height:15px;">{$item.goods_name}</p>
+                    <p style="font-size:10px; line-height:15px;">货号：{$item.goods_sn}</p>
+                    <p style="font-size:10px; line-height:15px;">价格：<span class="font">{$item.shop_price}</span></p>
+                </div>
+                <div style="width: 20%;float: right;overflow: hidden; text-align:right;">
+                    <p style="font-size:10px; line-height:15px;text-align:right;">
+					<a href="javascript:;" onclick="listTable.remove({$item.goods_id}, '{$lang.restore_goods_confirm}', 'restore_goods')">{$lang.restore}</a>
+                    </p>
+                    <p style="font-size:10px; line-height:15px;text-align:right; ">
+				    <a href="javascript:;" onclick="listTable.remove({$item.goods_id}, '{$lang.drop_goods_confirm}', 'drop_goods')">{$lang.drop}</a>
+                    </p>
+                </div>
+              </li>
+              {foreachelse}
+              <li class="no_goods_list">
+                <div class="no_goods">没有找到任何商品！</div>
+              </li>
+              {/foreach}
+            </ul>
+          </div>
+
+
+            <p class="page">
+              <span id="totalPages" style="display:none;">{$page_count}</span>
+              <a href="javascript:{if $filter.page eq 1}void(0){else}listTable.gotoPagePrev(){/if}" class="prev">上一页</a>
+              <span>{if $filter.page && $filter.page gte 0}{$filter.page}{else}0{/if}/{if $filter.page_count && $filter.page_count gte 0}{$filter.page_count}{else}0{/if}</span>
+              <a href="javascript:{if $filter.page eq $filter.page_count}void(0){else}listTable.gotoPageNext(){/if}">下一页</a>  
+            </p>
+
+
+        </div>
+      </section>
+      {include file='page_footer.htm'}
+      {if $full_page eq 1}
+    </div>
+    {include file='static_div.htm'}
+  </body>
+</html>
+{/if}
+

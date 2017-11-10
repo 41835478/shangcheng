@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title>{$lang.cp_home}{if $ur_here} - {$ur_here} {/if}</title>
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+
+    {insert_scripts files="../js/transport.js,common.js"}
+
+    <script language="JavaScript">
+
+        <!--
+
+        // 这里把JS用到的所有语言都赋值到这里
+
+        {foreach from=$lang.js_languages key=key item=item}
+
+        var {$key} = "{$item}";
+
+        {/foreach}
+
+        //-->
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+<h1>
+
+    <span class="action-span1"><a href="index.php?act=main">{$lang.cp_home}</a> </span><span id="search_id" class="action-span1"> - 微信海报设置</span>
+
+    <div style="clear:both"></div>
+
+</h1>
+
+
+
+{insert_scripts files="../js/utils.js,selectzone.js,colorselector.js"}
+
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+
+
+
+{if $warning}
+
+<ul style="padding:0; margin: 0; list-style-type:none; color: #CC0000;">
+
+    <li style="border: 1px solid #CC0000; background: #FFFFCC; padding: 10px; margin-bottom: 5px;" >{$warning}</li>
+
+</ul>
+
+{/if}
+
+
+
+<!-- start goods form -->
+
+<div class="tab-div1">
+
+<!-- tab body -->
+
+<div id="tabbody-div">
+
+<!-- 通用信息 -->
+
+<form name="theForm" method="post" action="weixin.php?act=qrcode_config" enctype="multipart/form-data">
+
+  <table width="100%" cellpadding="3" cellspacing="1">
+
+  <tbody>
+  <tr>
+ <span style=" color:#F30;">*&nbsp;注:&nbsp;提交保存后请到公众号重新生成推广海报查看效果</span>
+  
+ </tr>
+  <tr>
+
+    <td class="label">海报背景图 :</td>
+
+    <td><input type="file" name="qr_url"  />
+    {if $ret.qr_url}<br /><b style="color:#F00;">√已上传</b>{/if}
+    <br /><span>*&nbsp;注:上传推广海报背景图 建议尺寸：530*800</span></td>
+    {if $ret.qr_url}<td rowspan="10">背景图预览<br /><img src="../../{$ret.qr_url}" style="width:300px; height:auto;" /></td>{/if}
+
+  </tr>
+
+          <tr>
+
+    <td class="label">微信头像X坐标 :</td>
+
+    <td><input type="text " name="h_x" size="20" value="{$ret.h_x}"></td>
+
+  </tr>
+     <tr>
+
+    <td class="label">微信头像Y坐标 :</td>
+
+    <td><input type="text " name="h_y" size="20" value="{$ret.h_y}"></td>
+
+  </tr>
+  
+     <tr>
+
+    <td class="label">微信昵称水印X坐标 :</td>
+
+    <td><input type="text " name="n_x" size="20" value="{$ret.n_x}"></td>
+
+  </tr>
+     <tr>
+
+    <td class="label">微信昵称水印Y坐标 :</td>
+
+    <td><input type="text " name="n_y" size="20" value="{$ret.n_y}"></td>
+
+  </tr>
+  
+  <tr>
+
+    <td class="label">微信二维码X坐标 :</td>
+
+    <td><input type="text " name="q_x" size="20" value="{$ret.q_x}"></td>
+
+  </tr>
+     <tr>
+
+    <td class="label">微信二维码Y坐标 :</td>
+
+    <td><input type="text " name="q_y" size="20" value="{$ret.q_y}"></td>
+
+  </tr>
+  <tr>
+
+    <td colspan="2" align="center">
+
+      <input type="submit" value="{$lang.button_submit}" class="button" />
+
+    <input type="reset" value="{$lang.button_reset}" class="button" />
+
+    </td>
+
+  </tr>
+
+</tbody></table>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- end goods form -->
+
+{insert_scripts files="validator.js,tab.js"}
+
+
+
+<script language="JavaScript">
+
+var goodsId = '{$goods.goods_id}';
+
+var elements = document.forms['theForm'].elements;
+
+var sz1 = new SelectZone(1, elements['source_select1'], elements['target_select1']);
+
+var sz2 = new SelectZone(2, elements['source_select2'], elements['target_select2'], elements['price2']);
+
+var sz3 = new SelectZone(1, elements['source_select3'], elements['target_select3']);
+
+var marketPriceRate = {$cfg.market_price_rate|default:1};
+
+var integralPercent = {$cfg.integral_percent|default:0};
+
+
+
+{literal}
+
+onload = function()
+
+{
+
+
+
+    if (document.forms['theForm'].elements['auto_thumb'])
+
+    {
+
+        handleAutoThumb(document.forms['theForm'].elements['auto_thumb'].checked);
+
+    }
+
+
+
+    // 检查新订单
+
+    startCheckOrder();
+
+    {/literal}
+
+        {foreach from=$user_rank_list item=item}
+
+        set_price_note({$item.rank_id});
+
+    {/foreach}
+
+        {literal}
+
+        document.forms['theForm'].reset();
+
+    }
+
+
+
+    function setAttrList(result, text_result)
+
+    {
+
+        document.getElementById('tbody-goodsAttr').innerHTML = result.content;
+
+    }
+
+
+
+
+
+            {/literal}
+
+</script>
+
+{include file="pagefooter.htm"}
+

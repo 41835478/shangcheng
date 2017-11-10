@@ -1,0 +1,73 @@
+<!-- $Id: xcx_settings.htm  prince $ -->
+{include file="pageheader.htm"} {insert_scripts files="../js/utils.js"}
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="./js/validate/messages_zh.js"></script>
+<script type="text/javascript" src="./js/validator.js"></script>
+<style type="text/css">
+label.error {
+	color: red;
+	background: url(./images/warning_small.gif) no-repeat;
+	padding-left: 18px;
+}
+
+label.success {
+	background: url(./images/yes.gif) no-repeat;
+	padding-left: 18px;
+}
+
+#btn_visit{
+	background: #24a0d6 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 7px 15px;
+}
+</style>
+<form  method="post" action="xcx_make.php" name="theForm" enctype="multipart/form-data" >
+	<input type="hidden" id="act" name="act" value="post">
+	<div class="main-div">
+		<table id="group-table" cellspacing="1" cellpadding="3" width="100%">
+			<tr>
+            	<td style="color:#F00; " align="right">请核对以下资料，</td>
+				<td style="color:#F00; " > 如有错误，请在小程序设置页面修改</td>
+			</tr>
+			<tr>
+				<td class="label">小程序标题</td>
+				<td>
+					<input type="text" id="title" readonly="readonly" name="title" value="{$xcx.title}" class="required" />(小程序头部标题)
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序ID(AppID)</td>
+				<td>
+					<input type="text" id="appid" readonly="readonly"  name="appid" value="{$xcx.appid}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序密钥(AppSecret)</td>
+				<td>
+					<input type="text" id="appsecret" readonly="readonly"  name="appsecret" value="{$xcx.appsecret}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">接口授权码</td>
+				<td>
+					<input type="text" id="syskey" readonly="readonly"  name="syskey" value="{$xcx.syskey}" class="required" />(今天优品提供，未经允许禁止修改，否则无法使用)
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label">&nbsp;</td>
+				<td>
+                      <input type="submit" class="button" value="开始生成" />
+				</td>
+			</tr>
+		</table>
+	</div>
+</form>
+
+{include file="pagefooter.htm"}

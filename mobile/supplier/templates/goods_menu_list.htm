@@ -1,0 +1,17 @@
+<ul class="order_tab" style="position:relative">
+  <li id="order_manage1" class="first" onclick="toggle_menu();">{$ur_here}
+    <i id="menu_list_marker" class='on'></i>
+    <ul class="order_type" style="display:none; " id='menu_list'>
+      <li {if $ur_here eq '全部商品'}class='curr'{/if}><a href="goods.php?act=list" style="font-size:10px;">全部商品</a></li>
+      <li {if $ur_here eq '审核通过商品'}class='curr'{/if}><a href="goods.php?act=list&supplier_status=1" style="font-size:10px;">审核通过商品</a></li>
+      <li {if $ur_here eq '未审核商品'}class='curr'{/if}><a href="goods.php?act=list&supplier_status=0" style="font-size:10px;">未审核商品</a></li>
+      <li {if $ur_here eq '审核未通过商品'}class='curr'{/if}><a href="goods.php?act=list&supplier_status=-1" style="font-size:10px;">审核未通过商品</a></li>
+      <li {if $ur_here eq '平台转移商品'}class='curr'{/if}><a href="goods.php?act=list&supplier_status=2" style="font-size:10px;">平台转移商品</a></li>
+      <li {if $ur_here eq '商品回收站'}class='curr'{/if}><a href="goods.php?act=trash" style="font-size:10px;">商品回收站</a></li>
+      <li {if $ur_here eq '添加商品'}class='curr'{/if}><a href="goods.php?act=add" style="font-size:10px;">添加商品</a></li>
+    </ul>
+  </li>
+  
+  <li id="order_manage2" onclick="toggle_search();"><span class="line"></span>查询<i class='search'></i></li>
+
+</ul>

@@ -1,0 +1,70 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--<div class="w1210 chengjiao"> -->
+   <div class="chengjiaojl"> 
+    <div class="Top_Record"> 
+     <div class="record_Top">
+      <p class="font9">今天已成交<i>{$index_total.day}</i>单，近三天内已成交<i>{$index_total.day3}</i>单，客户评价<i>{$index_total.comment}</i>条，近30天成交<i>{$index_total.month}</i>单，现货库存<i>{$index_total.goods_number}</i>种
+     </div> 
+     <div class="topRec_List"> 
+      <dl> 
+       <dd class="font9">
+        客户名称
+       </dd> 
+       <dd class="font9">
+        <i></i>订单编号
+       </dd> 
+       <dd class="font9">
+        <i></i>下单日期
+       </dd> 
+       <dd class="font9">
+        <i></i>金额
+       </dd> 
+       <dd class="font9">
+        <i></i>付款情况
+       </dd> 
+       <dd class="font9">
+        <i></i>订单状态
+       </dd> 
+      </dl> 
+      <div class="maquee"> 
+     <ul style="margin-top: 0px; ">        	
+					{foreach from=$index_list item="order"}
+			   <li>
+	                    <div>{$order.consignee}</div>
+	                    <div>{$order.order_sn}</div>
+	                    <div><i>{$order.add_time}</i></div>
+	                    <div><i>{$order.total_fee}</i></div> 
+	                    <div>{$order.pay_name} | 
+			     {if $order.pay_status eq "未付款"} 
+			     <span class="nopay">未付款</span>
+			     </div>
+	                    <div>待付款</div>
+			     {else}
+	                     <span class="yespay">已付款</span>
+                            </div>
+	                    <div>{if $order.shipping_status eq "未发货"}待发货{elseif $order.shipping_status eq "收货确认"}已完成{else}{$order.shipping_status}{/if}</div>
+			     {/if}
+	                  
+	                </li>
+					{/foreach}
+		</ul>
+      </div> 
+     </div> 
+     <script type="text/javascript"> 
+      function autoScroll(obj){  
+            $(obj).find("ul").animate({  
+                marginTop : "-39px"  
+            },500,function(){  
+                $(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+            })  
+        }  
+        $(function(){  
+            setInterval('autoScroll(".maquee")',3000);
+            setInterval('autoScroll(".apple")',2000);
+              
+        }) 
+        
+</script> 
+    </div> 
+   </div> 
+ <!-- </div>-->

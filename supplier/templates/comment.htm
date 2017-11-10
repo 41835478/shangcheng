@@ -1,0 +1,53 @@
+﻿{include file="pageheader.htm"}
+<div class="main-div">
+
+<form id="form1" name="form1" method="post" action="comment_collect.php?act=comment_preview&goods_id={$goods_id}">
+<table cellspacing="1" cellpadding="3" width="100%">
+
+<tr>
+<td class="label" style="width:20%">{$lang.from_url}</td>
+<td> <input type="text" name="taourl" id="taourl"   size="50" value="http://detail.tmall.com/item.htm?spm=a230r.1.14.1.vK6QAo&id=43500650865&cm_id=140105335569ed55e27b&_u=rfn91b1123b&abbucket=19"/>例如：http://detail.tmall.com/item.htm?id=37407455923</td>
+</tr>
+
+<tr>
+<td class="label" style="width:20%">{$lang.goods_keywords}</td>
+<td><input type="text" name="keyword" id="keyword"   size="30" value="好"/>{$lang.goods_keywords_tips}</td>
+</tr>
+
+
+<tr>
+<td class="label" style="width:20%">{$lang.goods_comments_Getnumber}：</td>
+<td><input type="text" name="GetNum" id="GetNum" value="3">{$lang.goods_comments_Getnumber2}</td>
+</tr>
+
+
+<tr>
+<td class="label" style="width:20%">{$lang.goods_comments_number}：</td>
+<td><input type="text" name="maxNum" id="maxNum" value="10"></td>
+</tr>
+
+<tr>
+<td class="label" style="width:20%">每条评论的虚拟销量增量：</td>
+<td><input type="text" name="ghost_count" id="ghost_count" value="1"><span >如：设置2则每采集一条评论，虚拟销量就增加2</span></td>
+</tr>
+
+<!--今 天 优 品 多 商 户 系 统  技术服务   热 风 科 技  Q Q  1 2 0 0 2 9 1 2 1   20160730 S-->
+<!--tr>
+<td class="label" style="width:20%">{$lang.TimeSplit}</td>
+<td><input type="text" name="TimeSplit" id="TimeSplit" value="0">{$lang.TimeSplitstirng}</td>
+</tr-->
+<!--今 天 优 品 多 商 户 系 统  技术服务   热 风 科 技  Q Q  1 2 0 0 2 9 1 2 1   20160730 S-->
+
+
+
+<tr align="center">
+<td colspan="2"><input type="submit" name="button" class="button" id="button" value="{$lang.button_submit}">
+    <input type="reset" value="{$lang.button_reset}" class="button" />
+<a href="goods.php?act=list"><input type="button" class="button"   value="返回"></a></td>
+</tr>
+</table>
+</form>
+
+</div>
+
+{include file="pagefooter.htm"}

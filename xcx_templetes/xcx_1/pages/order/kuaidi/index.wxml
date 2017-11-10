@@ -1,0 +1,45 @@
+
+
+<view  class="parent">
+
+<view class="view-order" >
+<view class="view-orderstatus">
+<image src="/images/oorder.png"></image>
+<view class="view-orderstatus-info">
+
+<view class="order-footer">
+		<text class="text-name">快递公司：{{shipping_name}}</text>
+</view>
+<text class="text-address">快递单号:{{invoice_no}}</text>
+
+</view>
+
+</view>
+
+
+</view>
+
+
+
+
+
+
+<view  class="view-kd" wx:for="{{kuaidi}}" wx:for-index="i" style="background:#ffffff">
+<dl style=" margin-top:20px;">
+<view wx:if="{{i != 0 }}"><dt  style=" background:#ccc;"></dt></view>
+<view wx:else><dt></dt></view>
+<dd><view wx:if="{{i != 0 }}"><p  style=" color:#666"> {{item.context}}</p></view>
+<view wx:else><p > {{item.context}}</p></view>
+<strong>{{item.time}}</strong>
+</dd>
+</dl>
+</view>
+
+<view wx:if="{{kuaidi == false}}" class="kuaidi_no">
+<image src="/images/icon_empty.png"></image>
+<text>亲,暂时没有物流数据数据</text>
+</view>
+
+
+</view>
+

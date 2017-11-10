@@ -1,0 +1,1770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="6e300f12-f1e9-426b-baea-c94b5a829630" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qrcode.png" afterPath="$PROJECT_DIR$/qrcode.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supplier.png" afterPath="$PROJECT_DIR$/supplier.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/inc_menu.php" afterPath="$PROJECT_DIR$/admin/includes/inc_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/templates/top.htm" afterPath="$PROJECT_DIR$/admin/templates/top.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/log/singin_log.txt" afterPath="$PROJECT_DIR$/data/log/singin_log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/prince_jtypmall_pc/index.dwt" afterPath="$PROJECT_DIR$/themes/prince_jtypmall_pc/index.dwt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.php" afterPath="$PROJECT_DIR$/user.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/templates/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+              <folding>
+                <marker date="1510117514477" expanded="true" signature="950:1051" ph="SELECT nav_l... ${$yp-&gt;table('admin_user')}" />
+                <marker date="1510117514477" expanded="true" signature="1524:1640" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="1850:1972" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="2155:2234" ph="SELECT COUNT... ${$yp-&gt;table('comment')}" />
+                <marker date="1510117514477" expanded="true" signature="10928:11082" ph="SELECT SUM(m... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="11307:11441" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="11529:11622" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+                <marker date="1510117514477" expanded="true" signature="11685:11792" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+                <marker date="1510117514477" expanded="true" signature="11858:11922" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+                <marker date="1510117514477" expanded="true" signature="12401:12518" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="12638:12729" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+                <marker date="1510117514477" expanded="true" signature="12784:12875" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+                <marker date="1510117514477" expanded="true" signature="13108:13200" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+                <marker date="1510117514477" expanded="true" signature="14681:14760" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('comment')}" />
+                <marker date="1510117514477" expanded="true" signature="15032:15280" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('shaidan')}" />
+                <marker date="1510117514477" expanded="true" signature="15543:15608" ph="SELECT COUNT... ${$yp-&gt;table('goods_tag')}" />
+                <marker date="1510117514477" expanded="true" signature="15888:15996" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="16042:16184" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="16236:16354" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="16410:16529" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="16600:16729" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="16792:16956" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="17148:17267" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="17315:17468" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="17520:17640" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="17688:17842" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="17896:18015" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="18063:18216" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="18304:18503" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="18551:18782" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="18837:18972" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="19128:19198" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="20203:20279" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="20465:20561" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="21178:21306" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+                <marker date="1510117514477" expanded="true" signature="21633:21761" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+                <marker date="1510117514477" expanded="true" signature="21922:22079" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('booking_goods')}" />
+                <marker date="1510117514477" expanded="true" signature="22436:22678" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="23863:24055" ph="SELECT `from... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="26897:27149" ph="SELECT DATE_... " />
+                <marker date="1510117514477" expanded="true" signature="33521:33629" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="33746:33767" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+                <marker date="1510117514477" expanded="true" signature="33829:33906" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510117514477" expanded="true" signature="33940:34018" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510117514477" expanded="true" signature="35269:35343" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510117514477" expanded="true" signature="35442:35517" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510117514477" expanded="true" signature="39923:40009" ph="SELECT shipp... ${$yp-&gt;table('shipping')}" />
+                <marker date="1510117514477" expanded="true" signature="40195:40580" ph="INSERT INTO ${$yp-&gt;table('shipping')}... " />
+                <marker date="1510117514477" expanded="true" signature="40823:40966" ph="SELECT shipp... ${$yp-&gt;table(&quot;shipping_area&quot;)}" />
+                <marker date="1510117514477" expanded="true" signature="41773:41970" ph="INSERT INTO ${$yp-&gt;table('shipping_area')}... " />
+                <marker date="1510117514477" expanded="true" signature="43453:43531" ph="SELECT COUNT... ${$yp-&gt;table('payment')}" />
+                <marker date="1510117514477" expanded="true" signature="44208:44467" ph="INSERT INTO ${$yp-&gt;table('payment')}... " />
+                <marker date="1510117514477" expanded="true" signature="46237:46346" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+                <marker date="1510117514477" expanded="true" signature="46474:46603" ph="INSERT INTO ${$yp-&gt;table('category')}... " />
+                <marker date="1510117514477" expanded="true" signature="46792:46822" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+                <marker date="1510117514477" expanded="true" signature="53229:53752" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+                <marker date="1510117514477" expanded="true" signature="53972:54168" ph="INSERT INTO ${$yp-&gt;table('goods_gallery')}... " />
+                <marker date="1510117514477" expanded="true" signature="55280:55378" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="55471:55544" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510117514477" expanded="true" signature="56329:56408" ph="SELECT todol... ${$GLOBALS['yp']-&gt;table('admin_user')}" />
+                <marker date="1510117514477" expanded="true" signature="56692:56783" ph="SELECT * FRO... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510117514477" expanded="true" signature="57023:57093" ph="DELETE FROM " />
+                <marker date="1510117514477" expanded="true" signature="57152:57173" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510117514477" expanded="true" signature="57334:57424" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+                <marker date="1510117514477" expanded="true" signature="57883:57953" ph="DELETE FROM " />
+                <marker date="1510117514477" expanded="true" signature="58041:58062" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510117514477" expanded="true" signature="58791:58861" ph="DELETE FROM " />
+                <marker date="1510117514477" expanded="true" signature="58943:58964" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510117514477" expanded="true" signature="59172:59242" ph="DELETE FROM " />
+                <marker date="1510117514477" expanded="true" signature="59301:59322" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/templates/top.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="352" column="53" lean-forward="false" selection-start-line="352" selection-start-column="50" selection-end-line="352" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ads.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/ads.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3132">
+              <caret line="236" column="23" lean-forward="false" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+              <folding>
+                <marker date="1510038057433" expanded="true" signature="4227:4297" ph="SELECT COUNT... ${$yp-&gt;table('ad')}" />
+                <marker date="1510038057433" expanded="true" signature="8387:8867" ph="INSERT INTO ${$yp-&gt;table('ad')}... " />
+                <marker date="1510038057433" expanded="true" signature="9636:9714" ph="SELECT * FRO... ${$yp-&gt;table('ad')}" />
+                <marker date="1510038057433" expanded="true" signature="19394:19455" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('ad')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attention_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/attention_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1510038057476" expanded="true" signature="1615:1978" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057476" expanded="true" signature="2062:2428" ph="SELECT u.use... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057476" expanded="true" signature="2526:2638" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+                <marker date="1510038057476" expanded="true" signature="3362:3467" ph="INSERT INTO ${$yp-&gt;table('email_sendlist')}... " />
+                <marker date="1510038057476" expanded="true" signature="4303:4672" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057476" expanded="true" signature="4756:5128" ph="SELECT u.use... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057476" expanded="true" signature="5219:5331" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+                <marker date="1510038057476" expanded="true" signature="5988:6093" ph="INSERT INTO ${$yp-&gt;table('email_sendlist')}... " />
+                <marker date="1510038057476" expanded="true" signature="7297:7484" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+                <marker date="1510038057476" expanded="true" signature="7677:8048" ph="SELECT DISTI... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6156">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1510038057460" expanded="true" signature="3234:3302" ph="DELETE FROM " />
+                <marker date="1510038057460" expanded="true" signature="5188:5688" ph="INSERT INTO ${$yp-&gt;table('article')}... " />
+                <marker date="1510038057460" expanded="true" signature="6468:6542" ph="SELECT * FRO... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057460" expanded="true" signature="8677:8759" ph="SELECT file_... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057460" expanded="true" signature="11781:11856" ph="SELECT file_... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057460" expanded="true" signature="12136:12221" ph="DELETE FROM " />
+                <marker date="1510038057460" expanded="true" signature="12960:13004" ph="SELECT MAX(a... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057460" expanded="true" signature="13099:13219" ph="INSERT INTO ${$yp-&gt;table('goods_article')}... " />
+                <marker date="1510038057460" expanded="true" signature="14118:14162" ph="SELECT MAX(a... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057460" expanded="true" signature="14208:14313" ph="DELETE FROM " />
+                <marker date="1510038057460" expanded="true" signature="15845:16025" ph="SELECT file_... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057460" expanded="true" signature="18379:18517" ph="DELETE FROM " />
+                <marker date="1510038057460" expanded="true" signature="20031:20225" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('article')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/brand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4269">
+              <caret line="462" column="57" lean-forward="false" selection-start-line="462" selection-start-column="57" selection-end-line="462" selection-end-column="57" />
+              <folding>
+                <marker date="1510038057508" expanded="true" signature="2567:2796" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+                <marker date="1510038057508" expanded="true" signature="6410:6499" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+                <marker date="1510038057508" expanded="true" signature="7868:7939" ph="SELECT brand... ${$yp-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="8829:8900" ph="SELECT brand... ${$yp-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="10055:10253" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="10314:10463" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="14894:14971" ph="SELECT brand... ${$yp-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="16609:16713" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="16769:16790" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="17278:17387" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('brand')}" />
+                <marker date="1510038057508" expanded="true" signature="17443:17515" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('brand')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="444" column="40" lean-forward="true" selection-start-line="444" selection-start-column="40" selection-end-line="444" selection-end-column="40" />
+              <folding>
+                <marker date="1510038057667" expanded="true" signature="2548:2666" ph="select suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+                <marker date="1510038057667" expanded="true" signature="9550:9710" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="9812:9930" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="10034:10153" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="10216:10279" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="10552:10632" ph="SELECT * FRO... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="10761:10823" ph="select brand... ${$yp-&gt;table('brand')}" />
+                <marker date="1510038057667" expanded="true" signature="14724:14892" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="15805:15927" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="16418:16541" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="17044:17107" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="17623:17712" ph="SELECT cat_i... ${$yp-&gt;table('goods_cat')}" />
+                <marker date="1510038057667" expanded="true" signature="18564:18649" ph="SELECT * FRO... ${$yp-&gt;table('goods_gallery')}" />
+                <marker date="1510038057667" expanded="true" signature="23118:23271" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="34622:34652" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="38014:39691" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="39775:41322" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="45104:45153" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="45202:45406" ph="insert into ${$GLOBALS['yp']-&gt;table('ypmart_distrib_goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="46113:46221" ph="SELECT email... ${$yp-&gt;table('booking_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="49142:49283" ph="INSERT INTO ${$yp-&gt;table('bar_code')}... " />
+                <marker date="1510038057667" expanded="true" signature="50226:50318" ph="SELECT attr_... ${$yp-&gt;table('attribute')}" />
+                <marker date="1510038057667" expanded="true" signature="50539:50784" ph="SELECT g.*, ${$yp-&gt;table('goods_attr')}" />
+                <marker date="1510038057667" expanded="true" signature="52897:53083" ph="INSERT INTO ${$yp-&gt;table('goods_attr')}... " />
+                <marker date="1510038057667" expanded="true" signature="53442:53537" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="53642:53911" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="54447:54537" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('ypmart_distrib_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="54709:54902" ph="insert into ${$GLOBALS['yp']-&gt;table('ypmart_distrib_goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="57487:57677" ph="INSERT INTO ${$yp-&gt;table('goods_gallery')}... " />
+                <marker date="1510038057667" expanded="true" signature="60351:60445" ph="SELECT bonus... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="60641:60742" ph="SELECT is_ex... ${$GLOBALS['yp']-&gt;table('exchange_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="60935:61034" ph="SELECT packa... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="61225:61338" ph="SELECT act_i... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+                <marker date="1510038057667" expanded="true" signature="61535:61552" ph="SELECT data ${$GLOBALS['yp']-&gt;table('topic')}" />
+                <marker date="1510038057667" expanded="true" signature="65240:65384" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('supplier_category')}" />
+                <marker date="1510038057667" expanded="true" signature="65585:65666" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="65728:65810" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="65890:66048" ph="INSERT INTO ${$yp-&gt;table('supplier_goods_cat')}... " />
+                <marker date="1510038057667" expanded="true" signature="72882:72958" ph="SELECT goods... ${$yp-&gt;table('products')}" />
+                <marker date="1510038057667" expanded="true" signature="73626:73702" ph="SELECT goods... ${$yp-&gt;table('products')}" />
+                <marker date="1510038057667" expanded="true" signature="74723:74794" ph="SELECT goods... ${$yp-&gt;table('products')}" />
+                <marker date="1510038057667" expanded="true" signature="75387:75458" ph="SELECT promo... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="77367:77465" ph="SELECT email... ${$yp-&gt;table('booking_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="77522:77600" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="80210:80302" ph="select suppl... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="83564:83682" ph="select suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+                <marker date="1510038057667" expanded="true" signature="86173:86255" ph="SELECT bonus... ${$GLOBALS['yp']-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="86412:86501" ph="SELECT is_ex... ${$GLOBALS['yp']-&gt;table('exchange_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="86655:86742" ph="SELECT packa... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+                <marker date="1510038057667" expanded="true" signature="86894:87004" ph="SELECT act_i... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+                <marker date="1510038057667" expanded="true" signature="87153:87170" ph="SELECT data ${$GLOBALS['yp']-&gt;table('topic')}" />
+                <marker date="1510038057667" expanded="true" signature="91348:91431" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="91484:91578" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92276:92352" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92408:92484" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92521:92597" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92634:92707" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92744:92816" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92853:92928" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="92965:93040" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93077:93151" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93188:93261" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93298:93376" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93413:93479" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93516:93607" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93644:93720" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93757:93833" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="93870:93947" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="94057:94132" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="100469:100560" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="101886:102068" ph="INSERT INTO ${$yp-&gt;table('link_goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="102138:102316" ph="INSERT INTO ${$yp-&gt;table('link_goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="103293:103400" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="103738:103841" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="104861:105034" ph="INSERT INTO ${$yp-&gt;table('group_goods')}... " />
+                <marker date="1510038057667" expanded="true" signature="105875:105964" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="106991:107107" ph="SELECT artic... ${$yp-&gt;table('article')}" />
+                <marker date="1510038057667" expanded="true" signature="107838:107991" ph="INSERT INTO ${$yp-&gt;table('goods_article')}... " />
+                <marker date="1510038057667" expanded="true" signature="108790:108915" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="109783:109896" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="112623:112736" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="115469:115544" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="119443:119575" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+                <marker date="1510038057667" expanded="true" signature="121460:121722" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('products')}... " />
+                <marker date="1510038057667" expanded="true" signature="124153:124262" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+                <marker date="1510038057667" expanded="true" signature="124604:124664" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="126037:126172" ph="SELECT suppl... ${$GLOBALS['yp']&#10;                -&gt;table(&quot;supplier&quot;)}" />
+                <marker date="1510038057667" expanded="true" signature="126222:126433" ph="SELECT suppl... ${$GLOBALS['yp']&#10;                -&gt;table(&quot;supplier&quot;)}" />
+                <marker date="1510038057667" expanded="true" signature="135896:136014" ph="DELETE FROM " />
+                <marker date="1510038057667" expanded="true" signature="136252:136458" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('volume_price')}... " />
+                <marker date="1510038057667" expanded="true" signature="137628:137771" ph="select price... ${$GLOBALS['yp']-&gt;table('pricecut')}" />
+                <marker date="1510038057667" expanded="true" signature="139816:139940" ph="select min(a... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+                <marker date="1510038057667" expanded="true" signature="141873:142159" ph="select c.rec... ${$yp-&gt;table('cart')}" />
+                <marker date="1510038057667" expanded="true" signature="142628:142686" ph="SELECT * FRO... ${$yp-&gt;table('users')}" />
+                <marker date="1510038057667" expanded="true" signature="143628:143732" ph="SELECT disco... ${$yp-&gt;table('user_rank')}" />
+                <marker date="1510038057667" expanded="true" signature="143920:144047" ph="SELECT disco... ${$yp-&gt;table('user_rank')}" />
+                <marker date="1510038057667" expanded="true" signature="144136:144264" ph="SELECT disco... ${$yp-&gt;table('user_rank')}" />
+                <marker date="1510038057667" expanded="true" signature="145038:145143" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inc_menu.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/includes/inc_menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="29" column="81" lean-forward="true" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.en</find>
+      <find>login</find>
+      <find>act_login</find>
+      <find>menu</find>
+      <find>02_cat_and_goods</find>
+      <find>supplier</find>
+      <find>03_promotion</find>
+      <find>prince</find>
+      <find>goods_gallery</find>
+      <find>goods_ga</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/css/index.css" />
+        <option value="$PROJECT_DIR$/wen.html" />
+        <option value="$PROJECT_DIR$/admin/privilege.php" />
+        <option value="$PROJECT_DIR$/user.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/themes/prince_jtypmall_pc/index.dwt" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/mobile/index.php" />
+        <option value="$PROJECT_DIR$/mobile/includes/lib_main.php" />
+        <option value="$PROJECT_DIR$/admin/templates/top.htm" />
+        <option value="$PROJECT_DIR$/includes/lib_common.php" />
+        <option value="$PROJECT_DIR$/admin/includes/inc_menu.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="346" />
+    <option name="y" value="131" />
+    <option name="width" value="1400" />
+    <option name="height" value="967" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shangcheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shangcheng" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shangcheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shangcheng" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shangcheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shangcheng" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="json" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shangcheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shangcheng" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Program Files\TortoiseSVN\shop\shangcheng" />
+          <option name="myCopyRoot" value="D:\Program Files\TortoiseSVN\shop\shangcheng" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Program Files\TortoiseSVN\shop\shangcheng" />
+          <option name="myCopyRoot" value="D:\Program Files\TortoiseSVN\shop\shangcheng" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e300f12-f1e9-426b-baea-c94b5a829630" name="Default" comment="" />
+      <created>1509936325621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509936325621</updated>
+      <workItem from="1509936329457" duration="4096000" />
+      <workItem from="1510104081877" duration="26078000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38163000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18304536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26784">
+          <caret line="995" column="27" lean-forward="false" selection-start-line="995" selection-start-column="27" selection-end-line="995" selection-end-column="27" />
+          <folding>
+            <marker date="1510109468811" expanded="true" signature="4749:4815" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510109468811" expanded="true" signature="5641:5728" ph="SELECT is_re... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510109468811" expanded="true" signature="6227:6316" ph="select * fro... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510109468811" expanded="true" signature="6814:6899" ph="select rank_... ${$yp-&gt;table('supplier_rank')}" />
+            <marker date="1510109468811" expanded="true" signature="10559:10638" ph="select suppl... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510109468811" expanded="true" signature="11424:12088" ph="insert into ${$yp-&gt;table('supplier')}... " />
+            <marker date="1510109468811" expanded="true" signature="12721:12800" ph="select suppl... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510109468811" expanded="true" signature="12932:12994" ph="delete from " />
+            <marker date="1510109468811" expanded="true" signature="14131:14387" ph="SELECT COUNT... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="14729:14816" ph="SELECT is_re... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510109468811" expanded="true" signature="15802:15880" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510109468811" expanded="true" signature="16533:16672" ph="SELECT COUNT... ${$yp-&gt;table('verifycode')}" />
+            <marker date="1510109468811" expanded="true" signature="16737:16852" ph="select count... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="17279:17345" ph="delete from " />
+            <marker date="1510109468811" expanded="true" signature="17376:17539" ph="INSERT INTO ${$yp-&gt;table('verifycode')}... " />
+            <marker date="1510109468811" expanded="true" signature="20162:20310" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="20605:20841" ph="INSERT INTO ${$yp-&gt;table('users')}... " />
+            <marker date="1510109468811" expanded="true" signature="22570:22718" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="23057:23293" ph="INSERT INTO ${$yp-&gt;table('users')}... " />
+            <marker date="1510109468811" expanded="true" signature="24407:24485" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="25106:25231" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="31994:32093" ph="select user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="32222:32328" ph="select user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="34316:34398" ph="select count... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="35144:35270" ph="insert into ${$GLOBALS['yp']-&gt;table('email')}... " />
+            <marker date="1510109468811" expanded="true" signature="35803:35876" ph="select * fro... ${$GLOBALS['yp']-&gt;table('email')}" />
+            <marker date="1510109468811" expanded="true" signature="36000:36071" ph="delete from " />
+            <marker date="1510109468811" expanded="true" signature="36167:36247" ph="select count... ${$GLOBALS['yp']-&gt;table('email')}" />
+            <marker date="1510109468811" expanded="true" signature="36348:36419" ph="delete from " />
+            <marker date="1510109468811" expanded="true" signature="40418:40518" ph="SELECT * FRO... ${$yp-&gt;table('reg_fields')}" />
+            <marker date="1510109468811" expanded="true" signature="43122:43223" ph="SELECT id FR... ${$yp-&gt;table('reg_fields')}" />
+            <marker date="1510109468811" expanded="true" signature="43615:43724" ph="SELECT * FRO... ${$yp-&gt;table('reg_extend_info')}" />
+            <marker date="1510109468811" expanded="true" signature="43955:44098" ph="INSERT INTO ${$yp-&gt;table('reg_extend_info')}... " />
+            <marker date="1510109468811" expanded="true" signature="44501:44608" ph="select user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="44691:44780" ph="select count... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="50323:50440" ph="select face_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="51539:51642" ph="select email... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="52478:52591" ph="select email... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="53319:53490" ph="insert into ${$GLOBALS['yp']-&gt;table('email')}... " />
+            <marker date="1510109468811" expanded="true" signature="53875:53985" ph="select mobil... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="54713:54899" ph="SELECT COUNT... ${$yp-&gt;table('verifycode')}" />
+            <marker date="1510109468811" expanded="true" signature="55965:56094" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="61558:61648" ph="SELECT mobil... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="63669:63741" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="64295:64367" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="65336:65416" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="66318:66422" ph="select order... ${$yp-&gt;table('kuaidi_order')}" />
+            <marker date="1510109468811" expanded="true" signature="66437:66556" ph="select * fro... ${$yp-&gt;table('kuaidi_order_status')}" />
+            <marker date="1510109468811" expanded="true" signature="67116:67231" ph="select postm... ${$yp-&gt;table('kuaidi_order')}" />
+            <marker date="1510109468811" expanded="true" signature="67271:67351" ph="select postm... ${$yp-&gt;table('postman')}" />
+            <marker date="1510109468811" expanded="true" signature="69231:69329" ph="SELECT invoi... ${$GLOBALS['yp']-&gt;table('delivery_order')}" />
+            <marker date="1510109468811" expanded="true" signature="69522:69609" ph="SELECT shipp... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="70240:70315" ph="select shipp... ${$yp-&gt;table('shipping')}" />
+            <marker date="1510109468811" expanded="true" signature="70425:70500" ph="select invoi... ${$yp-&gt;table('delivery_order')}" />
+            <marker date="1510109468811" expanded="true" signature="70571:70664" ph="select order... ${$yp-&gt;table('kuaidi_order')}" />
+            <marker date="1510109468811" expanded="true" signature="70685:70791" ph="select * fro... ${$yp-&gt;table('kuaidi_order_status')}" />
+            <marker date="1510109468811" expanded="true" signature="71351:71454" ph="select postm... ${$yp-&gt;table('kuaidi_order')}" />
+            <marker date="1510109468811" expanded="true" signature="71493:71573" ph="select postm... ${$yp-&gt;table('postman')}" />
+            <marker date="1510109468811" expanded="true" signature="73219:73537" ph="SELECT bg.*,... ${$yp-&gt;table('back_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="76122:76220" ph="select mobil... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="76294:76417" ph="select count... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510109468811" expanded="true" signature="76706:76939" ph="select gc.ca... ${$yp-&gt;table('virtual_goods_card')}" />
+            <marker date="1510109468811" expanded="true" signature="76803:76903" ph="select order... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="79734:79857" ph="select count... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510109468811" expanded="true" signature="80934:81008" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('back_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="81543:81639" ph="SELECT regio... ${$yp-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="81691:81788" ph="SELECT regio... ${$yp-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="81836:81929" ph="SELECT regio... ${$yp-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="81981:82078" ph="SELECT regio... ${$yp-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="82561:82653" ph="select * fro... ${$yp-&gt;table('back_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="83638:83734" ph="SELECT * FRO... ${$yp-&gt;table('back_replay')}" />
+            <marker date="1510109468811" expanded="true" signature="84355:84483" ph="INSERT INTO ${$yp-&gt;table('back_replay')}... " />
+            <marker date="1510109468811" expanded="true" signature="84870:84951" ph="select statu... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510109468811" expanded="true" signature="86013:86113" ph="SELECT shipp... ${$GLOBALS['yp']-&gt;table('shipping')}" />
+            <marker date="1510109468811" expanded="true" signature="86815:86895" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510109468811" expanded="true" signature="88824:88899" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="88976:89052" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="90004:90077" ph="SELECT * FRO... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="92176:92249" ph="select * fro... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="92462:92538" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="92630:93229" ph="insert into ${$yp-&gt;table('back_order')}... " />
+            <marker date="1510109468811" expanded="true" signature="93578:93945" ph="insert into ${$yp-&gt;table('back_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="94217:94668" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('back_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="94807:95128" ph="insert into ${$yp-&gt;table('back_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="95272:95616" ph="insert into ${$yp-&gt;table('back_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="95804:96170" ph="insert into ${$yp-&gt;table('back_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="96321:96405" ph="SELECT money... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="97803:97880" ph="select goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510109468811" expanded="true" signature="97924:98019" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510109468811" expanded="true" signature="100817:100892" ph="SELECT addre... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="104203:104307" ph="SELECT COUNT... ${$yp-&gt;table('collect_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="105264:105365" ph="DELETE FROM " />
+            <marker date="1510109468811" expanded="true" signature="106858:106941" ph="SELECT COUNT... ${$yp-&gt;table('supplier_guanzhu')}" />
+            <marker date="1510109468811" expanded="true" signature="107763:107855" ph="DELETE FROM " />
+            <marker date="1510109468811" expanded="true" signature="108467:108590" ph="SELECT COUNT... ${$yp-&gt;table('feedback')}" />
+            <marker date="1510109468811" expanded="true" signature="108622:108722" ph="SELECT * FRO... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="108822:108982" ph="SELECT COUNT... ${$yp-&gt;table('feedback')}" />
+            <marker date="1510109468811" expanded="true" signature="109868:109963" ph="SELECT COUNT... ${$yp-&gt;table('comment')}" />
+            <marker date="1510109468811" expanded="true" signature="113593:113698" ph="SELECT suppl... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510109468811" expanded="true" signature="118441:118526" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510109468811" expanded="true" signature="119349:119458" ph="SELECT COUNT... ${$yp-&gt;table('account_log')}" />
+            <marker date="1510109468811" expanded="true" signature="119884:120013" ph="SELECT * FRO... ${$yp-&gt;table('account_log')}" />
+            <marker date="1510109468811" expanded="true" signature="121357:121462" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+            <marker date="1510109468811" expanded="true" signature="128894:128980" ph="SELECT order... ${$yp-&gt;table('pay_log')}" />
+            <marker date="1510109468811" expanded="true" signature="130259:130344" ph="SELECT is_pa... ${$GLOBALS['yp']-&gt;table('pay_log')}" />
+            <marker date="1510109468811" expanded="true" signature="130474:130572" ph="SELECT pay_s... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="132476:132605" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="132817:132961" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('collect_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="133962:134104" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('user_bonus')}" />
+            <marker date="1510109468811" expanded="true" signature="134164:134261" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('bonus_type')}" />
+            <marker date="1510109468811" expanded="true" signature="134477:134602" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('user_bonus')}... " />
+            <marker date="1510109468811" expanded="true" signature="135677:135831" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('booking_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="136008:136112" ph="SELECT email... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="137185:137395" ph="INSERT INTO ${$yp-&gt;table('booking_goods')}... " />
+            <marker date="1510109468811" expanded="true" signature="138074:138203" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="138401:138503" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="138986:139078" ph="SELECT user_... ${$yp-&gt;table('feedback')}" />
+            <marker date="1510109468811" expanded="true" signature="139306:139390" ph="DELETE FROM " />
+            <marker date="1510109468811" expanded="true" signature="139820:139911" ph="DELETE FROM " />
+            <marker date="1510109468811" expanded="true" signature="140579:140664" ph="select suppl... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="140717:140800" ph="select suppl... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="142128:142209" ph="SELECT user_... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="146505:146599" ph="SELECT pay_i... ${$yp-&gt;table('payment')}" />
+            <marker date="1510109468811" expanded="true" signature="150323:150627" ph="SELECT ub.su... ${$yp-&gt;table('user_bonus')}" />
+            <marker date="1510109468811" expanded="true" signature="150836:150916" ph="SELECT COUNT... ${$yp-&gt;table('user_bonus')}" />
+            <marker date="1510109468811" expanded="true" signature="152862:152937" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="153443:153734" ph="SELECT count... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="153756:154171" ph="SELECT o.*, ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="157554:157623" ph="SELECT * FRO... ${$yp-&gt;table('email_list')}" />
+            <marker date="1510109468811" expanded="true" signature="157720:157814" ph="INSERT INTO ${$yp-&gt;table('email_list')}... " />
+            <marker date="1510109468811" expanded="true" signature="160074:160140" ph="DELETE FROM " />
+            <marker date="1510109468811" expanded="true" signature="161711:161866" ph="SELECT order... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="164121:164217" ph="SELECT shipp... ${$yp-&gt;table('shipping')}" />
+            <marker date="1510109468811" expanded="true" signature="165738:165846" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="169193:169301" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="172204:172312" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="173947:174190" ph="INSERT INTO ${$yp-&gt;table('account_log')}... " />
+            <marker date="1510109468811" expanded="true" signature="175811:176035" ph="select vc.*,... ${$yp-&gt;table('valuecard')}" />
+            <marker date="1510109468811" expanded="true" signature="176598:176888" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('user_account')}... " />
+            <marker date="1510109468811" expanded="true" signature="177240:177341" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="178954:179196" ph="select tg.*,... ${$yp-&gt;table('takegoods')}" />
+            <marker date="1510109468811" expanded="true" signature="180392:180477" ph="SELECT COUNT... ${$yp-&gt;table('takegoods_order')}" />
+            <marker date="1510109468811" expanded="true" signature="181739:181966" ph="SELECT COUNT... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="182127:182942" ph="SELECT og.*,... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="182967:183760" ph="SELECT og.*,... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="184165:184244" ph="SELECT * FRO... ${$yp-&gt;table('goods_tag')}" />
+            <marker date="1510109468811" expanded="true" signature="184514:184770" ph="SELECT COUNT... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="184809:185065" ph="SELECT COUNT... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="185633:185701" ph="SELECT * FRO... ${$yp-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="186457:186637" ph="SELECT o.add... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="186868:186991" ph="INSERT INTO ${$yp-&gt;table('goods_tag')}... " />
+            <marker date="1510109468811" expanded="true" signature="187203:187617" ph="INSERT INTO ${$yp-&gt;table('comment')}... " />
+            <marker date="1510109468811" expanded="true" signature="187793:187884" ph="SELECT order... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="187898:188119" ph="INSERT INTO ${$yp-&gt;table('shop_grade')}... " />
+            <marker date="1510109468811" expanded="true" signature="189850:189988" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510109468811" expanded="true" signature="190472:190656" ph="INSERT INTO ${$yp-&gt;table('verifycode')}... " />
+            <marker date="1510109468811" expanded="true" signature="191242:191314" ph="SELECT * FRO... ${$yp-&gt;table('order_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="191403:191483" ph="select shipp... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="191608:191681" ph="select rec_i... ${$yp-&gt;table('shaidan')}" />
+            <marker date="1510109468811" expanded="true" signature="191781:191851" ph="select user_... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510109468811" expanded="true" signature="192648:192877" ph="INSERT INTO ${$yp-&gt;table('shaidan')}... " />
+            <marker date="1510109468811" expanded="true" signature="193241:193391" ph="INSERT INTO ${$yp-&gt;table('shaidan_img')}... " />
+            <marker date="1510109468811" expanded="true" signature="193536:193610" ph="SELECT * FRO... ${$yp-&gt;table('shaidan')}" />
+            <marker date="1510109468811" expanded="true" signature="193651:193760" ph="SELECT shaid... ${$yp-&gt;table(&quot;shaidan&quot;)}" />
+            <marker date="1510109468811" expanded="true" signature="194245:194454" ph="INSERT INTO ${$yp-&gt;table('account_log')}... " />
+            <marker date="1510109468811" expanded="true" signature="194481:194622" ph="SELECT SUM(r... ${$yp-&gt;table(&quot;account_log&quot;)}" />
+            <marker date="1510109468811" expanded="true" signature="195559:195654" ph="select order... ${$yp-&gt;table('kuaidi_order')}" />
+            <marker date="1510109468811" expanded="true" signature="195666:195770" ph="select * fro... ${$yp-&gt;table('kuaidi_order_status')}" />
+            <marker date="1510109468811" expanded="true" signature="196293:196390" ph="select postm... ${$yp-&gt;table('kuaidi_order')}" />
+            <marker date="1510109468811" expanded="true" signature="196428:196504" ph="select postm... ${$yp-&gt;table('postman')}" />
+            <marker date="1510109468811" expanded="true" signature="198014:198109" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="198164:198260" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="198311:198403" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="198458:198554" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510109468811" expanded="true" signature="200267:200341" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('back_goods')}" />
+            <marker date="1510109468811" expanded="true" signature="201372:201499" ph="SELECT SUM(u... ${$GLOBALS['yp']-&gt;table('account_log')}" />
+            <marker date="1510109468811" expanded="true" signature="201596:201683" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_info.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="42" column="72" lean-forward="false" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+          <folding>
+            <marker date="1510038065949" expanded="true" signature="53321:53327" ph=" " />
+            <marker date="1510038065949" expanded="true" signature="53420:53426" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="127" column="15" lean-forward="true" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <marker date="1510038171707" expanded="true" signature="806:933" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="1036:1168" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="1270:1402" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="1504:1590" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="2613:2694" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+            <marker date="1510038171707" expanded="true" signature="2730:2959" ph="INSERT INTO ${$yp-&gt;table('users')}... " />
+            <marker date="1510038171707" expanded="true" signature="3154:3226" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510038171707" expanded="true" signature="3593:3720" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="3811:3943" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="4033:4165" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171707" expanded="true" signature="4255:4341" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/myCollect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038171132" expanded="true" signature="177:455" ph="SELECT g.add... ${$yp-&gt;table('goods')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <marker date="1510038170462" expanded="true" signature="141:260" ph="SELECT cat_i... ${$yp-&gt;table('category')}" />
+            <marker date="1510038170462" expanded="true" signature="432:559" ph="SELECT cat_i... ${$yp-&gt;table('category')}" />
+            <marker date="1510038170462" expanded="true" signature="661:790" ph="SELECT cat_i... ${$yp-&gt;table('category')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lib_goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19359">
+          <caret line="103" column="64" lean-forward="false" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
+          <folding>
+            <marker date="1510038156124" expanded="true" signature="833:921" ph="SELECT paren... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038156124" expanded="true" signature="1118:1227" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038156124" expanded="true" signature="2306:2413" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038156124" expanded="true" signature="26805:26955" ph="select thumb... ${$GLOBALS['yp']-&gt;table('goods_gallery')}" />
+            <marker date="1510038156124" expanded="true" signature="34407:34494" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038156124" expanded="true" signature="37315:37405" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038156124" expanded="true" signature="37866:37941" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods_cat')}" />
+            <marker date="1510038156124" expanded="true" signature="39045:39137" ph="SELECT SUM(a... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038156124" expanded="true" signature="41573:41646" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038156124" expanded="true" signature="45801:45887" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+            <marker date="1510038156124" expanded="true" signature="46921:47039" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('auction_log')}" />
+            <marker date="1510038156124" expanded="true" signature="51064:51167" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('favourable_activity')}" />
+            <marker date="1510038156124" expanded="true" signature="51889:51982" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('wholesale')}" />
+            <marker date="1510038156124" expanded="true" signature="57274:57398" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038156124" expanded="true" signature="58386:58460" ph="SELECT ghost... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038156124" expanded="true" signature="58535:58623" ph="select sum(g... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510038156124" expanded="true" signature="58901:59064" ph="select bc.*,... ${$yp-&gt;table('bar_code')}" />
+            <marker date="1510038156124" expanded="true" signature="61595:61789" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038156124" expanded="true" signature="62619:62722" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038156124" expanded="true" signature="66229:66302" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038156124" expanded="true" signature="70070:70193" ph="select count... ${$GLOBALS['yp']-&gt;table('comment')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/ueditor/php/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <marker date="1510038171124" expanded="true" signature="193:296" ph="SELECT * FRO... ${$yp-&gt;table('users')}" />
+            <marker date="1510038171124" expanded="true" signature="631:736" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="825:935" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="1024:1134" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="1223:1309" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="1540:1624" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038171124" expanded="true" signature="1940:2045" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="2134:2244" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="2333:2443" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="2532:2618" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510038171124" expanded="true" signature="2849:2933" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/goodList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/getpay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038170497" expanded="true" signature="120:202" ph="SELECT pay_s... ${$yp-&gt;table('order_info')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/goods_comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <marker date="1510038170512" expanded="true" signature="224:364" ph="SELECT user_... ${$yp-&gt;table('comment')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/goods_share.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <marker date="1510038170519" expanded="true" signature="302:408" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/includes/lib_goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15039">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <marker date="1510038170585" expanded="true" signature="1067:1154" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170585" expanded="true" signature="1414:1544" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('member_price')}" />
+            <marker date="1510038170585" expanded="true" signature="2964:3119" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038170585" expanded="true" signature="3576:3748" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_attr')}... " />
+            <marker date="1510038170585" expanded="true" signature="4341:4475" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('member_price')}" />
+            <marker date="1510038170585" expanded="true" signature="4647:4788" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="5268:5427" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('member_price')}... " />
+            <marker date="1510038170585" expanded="true" signature="5740:5842" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('goods_cat')}" />
+            <marker date="1510038170585" expanded="true" signature="6012:6144" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="6373:6515" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_cat')}... " />
+            <marker date="1510038170585" expanded="true" signature="10624:10839" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_gallery')}... " />
+            <marker date="1510038170585" expanded="true" signature="12239:12454" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_gallery')}... " />
+            <marker date="1510038170585" expanded="true" signature="13343:13488" ph="SELECT DISTI... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038170585" expanded="true" signature="14264:14342" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="14437:14518" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="15235:15309" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="15402:15476" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="15550:15624" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="15698:15769" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="15843:15913" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="15987:16060" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="16134:16207" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="16281:16353" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="16427:16498" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="16572:16648" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="16722:16786" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="16860:16949" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="17045:17118" ph="DELETE FROM " />
+            <marker date="1510038170585" expanded="true" signature="17563:17770" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038170585" expanded="true" signature="18616:18719" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038170585" expanded="true" signature="18759:18906" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038170585" expanded="true" signature="20033:20145" ph="SELECT DISTI... ${$GLOBALS['yp']-&gt;table('attribute')}" />
+            <marker date="1510038170585" expanded="true" signature="28738:28830" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038170585" expanded="true" signature="30264:30434" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="30887:31026" ph="SELECT SUM(p... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="31397:31507" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038170585" expanded="true" signature="31983:32336" ph="SELECT g.goo... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038170585" expanded="true" signature="34052:34145" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="34235:34463" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="35750:35844" ph="SELECT ${$fi... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="36164:36376" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('attribute')}" />
+            <marker date="1510038170585" expanded="true" signature="37043:37198" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="37238:37441" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="38057:38141" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038170585" expanded="true" signature="38274:38386" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038170585" expanded="true" signature="38426:38586" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/includes/safety_mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/account_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <marker date="1510038170333" expanded="true" signature="351:437" ph="SELECT user_... ${$yp-&gt;table('users')}" />
+            <marker date="1510038170333" expanded="true" signature="669:831" ph="SELECT * FRO... ${$yp-&gt;table('account_log')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/user_login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/category_selecter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038059656" expanded="true" signature="3334:3418" ph="..." />
+            <marker date="1510038059656" expanded="true" signature="3442:3461" ph="..." />
+            <marker date="1510038059656" expanded="true" signature="3862:3919" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/jquery.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6075">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="338" column="3" lean-forward="false" selection-start-line="338" selection-start-column="3" selection-end-line="339" selection-end-column="18" />
+          <folding>
+            <marker date="1510038170593" expanded="true" signature="2414:2633" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('admin_log')}... " />
+            <marker date="1510038170593" expanded="true" signature="3980:4064" ph="SELECT id FR... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510038170593" expanded="true" signature="4116:4243" ph="INSERT INTO ${$yp-&gt;table('shop_config')}... " />
+            <marker date="1510038170593" expanded="true" signature="5638:5755" ph="SELECT type_... ${$GLOBALS['yp']-&gt;table('bonus_type')}" />
+            <marker date="1510038170593" expanded="true" signature="6215:6258" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170593" expanded="true" signature="6762:6872" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038170593" expanded="true" signature="11324:11437" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510038170593" expanded="true" signature="12444:12534" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('goods_type')}" />
+            <marker date="1510038170593" expanded="true" signature="13044:13127" ph="SELECT pay_i... ${$GLOBALS['yp']-&gt;table('payment')}" />
+            <marker date="1510038170593" expanded="true" signature="16746:16835" ph="SELECT attr_... ${$GLOBALS['yp']-&gt;table('goods_type')}" />
+            <marker date="1510038170593" expanded="true" signature="18864:19010" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038170593" expanded="true" signature="19127:19229" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038170593" expanded="true" signature="19407:19534" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('admin_user')}" />
+            <marker date="1510038170593" expanded="true" signature="19968:20092" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table(&quot;suppliers&quot;)}" />
+            <marker date="1510038170593" expanded="true" signature="21774:21868" ph="SELECT speci... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170593" expanded="true" signature="22338:22507" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170593" expanded="true" signature="22953:23059" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170593" expanded="true" signature="24360:24444" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170593" expanded="true" signature="26892:26896" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="27390:27394" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="27772:27776" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="28141:28145" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="28520:28524" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="28900:28904" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="29195:29199" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="29528:29568" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038170593" expanded="true" signature="31044:31048" ph="&gt;" />
+            <marker date="1510038170593" expanded="true" signature="31312:31492" ph="SELECT id, n... ${$GLOBALS['yp']-&gt;table('template')}" />
+            <marker date="1510038170593" expanded="true" signature="32676:32769" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510038170593" expanded="true" signature="45418:45585" ph="SELECT SUM(o... ${$GLOBALS['yp']-&gt;table('vote_option')}" />
+            <marker date="1510038170593" expanded="true" signature="54500:54939" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('stats')}... " />
+            <marker date="1510038170593" expanded="true" signature="68301:68527" ph="select rec_i... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038170593" expanded="true" signature="68775:68854" ph="delete from " />
+            <marker date="1510038170593" expanded="true" signature="69188:69298" ph="DELETE FROM " />
+            <marker date="1510038170593" expanded="true" signature="69931:70085" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510038170593" expanded="true" signature="70283:70487" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510038170593" expanded="true" signature="71406:71499" ph="select user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038170593" expanded="true" signature="71688:71785" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510038170593" expanded="true" signature="77190:77270" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038170593" expanded="true" signature="77639:77730" ph="SELECT paren... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510038170593" expanded="true" signature="77927:78023" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510038170593" expanded="true" signature="80068:80108" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510038170593" expanded="true" signature="81348:81549" ph="SELECT libra... ${$GLOBALS['yp']-&gt;table('template')}" />
+            <marker date="1510038170593" expanded="true" signature="82576:82683" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('nav')}" />
+            <marker date="1510038170593" expanded="true" signature="85868:86032" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('question')}" />
+            <marker date="1510038170593" expanded="true" signature="86218:86421" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('question')}" />
+            <marker date="1510038170593" expanded="true" signature="87263:87361" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('question')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/menu.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="240" column="39" lean-forward="false" selection-start-line="240" selection-start-column="39" selection-end-line="240" selection-end-column="39" />
+          <folding>
+            <marker date="1510038066219" expanded="true" signature="420:431" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/inc_priv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3888">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="423" column="9" lean-forward="false" selection-start-line="423" selection-start-column="9" selection-end-line="423" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/alipay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/flow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3996">
+          <caret line="450" column="22" lean-forward="false" selection-start-line="450" selection-start-column="12" selection-end-line="450" selection-end-column="22" />
+          <folding>
+            <marker date="1510038190604" expanded="true" signature="949:1021" ph="select goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="2942:3167" ph="select ga.at... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038190604" expanded="true" signature="5401:5478" ph="select * fro... ${$yp-&gt;table('user_address')}" />
+            <marker date="1510038190604" expanded="true" signature="7339:7484" ph="SELECT count... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="10411:10556" ph="SELECT count... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="15590:15735" ph="SELECT count... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="17193:17329" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('user_address')}" />
+            <marker date="1510038190604" expanded="true" signature="21287:21423" ph="select is_bu... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="21919:22024" ph="select sum(g... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="22091:22406" ph="select sum(o... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="26529:26637" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="28385:28521" ph="select is_bu... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="29017:29122" ph="select sum(g... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="29189:29504" ph="select sum(o... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="33346:33454" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="34856:34952" ph="SELECT COUNT... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="36985:37039" ph="SELECT COUNT... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="45016:45110" ph="select mobil... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038190604" expanded="true" signature="46060:46171" ph="select count... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="46560:46696" ph="SELECT COUNT... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="47025:47238" ph="select c.goo... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="47500:47804" ph="select sum(o... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="49871:49997" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('user_address')}" />
+            <marker date="1510038190604" expanded="true" signature="90548:90695" ph="SELECT COUNT... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="90884:90998" ph="SELECT * FRO... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="91105:91170" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="97966:98081" ph="select shipp... ${$yp-&gt;table('shipping')}" />
+            <marker date="1510038190604" expanded="true" signature="100466:100580" ph="SELECT shipp... ${$yp-&gt;table('shipping')}" />
+            <marker date="1510038190604" expanded="true" signature="104531:104649" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038190604" expanded="true" signature="109881:110546" ph="INSERT INTO ${$yp-&gt;table('order_goods')}... " />
+            <marker date="1510038190604" expanded="true" signature="110197:110545" ph="SELECT '${$n... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="111023:111100" ph="SELECT `wap_... ${$GLOBALS['yp']-&gt;table('weixin_config')}" />
+            <marker date="1510038190604" expanded="true" signature="113603:113721" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038190604" expanded="true" signature="116518:116754" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="117276:117362" ph="select valid... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="118435:118519" ph="select suppl... ${$GLOBALS['yp']-&gt;table('supplier')}" />
+            <marker date="1510038190604" expanded="true" signature="118707:118814" ph="select card_... ${$GLOBALS['yp']-&gt;table('virtual_goods_card')}" />
+            <marker date="1510038190604" expanded="true" signature="121114:121197" ph="delete from " />
+            <marker date="1510038190604" expanded="true" signature="127334:127379" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="127611:127717" ph="SELECT goods... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="127752:127872" ph="SELECT goods... ${$yp-&gt;table('collect_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="127963:128125" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('collect_goods')}... " />
+            <marker date="1510038190604" expanded="true" signature="133852:133976" ph="SELECT rec_i... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="138226:138355" ph="select is_bu... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="138863:138968" ph="select sum(g... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="139029:139344" ph="select sum(o... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="140307:140421" ph="select goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="140528:140661" ph="select goods... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="140725:140811" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="141201:141284" ph="select goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="141400:141483" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="141662:141783" ph="select produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038190604" expanded="true" signature="141964:142085" ph="select produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038190604" expanded="true" signature="142191:142409" ph="select pg.go... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+            <marker date="1510038190604" expanded="true" signature="142516:142629" ph="SELECT SUM(g... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="142755:142853" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="143190:143273" ph="select goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="143393:143476" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="143660:143781" ph="select produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038190604" expanded="true" signature="143967:144088" ph="select produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038190604" expanded="true" signature="144950:145026" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="146569:146734" ph="select goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="150473:150633" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038190604" expanded="true" signature="151609:151933" ph="SELECT b.goo... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="152456:152667" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="153804:153988" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="154071:154159" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="154257:154341" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="155899:156057" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038190604" expanded="true" signature="156902:156972" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="157387:157525" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="157772:158284" ph="SELECT c.rec... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="158751:158927" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="159156:159294" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="159767:160206" ph="SELECT c.rec... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="160642:160799" ph="SELECT DISTI... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510038190604" expanded="true" signature="161528:161619" ph="DELETE FROM " />
+            <marker date="1510038190604" expanded="true" signature="164043:164141" ph="SELECT `good... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="164298:164394" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="165867:165960" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038190604" expanded="true" signature="166146:166238" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510038190604" expanded="true" signature="166421:166514" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="168079:168627" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('cart')}... " />
+            <marker date="1510038190604" expanded="true" signature="168337:168627" ph="SELECT '${$_... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038190604" expanded="true" signature="168885:169312" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('cart')}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <marker date="1510117872972" expanded="true" signature="4700:4725" ph="SELECT guide... ${$GLOBALS['yp']-&gt;table('weixin_config')}" />
+            <marker date="1510117872972" expanded="true" signature="5594:5932" ph="SELECT o.ord... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510117872972" expanded="true" signature="11857:11964" ph="SELECT link_... ${$GLOBALS['yp']-&gt;table('friend_link')}" />
+            <marker date="1510117872972" expanded="true" signature="13451:13819" ph="select ap.ad... ${$GLOBALS['yp']-&gt;table( &quot;ypmart_ad_position&quot; )}" />
+            <marker date="1510117872972" expanded="true" signature="14687:14755" ph="select * fro... ${$GLOBALS['yp']-&gt;table('ypmart_menu')}" />
+            <marker date="1510117872972" expanded="true" signature="21786:21867" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510117872972" expanded="true" signature="22144:22310" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+            <marker date="1510117872972" expanded="true" signature="23091:23184" ph="SELECT code,... ${$GLOBALS['yp']-&gt;table(&quot;supplier_shop_config&quot;)}" />
+            <marker date="1510117872972" expanded="true" signature="23638:23714" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510117872972" expanded="true" signature="23862:23938" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510117872972" expanded="true" signature="24078:24154" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510117872972" expanded="true" signature="24217:24449" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table(&quot;goods&quot;)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/v_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <marker date="1510038288646" expanded="true" signature="1199:1259" ph="select paren... ${$yp-&gt;table('users')}" />
+            <marker date="1510038288646" expanded="true" signature="1326:1386" ph="select user_... ${$yp-&gt;table('users')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/getIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038170496" expanded="true" signature="196:319" ph="SELECT artic... ${$yp-&gt;table('article')}" />
+            <marker date="1510038170496" expanded="true" signature="383:532" ph="SELECT ad_na... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038170496" expanded="true" signature="660:828" ph="SELECT ad_na... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038170496" expanded="true" signature="897:1065" ph="SELECT ad_na... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038170496" expanded="true" signature="1129:1297" ph="SELECT ad_na... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038170496" expanded="true" signature="1363:1531" ph="SELECT ad_na... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038170496" expanded="true" signature="1848:1935" ph="SELECT cat_i... ${$yp-&gt;table('category')}" />
+            <marker date="1510038170496" expanded="true" signature="2149:2396" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170496" expanded="true" signature="4148:4479" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170496" expanded="true" signature="4536:4829" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170496" expanded="true" signature="4883:5177" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170496" expanded="true" signature="5231:5524" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170496" expanded="true" signature="5770:5832" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510038170496" expanded="true" signature="6067:6094" ph="SELECT topic... ${$yp-&gt;table('topic')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="1502" column="76" lean-forward="false" selection-start-line="1502" selection-start-column="76" selection-end-line="1502" selection-end-column="76" />
+          <folding>
+            <marker date="1510119515644" expanded="true" signature="1599:1693" ph="SELECT speci... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510119515644" expanded="true" signature="2163:2332" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510119515644" expanded="true" signature="2778:2884" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510119515644" expanded="true" signature="6763:6767" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="7261:7265" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="7643:7647" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="8012:8016" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="8391:8395" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="8771:8775" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="9066:9070" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="9399:9439" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510119515644" expanded="true" signature="10915:10919" ph="&gt;" />
+            <marker date="1510119515644" expanded="true" signature="11183:11370" ph="SELECT id, n... ${$GLOBALS['yp']-&gt;table('ypmart_template')}" />
+            <marker date="1510119515644" expanded="true" signature="12554:12647" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510119515644" expanded="true" signature="25285:25452" ph="SELECT SUM(o... ${$GLOBALS['yp']-&gt;table('vote_option')}" />
+            <marker date="1510119515644" expanded="true" signature="34367:34860" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('stats')}... " />
+            <marker date="1510119515644" expanded="true" signature="49244:49470" ph="select rec_i... ${$GLOBALS['yp']-&gt;table('cart')}" />
+            <marker date="1510119515644" expanded="true" signature="49718:49797" ph="delete from " />
+            <marker date="1510119515644" expanded="true" signature="50066:50176" ph="DELETE FROM " />
+            <marker date="1510119515644" expanded="true" signature="50736:50890" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510119515644" expanded="true" signature="51088:51292" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510119515644" expanded="true" signature="52271:52367" ph="select headi... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510119515644" expanded="true" signature="52399:52492" ph="select user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510119515644" expanded="true" signature="52679:52776" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510119515644" expanded="true" signature="54202:54334" ph="select count... ${$GLOBALS['yp']-&gt;table('chat_customer')}" />
+            <marker date="1510119515644" expanded="true" signature="58767:58847" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510119515644" expanded="true" signature="59216:59307" ph="SELECT paren... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510119515644" expanded="true" signature="59504:59600" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510119515644" expanded="true" signature="61705:61801" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510119515644" expanded="true" signature="63844:63884" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+            <marker date="1510119515644" expanded="true" signature="65124:65332" ph="SELECT libra... ${$GLOBALS['yp']-&gt;table('ypmart_template')}" />
+            <marker date="1510119515644" expanded="true" signature="66361:66468" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('nav')}" />
+            <marker date="1510119515644" expanded="true" signature="69594:69758" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('question')}" />
+            <marker date="1510119515644" expanded="true" signature="69944:70147" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('question')}" />
+            <marker date="1510119515644" expanded="true" signature="70989:71087" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('question')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/includes/inc_priv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1863">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1510038170501" expanded="true" signature="515:577" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510038170501" expanded="true" signature="680:742" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510038170501" expanded="true" signature="875:965" ph="SELECT img_u... ${$yp-&gt;table('goods_gallery')}" />
+            <marker date="1510038170501" expanded="true" signature="1196:1412" ph="SELECT attr.... ${$yp-&gt;table('goods_attr')}" />
+            <marker date="1510038170501" expanded="true" signature="1426:1755" ph="SELECT a.att... ${$yp-&gt;table('goods_attr')}" />
+            <marker date="1510038170501" expanded="true" signature="2629:2703" ph="SELECT click... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170501" expanded="true" signature="2907:3441" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170501" expanded="true" signature="3509:3605" ph="select value... ${$yp-&gt;table('supplier_shop_config')}" />
+            <marker date="1510038170501" expanded="true" signature="3672:3772" ph="select value... ${$yp-&gt;table('supplier_shop_config')}" />
+            <marker date="1510038170501" expanded="true" signature="5498:5649" ph="SELECT shop_... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170501" expanded="true" signature="6422:6533" ph="SELECT produ... ${$yp-&gt;table('products')}" />
+            <marker date="1510038170501" expanded="true" signature="6764:6872" ph="SELECT `attr... ${$yp-&gt;table('goods_attr')}" />
+            <marker date="1510038170501" expanded="true" signature="7876:7963" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038170501" expanded="true" signature="9037:9124" ph="SELECT user_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038170501" expanded="true" signature="9139:9232" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038170501" expanded="true" signature="9528:9637" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+            <marker date="1510038170501" expanded="true" signature="9858:9968" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('volume_price')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/init(bf).php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/volume_price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038171754" expanded="true" signature="538:660" ph="SELECT volum... ${$GLOBALS['yp']-&gt;table('volume_price')}" />
+            <marker date="1510038171754" expanded="true" signature="873:994" ph="SELECT `attr... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038171754" expanded="true" signature="1169:1245" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038171754" expanded="true" signature="2246:2322" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038171754" expanded="true" signature="3284:3369" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510038171754" expanded="true" signature="3383:3503" ph="SELECT rank_... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510038171754" expanded="true" signature="3654:3730" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038171754" expanded="true" signature="4773:4849" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038171754" expanded="true" signature="5883:5959" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038171754" expanded="true" signature="7551:7627" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/goodsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding>
+            <marker date="1510038170502" expanded="true" signature="302:372" ph="SELECT * FRO... ${$yp-&gt;table('category')}" />
+            <marker date="1510038170502" expanded="true" signature="496:561" ph="SELECT * FRO... ${$yp-&gt;table('category')}" />
+            <marker date="1510038170502" expanded="true" signature="720:790" ph="SELECT * FRO... ${$yp-&gt;table('category')}" />
+            <marker date="1510038170502" expanded="true" signature="929:1002" ph="SELECT goods... ${$yp-&gt;table('goods_cat')}" />
+            <marker date="1510038170502" expanded="true" signature="1303:1829" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="1851:2263" ph="SELECT g.add... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="2745:2866" ph="SELECT DISTI... ${$yp-&gt;table('goods_attr')}" />
+            <marker date="1510038170502" expanded="true" signature="3359:3891" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="3915:4424" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="4475:4877" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="4901:5277" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="5633:6111" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="6135:6661" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="6704:7198" ph="SELECT g.goo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="7579:7889" ph="SELECT g.add... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="7913:8283" ph="SELECT g.add... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038170502" expanded="true" signature="8326:8659" ph="SELECT g.add... ${$yp-&gt;table('goods')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/includes/inc_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2460">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/topic_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038057486" expanded="true" signature="3179:3261" ph="SELECT * FRO... ${$yp-&gt;table('attribute')}" />
+            <marker date="1510038057486" expanded="true" signature="7270:7328" ph="DELETE FROM " />
+            <marker date="1510038057486" expanded="true" signature="7395:7454" ph="DELETE FROM " />
+            <marker date="1510038057486" expanded="true" signature="9291:9352" ph="DELETE FROM " />
+            <marker date="1510038057486" expanded="true" signature="9372:9434" ph="DELETE FROM " />
+            <marker date="1510038057486" expanded="true" signature="10953:11036" ph="delete from " />
+            <marker date="1510038057486" expanded="true" signature="11181:11351" ph="insert into ${$yp-&gt;table('attribute_color')}... " />
+            <marker date="1510038057486" expanded="true" signature="11633:11715" ph="SELECT * FRO... ${$yp-&gt;table('attribute')}" />
+            <marker date="1510038057486" expanded="true" signature="11818:11905" ph="select * fro... ${$yp-&gt;table('attribute_color')}" />
+            <marker date="1510038057486" expanded="true" signature="13445:13514" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('attribute')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/attr_img_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4269">
+          <caret line="462" column="57" lean-forward="false" selection-start-line="462" selection-start-column="57" selection-end-line="462" selection-end-column="57" />
+          <folding>
+            <marker date="1510038057508" expanded="true" signature="2567:2796" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+            <marker date="1510038057508" expanded="true" signature="6410:6499" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+            <marker date="1510038057508" expanded="true" signature="7868:7939" ph="SELECT brand... ${$yp-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="8829:8900" ph="SELECT brand... ${$yp-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="10055:10253" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="10314:10463" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="14894:14971" ph="SELECT brand... ${$yp-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="16609:16713" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="16769:16790" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="17278:17387" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510038057508" expanded="true" signature="17443:17515" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('brand')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="444" column="40" lean-forward="true" selection-start-line="444" selection-start-column="40" selection-end-line="444" selection-end-column="40" />
+          <folding>
+            <marker date="1510038057667" expanded="true" signature="2548:2666" ph="select suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+            <marker date="1510038057667" expanded="true" signature="9550:9710" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="9812:9930" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="10034:10153" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="10216:10279" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="10552:10632" ph="SELECT * FRO... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="10761:10823" ph="select brand... ${$yp-&gt;table('brand')}" />
+            <marker date="1510038057667" expanded="true" signature="14724:14892" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="15805:15927" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="16418:16541" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="17044:17107" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="17623:17712" ph="SELECT cat_i... ${$yp-&gt;table('goods_cat')}" />
+            <marker date="1510038057667" expanded="true" signature="18564:18649" ph="SELECT * FRO... ${$yp-&gt;table('goods_gallery')}" />
+            <marker date="1510038057667" expanded="true" signature="23118:23271" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="34622:34652" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="38014:39691" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="39775:41322" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="45104:45153" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="45202:45406" ph="insert into ${$GLOBALS['yp']-&gt;table('ypmart_distrib_goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="46113:46221" ph="SELECT email... ${$yp-&gt;table('booking_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="49142:49283" ph="INSERT INTO ${$yp-&gt;table('bar_code')}... " />
+            <marker date="1510038057667" expanded="true" signature="50226:50318" ph="SELECT attr_... ${$yp-&gt;table('attribute')}" />
+            <marker date="1510038057667" expanded="true" signature="50539:50784" ph="SELECT g.*, ${$yp-&gt;table('goods_attr')}" />
+            <marker date="1510038057667" expanded="true" signature="52897:53083" ph="INSERT INTO ${$yp-&gt;table('goods_attr')}... " />
+            <marker date="1510038057667" expanded="true" signature="53442:53537" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="53642:53911" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="54447:54537" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('ypmart_distrib_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="54709:54902" ph="insert into ${$GLOBALS['yp']-&gt;table('ypmart_distrib_goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="57487:57677" ph="INSERT INTO ${$yp-&gt;table('goods_gallery')}... " />
+            <marker date="1510038057667" expanded="true" signature="60351:60445" ph="SELECT bonus... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="60641:60742" ph="SELECT is_ex... ${$GLOBALS['yp']-&gt;table('exchange_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="60935:61034" ph="SELECT packa... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="61225:61338" ph="SELECT act_i... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+            <marker date="1510038057667" expanded="true" signature="61535:61552" ph="SELECT data ${$GLOBALS['yp']-&gt;table('topic')}" />
+            <marker date="1510038057667" expanded="true" signature="65240:65384" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('supplier_category')}" />
+            <marker date="1510038057667" expanded="true" signature="65585:65666" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="65728:65810" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="65890:66048" ph="INSERT INTO ${$yp-&gt;table('supplier_goods_cat')}... " />
+            <marker date="1510038057667" expanded="true" signature="72882:72958" ph="SELECT goods... ${$yp-&gt;table('products')}" />
+            <marker date="1510038057667" expanded="true" signature="73626:73702" ph="SELECT goods... ${$yp-&gt;table('products')}" />
+            <marker date="1510038057667" expanded="true" signature="74723:74794" ph="SELECT goods... ${$yp-&gt;table('products')}" />
+            <marker date="1510038057667" expanded="true" signature="75387:75458" ph="SELECT promo... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="77367:77465" ph="SELECT email... ${$yp-&gt;table('booking_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="77522:77600" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="80210:80302" ph="select suppl... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="83564:83682" ph="select suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+            <marker date="1510038057667" expanded="true" signature="86173:86255" ph="SELECT bonus... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="86412:86501" ph="SELECT is_ex... ${$GLOBALS['yp']-&gt;table('exchange_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="86655:86742" ph="SELECT packa... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+            <marker date="1510038057667" expanded="true" signature="86894:87004" ph="SELECT act_i... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+            <marker date="1510038057667" expanded="true" signature="87153:87170" ph="SELECT data ${$GLOBALS['yp']-&gt;table('topic')}" />
+            <marker date="1510038057667" expanded="true" signature="91348:91431" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="91484:91578" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92276:92352" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92408:92484" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92521:92597" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92634:92707" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92744:92816" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92853:92928" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="92965:93040" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93077:93151" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93188:93261" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93298:93376" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93413:93479" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93516:93607" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93644:93720" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93757:93833" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="93870:93947" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="94057:94132" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="100469:100560" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="101886:102068" ph="INSERT INTO ${$yp-&gt;table('link_goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="102138:102316" ph="INSERT INTO ${$yp-&gt;table('link_goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="103293:103400" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="103738:103841" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="104861:105034" ph="INSERT INTO ${$yp-&gt;table('group_goods')}... " />
+            <marker date="1510038057667" expanded="true" signature="105875:105964" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="106991:107107" ph="SELECT artic... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057667" expanded="true" signature="107838:107991" ph="INSERT INTO ${$yp-&gt;table('goods_article')}... " />
+            <marker date="1510038057667" expanded="true" signature="108790:108915" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="109783:109896" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="112623:112736" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="115469:115544" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="119443:119575" ph="SELECT goods... ${$yp-&gt;table('goods')}" />
+            <marker date="1510038057667" expanded="true" signature="121460:121722" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('products')}... " />
+            <marker date="1510038057667" expanded="true" signature="124153:124262" ph="SELECT produ... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510038057667" expanded="true" signature="124604:124664" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="126037:126172" ph="SELECT suppl... ${$GLOBALS['yp']&#10;                -&gt;table(&quot;supplier&quot;)}" />
+            <marker date="1510038057667" expanded="true" signature="126222:126433" ph="SELECT suppl... ${$GLOBALS['yp']&#10;                -&gt;table(&quot;supplier&quot;)}" />
+            <marker date="1510038057667" expanded="true" signature="135896:136014" ph="DELETE FROM " />
+            <marker date="1510038057667" expanded="true" signature="136252:136458" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('volume_price')}... " />
+            <marker date="1510038057667" expanded="true" signature="137628:137771" ph="select price... ${$GLOBALS['yp']-&gt;table('pricecut')}" />
+            <marker date="1510038057667" expanded="true" signature="139816:139940" ph="select min(a... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510038057667" expanded="true" signature="141873:142159" ph="select c.rec... ${$yp-&gt;table('cart')}" />
+            <marker date="1510038057667" expanded="true" signature="142628:142686" ph="SELECT * FRO... ${$yp-&gt;table('users')}" />
+            <marker date="1510038057667" expanded="true" signature="143628:143732" ph="SELECT disco... ${$yp-&gt;table('user_rank')}" />
+            <marker date="1510038057667" expanded="true" signature="143920:144047" ph="SELECT disco... ${$yp-&gt;table('user_rank')}" />
+            <marker date="1510038057667" expanded="true" signature="144136:144264" ph="SELECT disco... ${$yp-&gt;table('user_rank')}" />
+            <marker date="1510038057667" expanded="true" signature="145038:145143" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lib_common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="3448" column="41" lean-forward="false" selection-start-line="3448" selection-start-column="41" selection-end-line="3448" selection-end-column="41" />
+          <folding>
+            <marker date="1510131156544" expanded="true" signature="4337:4477" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510131156544" expanded="true" signature="4717:4821" ph="SELECT confi... ${$GLOBALS['yp']-&gt;table('shipping_area')}" />
+            <marker date="1510131156544" expanded="true" signature="29571:29659" ph="SELECT code,... ${$GLOBALS['yp']-&gt;table('shop_config')}" />
+            <marker date="1510131156544" expanded="true" signature="32381:32509" ph="SELECT cus_n... ${$GLOBALS['yp']-&gt;table('chat_third_customer')}" />
+            <marker date="1510131156544" expanded="true" signature="32551:32679" ph="SELECT cus_n... ${$GLOBALS['yp']-&gt;table('chat_third_customer')}" />
+            <marker date="1510131156544" expanded="true" signature="34770:34861" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510131156544" expanded="true" signature="37418:37600" ph="SELECT act_i... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+            <marker date="1510131156544" expanded="true" signature="40111:40311" ph="SELECT act_i... ${$GLOBALS['yp']-&gt;table('favourable_activity')}" />
+            <marker date="1510131156544" expanded="true" signature="41201:41298" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="41757:41863" ph="SELECT cat_i... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="42683:42780" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="44425:44522" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="45834:45931" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="47243:47340" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="49070:49207" ph="SELECT templ... ${$GLOBALS['yp']-&gt;table('mail_templates')}" />
+            <marker date="1510131156544" expanded="true" signature="49819:50248" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('order_action')}... " />
+            <marker date="1510131156544" expanded="true" signature="50014:50248" ph="SELECT order... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510131156544" expanded="true" signature="51857:52076" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510131156544" expanded="true" signature="52116:52389" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('order_goods')}" />
+            <marker date="1510131156544" expanded="true" signature="52549:52636" ph="select valid... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="55253:55368" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('virtual_card')}" />
+            <marker date="1510131156544" expanded="true" signature="55597:55760" ph="SELECT card_... ${$GLOBALS['yp']-&gt;table('virtual_card')}" />
+            <marker date="1510131156544" expanded="true" signature="57359:57477" ph="SELECT order... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510131156544" expanded="true" signature="59607:59852" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('virtual_goods_card')}... " />
+            <marker date="1510131156544" expanded="true" signature="59966:60151" ph="SELECT card_... ${$GLOBALS['yp']-&gt;table('virtual_goods_card')}" />
+            <marker date="1510131156544" expanded="true" signature="61409:61527" ph="SELECT order... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510131156544" expanded="true" signature="63670:63825" ph="SELECT card_... ${$GLOBALS['yp']-&gt;table('virtual_card')}" />
+            <marker date="1510131156544" expanded="true" signature="64802:64959" ph="SELECT card_... ${$GLOBALS['yp']-&gt;table('virtual_goods_card')}" />
+            <marker date="1510131156544" expanded="true" signature="66238:66416" ph="SELECT ext_i... ${$GLOBALS['yp']-&gt;table('goods_activity')}" />
+            <marker date="1510131156544" expanded="true" signature="111272:111397" ph="SELECT pro_p... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510131156544" expanded="true" signature="111620:111698" ph="SELECT disco... ${$GLOBALS['yp']-&gt;table('user_rank')}" />
+            <marker date="1510131156544" expanded="true" signature="112370:112737" ph="SELECT a.att... ${$GLOBALS['yp']-&gt;table('attribute')}" />
+            <marker date="1510131156544" expanded="true" signature="113308:113675" ph="SELECT a.att... ${$GLOBALS['yp']-&gt;table('attribute')}" />
+            <marker date="1510131156544" expanded="true" signature="117178:117431" ph="SELECT s.sup... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510131156544" expanded="true" signature="118254:118814" ph="SELECT pg.go... ${$GLOBALS['yp']-&gt;table('package_goods')}" />
+            <marker date="1510131156544" expanded="true" signature="120145:120262" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510131156544" expanded="true" signature="121813:121884" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('products')}" />
+            <marker date="1510131156544" expanded="true" signature="121980:122066" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510131156544" expanded="true" signature="123474:123745" ph="SELECT ga.go... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510131156544" expanded="true" signature="125482:125625" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510131156544" expanded="true" signature="126961:127073" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('keyword')}" />
+            <marker date="1510131156544" expanded="true" signature="128052:128396" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('keyword')}... " />
+            <marker date="1510131156544" expanded="true" signature="128626:128839" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('keyword_area')}... " />
+            <marker date="1510131156544" expanded="true" signature="131710:131842" ph="select code,... ${$GLOBALS['yp']-&gt;table('supplier_shop_config')}" />
+            <marker date="1510131156544" expanded="true" signature="132158:132204" ph="SELECT * FRO... weixin_config" />
+            <marker date="1510131156544" expanded="true" signature="132541:132619" ph="select * fro... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510131156544" expanded="true" signature="132882:133049" ph="insert into weixin_corn... " />
+            <marker date="1510131156544" expanded="true" signature="133335:133426" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510131156544" expanded="true" signature="133512:133629" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510131156544" expanded="true" signature="133709:133827" ph="select regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510131156544" expanded="true" signature="138612:138702" ph="select path_... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510131156544" expanded="true" signature="138976:139068" ph="select path_... ${$GLOBALS['yp']-&gt;table('article_cat')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/topic_edit.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14445">
+          <caret line="535" column="35" lean-forward="false" selection-start-line="535" selection-start-column="35" selection-end-line="535" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/top.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="352" column="53" lean-forward="false" selection-start-line="352" selection-start-column="50" selection-end-line="352" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ads.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3132">
+          <caret line="236" column="23" lean-forward="false" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+          <folding>
+            <marker date="1510038057433" expanded="true" signature="4227:4297" ph="SELECT COUNT... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038057433" expanded="true" signature="8387:8867" ph="INSERT INTO ${$yp-&gt;table('ad')}... " />
+            <marker date="1510038057433" expanded="true" signature="9636:9714" ph="SELECT * FRO... ${$yp-&gt;table('ad')}" />
+            <marker date="1510038057433" expanded="true" signature="19394:19455" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('ad')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/attention_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038057476" expanded="true" signature="1615:1978" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057476" expanded="true" signature="2062:2428" ph="SELECT u.use... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057476" expanded="true" signature="2526:2638" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+            <marker date="1510038057476" expanded="true" signature="3362:3467" ph="INSERT INTO ${$yp-&gt;table('email_sendlist')}... " />
+            <marker date="1510038057476" expanded="true" signature="4303:4672" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057476" expanded="true" signature="4756:5128" ph="SELECT u.use... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510038057476" expanded="true" signature="5219:5331" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+            <marker date="1510038057476" expanded="true" signature="5988:6093" ph="INSERT INTO ${$yp-&gt;table('email_sendlist')}... " />
+            <marker date="1510038057476" expanded="true" signature="7297:7484" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+            <marker date="1510038057476" expanded="true" signature="7677:8048" ph="SELECT DISTI... ${$GLOBALS['yp']-&gt;table('collect_goods')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6156">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510038057460" expanded="true" signature="3234:3302" ph="DELETE FROM " />
+            <marker date="1510038057460" expanded="true" signature="5188:5688" ph="INSERT INTO ${$yp-&gt;table('article')}... " />
+            <marker date="1510038057460" expanded="true" signature="6468:6542" ph="SELECT * FRO... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057460" expanded="true" signature="8677:8759" ph="SELECT file_... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057460" expanded="true" signature="11781:11856" ph="SELECT file_... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057460" expanded="true" signature="12136:12221" ph="DELETE FROM " />
+            <marker date="1510038057460" expanded="true" signature="12960:13004" ph="SELECT MAX(a... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057460" expanded="true" signature="13099:13219" ph="INSERT INTO ${$yp-&gt;table('goods_article')}... " />
+            <marker date="1510038057460" expanded="true" signature="14118:14162" ph="SELECT MAX(a... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057460" expanded="true" signature="14208:14313" ph="DELETE FROM " />
+            <marker date="1510038057460" expanded="true" signature="15845:16025" ph="SELECT file_... ${$yp-&gt;table('article')}" />
+            <marker date="1510038057460" expanded="true" signature="18379:18517" ph="DELETE FROM " />
+            <marker date="1510038057460" expanded="true" signature="20031:20225" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('article')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+          <folding>
+            <marker date="1510117514477" expanded="true" signature="950:1051" ph="SELECT nav_l... ${$yp-&gt;table('admin_user')}" />
+            <marker date="1510117514477" expanded="true" signature="1524:1640" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="1850:1972" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="2155:2234" ph="SELECT COUNT... ${$yp-&gt;table('comment')}" />
+            <marker date="1510117514477" expanded="true" signature="10928:11082" ph="SELECT SUM(m... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="11307:11441" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="11529:11622" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+            <marker date="1510117514477" expanded="true" signature="11685:11792" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510117514477" expanded="true" signature="11858:11922" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510117514477" expanded="true" signature="12401:12518" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="12638:12729" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+            <marker date="1510117514477" expanded="true" signature="12784:12875" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+            <marker date="1510117514477" expanded="true" signature="13108:13200" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510117514477" expanded="true" signature="14681:14760" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510117514477" expanded="true" signature="15032:15280" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('shaidan')}" />
+            <marker date="1510117514477" expanded="true" signature="15543:15608" ph="SELECT COUNT... ${$yp-&gt;table('goods_tag')}" />
+            <marker date="1510117514477" expanded="true" signature="15888:15996" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="16042:16184" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="16236:16354" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="16410:16529" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="16600:16729" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="16792:16956" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="17148:17267" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="17315:17468" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="17520:17640" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="17688:17842" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="17896:18015" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="18063:18216" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="18304:18503" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="18551:18782" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="18837:18972" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="19128:19198" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="20203:20279" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="20465:20561" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="21178:21306" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510117514477" expanded="true" signature="21633:21761" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510117514477" expanded="true" signature="21922:22079" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('booking_goods')}" />
+            <marker date="1510117514477" expanded="true" signature="22436:22678" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="23863:24055" ph="SELECT `from... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="26897:27149" ph="SELECT DATE_... " />
+            <marker date="1510117514477" expanded="true" signature="33521:33629" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="33746:33767" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+            <marker date="1510117514477" expanded="true" signature="33829:33906" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510117514477" expanded="true" signature="33940:34018" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510117514477" expanded="true" signature="35269:35343" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510117514477" expanded="true" signature="35442:35517" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510117514477" expanded="true" signature="39923:40009" ph="SELECT shipp... ${$yp-&gt;table('shipping')}" />
+            <marker date="1510117514477" expanded="true" signature="40195:40580" ph="INSERT INTO ${$yp-&gt;table('shipping')}... " />
+            <marker date="1510117514477" expanded="true" signature="40823:40966" ph="SELECT shipp... ${$yp-&gt;table(&quot;shipping_area&quot;)}" />
+            <marker date="1510117514477" expanded="true" signature="41773:41970" ph="INSERT INTO ${$yp-&gt;table('shipping_area')}... " />
+            <marker date="1510117514477" expanded="true" signature="43453:43531" ph="SELECT COUNT... ${$yp-&gt;table('payment')}" />
+            <marker date="1510117514477" expanded="true" signature="44208:44467" ph="INSERT INTO ${$yp-&gt;table('payment')}... " />
+            <marker date="1510117514477" expanded="true" signature="46237:46346" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+            <marker date="1510117514477" expanded="true" signature="46474:46603" ph="INSERT INTO ${$yp-&gt;table('category')}... " />
+            <marker date="1510117514477" expanded="true" signature="46792:46822" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+            <marker date="1510117514477" expanded="true" signature="53229:53752" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+            <marker date="1510117514477" expanded="true" signature="53972:54168" ph="INSERT INTO ${$yp-&gt;table('goods_gallery')}... " />
+            <marker date="1510117514477" expanded="true" signature="55280:55378" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="55471:55544" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510117514477" expanded="true" signature="56329:56408" ph="SELECT todol... ${$GLOBALS['yp']-&gt;table('admin_user')}" />
+            <marker date="1510117514477" expanded="true" signature="56692:56783" ph="SELECT * FRO... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510117514477" expanded="true" signature="57023:57093" ph="DELETE FROM " />
+            <marker date="1510117514477" expanded="true" signature="57152:57173" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510117514477" expanded="true" signature="57334:57424" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+            <marker date="1510117514477" expanded="true" signature="57883:57953" ph="DELETE FROM " />
+            <marker date="1510117514477" expanded="true" signature="58041:58062" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510117514477" expanded="true" signature="58791:58861" ph="DELETE FROM " />
+            <marker date="1510117514477" expanded="true" signature="58943:58964" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510117514477" expanded="true" signature="59172:59242" ph="DELETE FROM " />
+            <marker date="1510117514477" expanded="true" signature="59301:59322" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/inc_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="29" column="81" lean-forward="true" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

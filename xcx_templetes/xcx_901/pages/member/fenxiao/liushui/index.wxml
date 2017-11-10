@@ -1,0 +1,28 @@
+<!--pages/member/fenxiao/liushui/index.wxml-->
+
+<view class="main">
+<view class="Bill"><i></i>佣金结余：<strong>￥{{summoney}}元</strong></view>
+<view style=" height:20rpx; background:#f5f5f5;"></view>
+<view class="Funds">
+  <ul>
+    <li class="Funds_li" wx:for="{{result}}" wx:key="">
+    	<span class="icon on"></span>
+        <span wx:if="{{item.money > 0}}">账户收入:<em>￥{{item.money}}</em></span>
+        <span wx:else>账户支出:<em>￥{{item.money}}</em></span>
+        <span>{{item.time}}</span>
+        <span>{{item.change_desc}}</span>
+       
+    </li>
+ 
+  </ul>
+</view>
+
+
+</view>
+
+
+
+<view wx:if="{{result == null}}" class="view-tint">
+<image src="/images/icon_empty.png"></image>
+<text>亲,没有数据</text>
+</view>

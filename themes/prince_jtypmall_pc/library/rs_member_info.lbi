@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{if !$smarty.session.user_id >0 }
+<div class="user-pic">
+<div class="user-pic-mask"></div>
+<img src="themes/prince_jtypmall_pc/images/people.gif" />
+</div>
+<p>你好！请<a href="javascript:show_login();" class="quick-login-a main-color">登录</a>|<a href="register.php" class="main-color">注册</a></p>
+{else}
+<div class="user-have-login">
+<div class="user-pic">
+<div class="user-pic-mask"></div>
+<!--{if $smarty.session.headimg}-->
+<img src="{$smarty.session.headimg}" />
+<!--{else}-->
+<img src="themes/prince_jtypmall_pc/images/people.gif" />
+<!--{/if}-->
+</div>
+<div class="user-info">
+<p>用户名：{$smarty.session.user_name}</p>
+<p>级　别：{$smarty.session.user_rank_name}</p>
+</div>
+</div>
+<p class="mt10">
+<a class="btn order-btn" href="user.php?act=order_list">订单中心</a>
+<a class="btn account-btn" href="user.php?act=account_detail">帐户中心</a>
+</p>
+{/if}
+<script type="text/javascript">	
+function show_login(){
+	$('.pop-login,.pop-mask').show();
+}
+</script>

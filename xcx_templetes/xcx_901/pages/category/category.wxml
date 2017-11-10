@@ -1,0 +1,26 @@
+<view class="container">
+	<!-- 侧边栏 -->
+	<view class="sidebar">
+		<text wx:for="{{topCategories}}" wx:key="id" bindtap="tapTopCategory" data-id="{{item.id}}" data-banner="{{item.mobile_name}}" data-index="{{index}}" class="{{highlight[index]}}">{{item.mobile_name}}</text>
+	</view>
+	<!-- right -->
+	<view class="main">
+    <text wx:if="{{cat_name}}" class="btn" bindtap="avatarTap" data-object-id="{{parent_id}}">进入{{cat_name}}频道</text>
+
+		<!-- banner -->
+    <view class="banner" wx:if="{{banner.ad_link}}">
+		  <image mode="widthFix"  data-url="{{banner.ad_link}}" bindtap="clickBanner"   src="{{banner.image}}"  />
+		</view>
+    <!-- GridView -->
+		<view class="gridview">
+			<dl wx:for="{{subCategories}}" wx:key="id">
+				<dt>
+					<image src="{{item.image}}" mode="scaleToFit" bindtap="avatarTap" data-object-id="{{item.id}}"/>
+				</dt>
+				<dd>
+					<text>{{item.mobile_name}}</text>
+				</dd>
+			</dl>
+		</view>
+	</view>
+</view>

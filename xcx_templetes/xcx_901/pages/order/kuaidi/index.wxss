@@ -1,0 +1,182 @@
+/* pages/order/ordersubmit/index.wxss */
+
+
+.view-order
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:150rpx;
+    background: #FF8C69;
+}
+
+
+.view-orderstatus{
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx 0 0 3;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600rpx;
+}
+
+.view-orderstatus image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 30rpx;
+}
+
+.view-orderstatus-info{
+    display: flex;
+    width: 500rpx;
+    flex-direction: column;
+    margin-left: 20rpx;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 150rpx;
+}
+
+.view-orderstatus-info text{
+    font-size: 29rpx;
+    color: #ffffff;
+}
+
+.view-kd
+{
+    width:90%; 
+    overflow:hidden;
+    background:#FFF;
+}
+.kview-kd h2{
+   width:85%;
+    margin:auto;
+     height:50px; 
+     font-size:16px; 
+     line-height:50px; 
+     color:#666; 
+     border-bottom:1px solid #eeeeee;
+      font-weight:normal;
+      }
+.view-kd{
+  width:90%;
+  margin:auto; 
+  overflow:hidden;
+   margin-top:10px;
+   }
+.view-kd dl{ 
+  width:85%;
+  margin:auto;
+  overflow:hidden;
+  position:relative;
+  }
+.view-kd dl dt{
+   position:absolute;
+   top:0px;
+   float:left;
+   width:15px;
+   height:15px;
+   margin-left:2px;
+   background:#25AE5F;
+   border-radius: 50%; 
+   }
+.view-kd dl dd{ 
+   width:88%; 
+   float:left;
+   overflow:hidden;
+   border-left:1px solid #dddddd;
+   margin-left:9px;}
+.view-kd dl dd p{ 
+  width:85%;
+  overflow:hidden; 
+  float:right;
+  font-size:13px;
+  line-height:150%;
+  color:#52BF7F;
+     }
+.view-kd dl dd strong{
+   display:block; 
+   padding-bottom:10px; 
+   width:85%;
+   float:right;
+    font-size:12px;
+     color:#666; 
+    line-height:150%;
+     font-weight:normal;
+    }
+
+
+
+.kuaidi_no{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170rpx;
+}
+.kuaidi_no image{
+   width: 412rpx;
+   height: 312rpx;
+   margin-left: 10rpx;
+}
+
+.kuaidi_no text{
+   color: #888888;
+   font-size: 33rpx;
+   margin-top: 30rpx;
+}
+
+.view-title{
+    display: flex;
+    flex-direction: row;
+    height: 75rpx;
+    margin-left: 20rpx;
+    align-items: center;
+}
+
+.view-title image{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.view-title text{
+    font-size: 29rpx;
+    color: black;
+}
+
+.class-line{
+	width: 710rpx;
+    margin-left: 20rpx;
+	height: 2rpx;
+	background: #F4F4F4;
+}
+
+.order-footer {
+	padding: 3px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 20rpx;
+	border-bottom: 1px solid #eee;
+	height: 60rpx;
+	align-items: center;
+}
+
+.order-footer text {
+	font-size: 28rpx;
+	
+	
+}
+
+
+
+
+.parent{
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+}

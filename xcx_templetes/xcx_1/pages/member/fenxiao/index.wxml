@@ -1,0 +1,41 @@
+<!--pages/member/fenxiao/index.wxml-->
+<view>
+<view class="head">	
+
+<view class="carts-item">
+		<view>
+		
+			<image class="carts-image" background-size="cover" src="{{userInfo.avatarUrl}}"/>
+		</view>
+		<view class="carts-text">
+		
+			<text class="carts-title" >{{userInfo.nickName}}</text>
+			<view class="carts-subtitle">
+				<text>您是由{{result.nickname}}推荐</text>
+			</view>
+		</view>
+        
+</view>
+<ul>
+<li style=" border-right:1px solid #191c27; margin-left:-1px;"><span class="v_1">收益订单：{{result.order_count}}</span></li>
+<li><span class="v_2">佣金结余：￥{{result.summoney}}</span></li>
+</ul>
+</view>
+
+<view class="liuyandom">
+<ul>
+<li><span class="mun3" bindtap="navigateToxiaji"></span><em>我的下级</em></li>
+<li><span class="mun2" bindtap="navigateToliushui"></span><em>佣金流水</em></li>
+<li><span class="mun7" bindtap="navigateToyongjin"></span><em>佣金结算</em></li>
+<!--li><span class="mun4" bindtap="navigateToerweima"></span><em>推广二维码</em></li>
+<li class="vuser_mid" style=" width:50%;"></li>
+<li><span class="mun8" bindtap="navigateToxinshou"></span><em>新手必看</em></li-->
+<li><span class="mun10"bindtap="navigateTomember"></span><em>个人中心</em></li>
+
+</ul>
+</view>
+</view>
+
+
+
+

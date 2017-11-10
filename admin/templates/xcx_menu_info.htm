@@ -1,0 +1,73 @@
+{include file="pageheader.htm"} 
+<script>
+function change_link_type(obj)
+{
+	var id = 'value_' + obj.value
+	{foreach from=$link_type item=item key=key}
+	document.getElementById('value_{$key}').style.display = 'none'
+	{/foreach}
+	document.getElementById(id).style.display = ''
+}
+</script>
+<div class="list-div">
+<form name="theForm" action="xcx_menu.php" enctype="multipart/form-data" method="post">
+<table>
+  <tr>
+  	<td align="left" class="label">菜单名称：</td>
+    <td><input type="text" name="menu_name" value="{$menu.menu_name}" /></td>
+  </tr>
+  <tr>
+  	<td align="left" class="label">菜单图片：</td>
+    <td>
+     <input type="file" name="menu_img" /><br />
+     {if $menu.menu_img}
+     <img src="/{$menu.menu_img}" width="100" height="100"  style="margin-top:10px"/>
+     {/if}
+    </td>
+  </tr>
+  <tr>
+  	<td align="left" class="label">链接地址：</td>
+    <td>
+		<select name="type" onchange="change_link_type(this)">
+		{foreach from=$link_type item=item key=key}
+		<option value="{$key}" {if $menu.type eq $key}selected{/if} >{$item.name}</option>
+		{/foreach}
+		</select>
+		{foreach from=$link_type item=item key=key}
+		{if $item.options}
+		<select id="value_{$key}" name="value[{$key}]" {if $menu.type neq $key}style="display:none;"{/if}>
+		{$item.options}
+		</select>
+		{else}
+		<input id="value_{$key}" type="text" name="value[{$key}]" {if $menu.type eq $key}value="{$menu.link}"{else}value="{$item.value}"{/if} {if $menu.type neq $key}style="display:none;"{/if}/>
+		{/if}
+		{/foreach}
+        <br /><span>小程序的页面链接非普通的链接，小程序的链接类似:pages/index/index (不带参数) 或pages/goods/detail/detail?objectId=1 (带参数)
+        <br />若选择自定义，可以使用微信小程序开发工具打开某个页面进行获取页面路径及参数</span>
+    </td>
+  </tr>
+  <tr>
+  	<td align="left" class="label">排序：</td>
+    <td><input type="text" name="sort" value="{$menu.sort}"/></td>
+  </tr>
+  <tr>
+  	<td align="left" class="label">是否小程序底部菜单：</td>
+    <td>
+    <select name="is_tabbar">
+        <option  value="0">否</option> 
+        <option {if $menu.is_tabbar eq 1} selected="selected" {/if}value="1" >是</option> 
+    </select>
+    </td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+    <td>
+    <input type="submit" name="" value="提交" class="button"/>
+     <input type="hidden" name="act" value="{$from_act}" />
+     <input type="hidden" name="id" value="{$menu.id}" />
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{include file="pagefooter.htm"}

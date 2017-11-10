@@ -1,0 +1,73 @@
+<view class="search">
+     <view class="search-content">
+		 <image src="/images/search1.png"></image>
+
+		 <input bindinput="bindChange" placeholder-style="color:#999" class="input_search" value="{{keywords}}" placeholder="搜索关键词"/>
+
+
+		 </view>
+		 <text bindtap="search" >搜索</text>
+</view>
+
+<dl class="menu">
+	<dt data-index="0" bindtap="tapMainMenu" class="{{menu[0]}}">上架</dt>
+	<dd class="{{subMenuDisplay[0]}}">
+		<ul>
+			<li class="{{subMenuHighLight[0][0]}}" data-index="0-0" bindtap="tapSubMenu">最新</li>
+			<li class="{{subMenuHighLight[0][1]}}" data-index="0-1" bindtap="tapSubMenu">最早</li>
+			
+		</ul>
+	</dd>
+	<dt data-index="1" bindtap="tapMainMenu" class="{{menu[1]}}">价格</dt>
+	<dd class="{{subMenuDisplay[1]}}">
+		<ul>
+			<li class="{{subMenuHighLight[1][0]}}" data-index="1-0" bindtap="tapSubMenu">从高到低</li>
+			<li class="{{subMenuHighLight[1][1]}}" data-index="1-1" bindtap="tapSubMenu">从低到高</li>
+		</ul>
+	</dd>
+	<dt data-index="2" bindtap="tapMainMenu" class="{{menu[2]}}">销量</dt>
+	<dd class="{{subMenuDisplay[2]}}">
+		<ul>
+			<li class="{{subMenuHighLight[2][0]}}" data-index="2-0" bindtap="tapSubMenu">从多到少</li>
+			<li class="{{subMenuHighLight[2][1]}}" data-index="2-1" bindtap="tapSubMenu">从少到多</li>
+			
+		</ul>
+	</dd>
+
+	<dt data-index="3" bindtap="tapMainMenu" class="{{menu[3]}}">人气</dt>
+	<dd class="{{subMenuDisplay[3]}}">
+		<ul>
+			<li class="{{subMenuHighLight[3][0]}}" data-index="3-0" bindtap="tapSubMenu">从高到低</li>
+			<li class="{{subMenuHighLight[3][1]}}" data-index="3-1" bindtap="tapSubMenu">从低到高</li>
+			
+		</ul>
+	</dd>
+	
+
+</dl>
+
+<view wx:if="{{!empty}}" class="goodsList carts-list">
+	<view wx:for="{{goods}}" wx:key="objectId" class="carts-item" data-object-id="{{item.goods_id}}" bindtap="tapGoods">
+		<view>
+		<!-- 缩略图 -->
+		  <image class="carts-image" src="{{item.image}}" mode="aspectFill"/>
+		</view>
+      <view class="carts-text">
+      	<!-- 商品标题 -->
+        <text class="carts-title">{{item.goods_name}}</text>
+        <!-- 价格 -->
+        <text class="carts-price">￥{{item.shop_price}}元</text>
+        <!-- 销量与评价 -->
+        <view class="goods-score">
+          <text wx:if="{{item.ghost_count}}">已售:{{item.ghost_count}}件</text>
+          <text>人气:{{item.click_count}}</text>
+          <view class="view-buy">
+              <text class="btn-buy" style="color:#fff">立即购买</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+<view wx:else class="view-empty">
+<text>抱歉暂时没有相关结果,换个筛选条试试吧!</text>
+</view>

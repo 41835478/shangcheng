@@ -1,0 +1,56 @@
+
+
+<dl class="menu">
+	<dt data-index="0" bindtap="tapMainMenu" class="{{menu[0]}}">积分</dt>
+	<dd class="{{subMenuDisplay[0]}}">
+		<ul>
+			<li class="{{subMenuHighLight[0][0]}}" data-index="0-0" bindtap="tapSubMenu">从高到低</li>
+			<li class="{{subMenuHighLight[0][1]}}" data-index="0-1" bindtap="tapSubMenu">从低到高</li>
+			
+		</ul>
+	</dd>
+	<dt data-index="1" bindtap="tapMainMenu" class="{{menu[1]}}">销量</dt>
+	<dd class="{{subMenuDisplay[1]}}">
+		<ul>
+			<li class="{{subMenuHighLight[1][0]}}" data-index="1-0" bindtap="tapSubMenu">从多到少</li>
+			<li class="{{subMenuHighLight[1][1]}}" data-index="1-1" bindtap="tapSubMenu">从少到多</li>
+		</ul>
+	</dd>
+	<dt data-index="2" bindtap="tapMainMenu" class="{{menu[2]}}">热度</dt>
+	<dd class="{{subMenuDisplay[2]}}">
+		<ul>
+			<li class="{{subMenuHighLight[2][0]}}" data-index="2-0" bindtap="tapSubMenu">热销</li>
+			<li class="{{subMenuHighLight[2][1]}}" data-index="2-1" bindtap="tapSubMenu">非热销</li>
+			
+		</ul>
+	</dd>
+
+	<dt data-index="3" bindtap="tapMainMenu" class="{{menu[3]}}">人气</dt>
+	
+	
+
+</dl>
+
+<view class="goodsList carts-list">
+	<view wx:for="{{goods}}" wx:key="" class="carts-item" data-object-id="{{item.goods_id}}" bindtap="tapGoods">
+		<view>
+		<!-- 缩略图 -->
+		  <image class="carts-image" src="{{item.image}}" mode="aspectFill"/>
+		</view>
+      <view class="carts-text">
+      	<!-- 商品标题 -->
+        <text class="carts-title">{{item.goods_name}}</text>
+        <!-- 价格 -->
+          <text class="carts-price">仅需：{{item.exchange_integral}}积分</text>
+		<!-- 销量与评价 -->
+		<view class="goods-score">
+			<text wx:if="{{item.ghost_count}}">已售:{{item.ghost_count}}件</text>
+			<text>人气:{{item.click_count}}</text>
+		</view>
+      </view>
+    </view>
+</view>
+<view wx:if="{{goods.length == 0}}"class="view-tint">
+<image src="/images/icon_empty.png"></image>
+<text>亲,没有数据</text>
+</view>

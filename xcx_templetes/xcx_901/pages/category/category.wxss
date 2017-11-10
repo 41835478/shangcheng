@@ -1,0 +1,93 @@
+/*页面背景*/
+page {
+	background-color: #ffffff;
+}
+
+/*容器总体布局为左右两列*/
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+/*侧边栏顶级分类给予固定宽度*/
+.sidebar {
+	width: 240rpx;
+	border-top: 1px solid #e5e5e5;
+	height: 568px;
+}
+
+/*text块状布局独占一行*/
+.sidebar text {
+	display: block;
+	border: 1px solid #e5e5e5;
+	border-top: 0;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #232626;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+/*hight light*/
+.sidebar text.highlight {
+	background-color: #f3f5f7;
+	color: #f23131;
+	border-right: 0;
+}
+
+.main {
+	width: 100%;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+}
+
+/*category banner*/
+.banner {
+	width: 90%;
+	padding-right: 0rpx;
+  text-align: center;
+	margin: 5%;
+
+}
+.banner image{
+	width: 500rpx;
+}
+
+/*网格布局子类九宫格分布*/
+.gridview {
+	background-color: #ffffff;
+	height: 100%;
+}
+
+/*向左流动*/
+.gridview dl {
+	float: left;
+	margin: 30rpx;
+}
+
+/*图片*/
+.gridview dt image {
+	width: 120rpx;
+	height: 120rpx;
+}
+
+/*文字*/
+.gridview dd text {
+	color: #6c6c6c;
+	font-size: 12px;
+	text-align: center;
+	display: block;
+	line-height: 20px;
+}
+
+.btn{
+	font-size: 29rpx;
+	color: #fff;
+	background: red;
+	border-radius: 9rpx;
+	padding: 20rpx;
+  text-align: center;
+  margin: 20rpx;
+}

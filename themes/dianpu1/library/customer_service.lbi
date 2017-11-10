@@ -1,0 +1,47 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<ul class="shopTolal">   
+              <li> <span><img width="90" height="45" src="{$shoplogo}" style="margin:0 36px;" /></span></li>
+
+               <li >
+                   <span >
+                      <a href="chat.php?act=chat&chat_supp_id={$smarty.get.suppId}" target="_blank" alt="点击这里联系我" title="点击这里联系我" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在线客服</a> 
+                   </span>
+               </li>
+              
+               {if $wechat_qrcode && $wechat}
+               <li>
+                   <span> 
+                      <img src="{$wechat_qrcode}" alt="客服微信二维码" title="客服微信二维码" style="width:130px; height:auto;"/>
+                   </span>
+               </li>
+               {/if}
+               
+               {if $wechat}
+               <!-- 微信号码 {foreach from=$wechat item=im} --> 
+               <li>
+                   <span>客服微信：</span>
+                   <span> 
+                      {$im}
+                   </span>
+               </li>
+               <!-- {/foreach} 结束微信号码 -->
+               {/if}
+               
+               <!-- qq号码 {foreach from=$qq item=im} --> 
+               <li>
+                   <span>客服 QQ：</span>
+                   <span> 
+                      <a style="background:none;" href="http://wpa.qq.com/msgrd?v=3&uin={$im}&site=qq&menu=yes" target="_blank" alt="点击这里联系我" title="点击这里联系我"><img src="http://wpa.qq.com/pa?p=1:{$im}:4" height="16" border="0" alt="客服QQ" /></a> 
+                   </span>
+               </li>
+               <!-- {/foreach} 结束qq号码 --> 
+
+
+               <!-- ww号码 {foreach from=$ww item=im} --> 
+               <li>
+                   <span>客服旺旺：</span>
+                   <span> <a style="background:none;"  href="http://amos1.taobao.com/msg.ww?v=2&uid={$im|escape:u8_url}&s=2" target="_blank"><img src="/images/online.ww.gif" width="16" height="16" border="0" alt="客服旺旺" /></a> 
+                   </span>
+               </li>
+               <!-- {/foreach} 结束ww号码 --> </ul>

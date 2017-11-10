@@ -1,0 +1,130 @@
+/* pages/member/fenxiao/index.wxss */
+
+.head{
+   width:100%;
+   overflow:hidden;
+   background:#282c39;
+   position:relative
+   }
+.head ul{
+   width:100%;
+   margin:auto;
+   height:50px; 
+   border-top:1px solid #191c27
+ }
+.head ul li{
+   width:50%;
+    margin:auto; 
+    height:50px;
+    float:left;
+    text-align:center
+    }
+.head ul li span{
+   display:inline-block;
+   height:50px; margin:auto;
+   font-size:14px; line-height:50px;
+   color:#FFF;padding-left:20px;
+   padding-right:10px;
+   }
+.v_2{
+   background:url(/images/v_2.png) no-repeat left center;background-size: auto 20px;
+   }
+.v_1{
+   background:url(/images/v_1.png) no-repeat left center;background-size: auto 20px;
+   }
+
+
+.carts-item {
+	display: flex;
+	flex-direction: row;
+	height:190rpx;
+	/*width属性解决标题文字太短而缩略图偏移*/
+	width:720rpx;
+	border-bottom: 1px solid #eee;
+	padding: 30rpx 0 10rpx 30rpx;
+}
+
+/*左部图片*/
+.carts-image {
+	width:150rpx;
+	height:150rpx;
+  display:block;  
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+.carts-text {
+	margin-left: 10rpx;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+/*会员名*/
+.carts-title {
+  margin-top: 40rpx;
+	font-size: 38rpx;
+  color:#FFF;
+	
+}
+
+/*推荐人*/
+.carts-subtitle {
+	margin-top: 30rpx;
+	font-size: 25rpx;
+	color:darkgray;
+	padding: 0 0rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+.liuyandom{
+   width:100%;
+   overflow:hidden;
+    }
+.liuyandom ul{
+   width:100%; 
+   margin:auto;
+   overflow:hidden;
+   }
+.liuyandom ul li{
+   width:25%;
+    float:left;
+    margin:auto;
+    border-bottom:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+    margin-left:-1px;
+    padding-top:15px;
+    padding-bottom:15px;
+    height:60px;
+    }
+.liuyandom ul li span{
+   display:block;
+   width:40px;
+   height:40px;
+   margin:auto;}
+.liuyandom ul li em{
+   display:block; 
+   width:100%; 
+   height:20px; 
+   text-align:center;
+   font-size:13px; 
+   line-height:20px; 
+   color:#666; 
+   font-style:normal;
+   }
+.vuser_mid{background:url(/images/logo.gif) no-repeat center center;
+background-size: auto 45px;
+}
+.mun1{background:url(/images/m1.png) no-repeat left center;background-size: auto 40px;}
+.mun2{background:url(/images/m2.png) no-repeat left center;background-size: auto 40px;}
+.mun3{background:url(/images/m3.png) no-repeat left center;background-size: auto 40px;}
+.mun4{background:url(/images/m4.png) no-repeat left center;background-size: auto 40px;}
+.mun5{background:url(/images/m5.png) no-repeat left center;background-size: auto 40px;}
+.mun6{background:url(/images/m6.png) no-repeat left center;background-size: auto 40px;}
+.mun7{background:url(/images/m7.png) no-repeat left center;background-size: auto 40px;}
+.mun8{background:url(/images/m8.png) no-repeat left center;background-size: auto 40px;}
+.mun9{background:url(/images/m9.png) no-repeat left center;background-size: auto 40px;}
+.mun10{background:url(/images/m10.png) no-repeat left center;background-size: auto 40px;}

@@ -1,0 +1,843 @@
+<?php exit;?>a:3:{s:8:"template";a:12:{i:0;s:97:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/index.dwt";i:1;s:117:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/page_header_index.lbi";i:2;s:108:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/index_ad.lbi";i:3;s:110:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/index_icon.lbi";i:4;s:112:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/cat_articles.lbi";i:5;s:111:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/ad_position.lbi";i:6;s:113:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/supplier_city.lbi";i:7;s:119:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/recommend_promotion.lbi";i:8;s:113:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/recommend_new.lbi";i:9;s:113:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/recommend_hot.lbi";i:10;s:109:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/cat_goods.lbi";i:11;s:110:"D:/Program Files/TortoiseSVN/shop/shangcheng/mobile/themesmobile/prince_jtypmall_mobile/library/footer_nav.lbi";}s:7:"expires";i:1510287106;s:8:"maketime";i:1510283506;}<!DOCTYPE html >
+<html>
+<head>
+<meta name="Generator" content="JTYP v7" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>今天优品多商户系统  </title>
+<meta name="Keywords" content="今天优品多商户系统" />
+<meta name="Description" content="今天优品多商户系统" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/index.css"/>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+554fcae493e564ee0dc75bdf2ebf94cashare|a:1:{s:4:"name";s:5:"share";}554fcae493e564ee0dc75bdf2ebf94ca<div class="body_bj">
+<div id="show_guide_qrcode" onclick="closeReg();" style="display:none;text-align: center;position:fixed; top:0;  left:0; width:100%; height:100%;background:rgba(0, 0, 0, 0.7); color:#FFF;z-index:2000001;  ">
+<img src="http://127.0.0.1/data/erweima/1501536968475076176.jpg" style="width: 250px;height: 250px; margin-top:15%;z-index:20001;" />
+<br /><br />识别图中二维码关注我们
+</div>
+<header id="newheader"> <script type="text/javascript" src="js/transport.js"></script> 
+<script type="text/javascript">
+var process_request = "正在处理您的请求...";
+</script>
+<script language="javascript"> 
+<!--
+/*屏蔽所有的js错误*/
+function killerrors() { 
+return true; 
+} 
+window.onerror = killerrors; 
+//-->
+</script>
+<a href="catalog.php" class="top_bt"></a>
+<a href="flow.php" id='user_btn' class='user_btn'></a>
+<a href="javascript:showReg();" id='follow_btn' class='follow_btn' style="display:none; color:#FFF;"  >关注</a>
+<div class="new_index_search_mid"> <a href="searchindex.php" > <em>搜索商品</em> <span><img src="themesmobile/prince_jtypmall_mobile/images/icosousuo.png"></span> </a> </div>
+<script>
+onload = function(){  
+        header_login();
+}
+function header_login()
+{	
+	Ajax.call('login_act_ajax_top.php', '', loginactResponse, 'GET', 'JSON', '1', '1');
+}
+function loginactResponse(result)
+{
+	if(result.user_id>0 && result.got_u==0){
+		ChangeUrlParam("u",result.user_id)
+	}
+	if(result.isfollow==0){
+        document.getElementById('user_btn').style.display = 'none';
+		document.getElementById('follow_btn').style.display = 'block';
+	}
+}
+function ChangeUrlParam(name,value){
+  	var url=window.location.href ;
+  	var newUrl="";
+	var reg = new RegExp("(^|)"+ name +"=([^&]*)(|$)");
+	var tmp = name + "=" + value;
+	if(url.match(reg) != null){
+		 newUrl= url.replace(eval(reg),tmp);
+	}else{
+		 if(url.match("[\?]")){
+ 			newUrl= url + "&" + tmp;
+    	}else{
+ 			newUrl= url + "?" + tmp;
+ 		}
+	}
+	var stateObject = {};
+	var title = "";
+	history.pushState(stateObject,title,newUrl);
+}
+function showReg(){
+                document.getElementById('show_guide_qrcode').style.display = 'block';
+}
+function closeReg(){
+                document.getElementById('show_guide_qrcode').style.display = 'none';
+}
+</script> </header>
+ 
+<style>
+	.scrollimg{position:relative; overflow:hidden; margin:0px auto; margin-top:45px; /* 设置焦点图最大宽度 */}
+	.scrollimg .hd{ position: absolute;
+bottom:0px;
+text-align: center;
+width: 100%;}
+	.scrollimg .hd li{display: inline-block;
+width: .4em;
+height: .4em;
+margin: 0 .4em;
+-webkit-border-radius: .8em;
+-moz-border-radius: .8em;
+-ms-border-radius: .8em;
+-o-border-radius: .8em; 
+border-radius: .8em;
+background: #FFF;
+filter: alpha(Opacity=60);
+opacity: .6;
+box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
+	.scrollimg .hd li.on{ filter: alpha(Opacity=90);
+opacity: .9;
+background:#E71F19;
+box-shadow: 0 0 2px #ccc; }
+	.scrollimg .bd{position:relative; z-index:0;}
+	.scrollimg .bd li{position:relative; text-align:center;}
+	.scrollimg .bd li img{background:url(themesmobile/prince_jtypmall_mobile/images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+	.scrollimg .bd li a{-webkit-tap-highlight-color:rgba(0,0,0,0);}  /* 去掉链接触摸高亮 */
+	.scrollimg .bd li .tit{display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(themesmobile/prince_jtypmall_mobile/images/focusBg.png) repeat-x; color:#fff;  text-align:left;}
+</style>
+<div id="scrollimg" class="scrollimg">
+				<div class="bd">
+					<ul>
+			          <li><a href="affiche.php?ad_id=25&uri="><img src="../../data/afficheimg/1461550567599490669.jpg" width="100%" /></a></li>
+                    <li><a href="affiche.php?ad_id=29&uri="><img src="../../data/afficheimg/1461550476770626389.jpg" width="100%" /></a></li>
+                    <li><a href="affiche.php?ad_id=30&uri="><img src="../../data/afficheimg/1461550450976297313.jpg" width="100%" /></a></li>
+          					</ul>
+				</div>
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#scrollimg",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});
+			</script> 
+ 
+<div class="entry-list clearfix">
+	<nav>
+		<ul>
+						<li>
+				<a href="catalog.php">
+					<img alt="商品分类" src="/mobile/images/201603/1458379366066881920.png" />
+					<span>商品分类</span>
+				</a>
+			</li>
+						<li>
+				<a href="pro_search.php">
+					<img alt="促销活动" src="/mobile/images/201603/1458379393020351679.png" />
+					<span>促销活动</span>
+				</a>
+			</li>
+						<li>
+				<a href="exchange.php">
+					<img alt="积分兑换" src="/mobile/images/201603/1458379414416900416.png" />
+					<span>积分兑换</span>
+				</a>
+			</li>
+						<li>
+				<a href="activity.php">
+					<img alt="优惠活动" src="/mobile/images/201603/1458379433548978373.png" />
+					<span>优惠活动</span>
+				</a>
+			</li>
+						<li>
+				<a href="brand.php">
+					<img alt="品牌街" src="/mobile/images/201603/1458379450725165370.png" />
+					<span>品牌街</span>
+				</a>
+			</li>
+						<li>
+				<a href="supplier_near.php">
+					<img alt="附近店铺" src="/mobile/images/201605/1463265928539956917.png" />
+					<span>附近店铺</span>
+				</a>
+			</li>
+						<li>
+				<a href="pre_sale.php?">
+					<img alt="手机预售" src="/mobile/images/201605/1462714260881857343.png" />
+					<span>手机预售</span>
+				</a>
+			</li>
+						<li>
+				<a href="auction.php">
+					<img alt="手机拍卖" src="/mobile/images/201605/1462714281875574848.png" />
+					<span>手机拍卖</span>
+				</a>
+			</li>
+					</ul>
+	</nav>
+</div> 
+<div class="hot">
+<h3></h3>
+<ul id="mq" onmouseover="iScrollAmount=0"onmouseout="iScrollAmount=1">
+  
+			<li class="first"><span>推荐</span><a href="article.php?id=91" title="今天优品官方微信开通了，求关注~~">今天优品官方微信开通了，求关注~...</a></li>
+			
+</ul>
+</div>
+<script>
+var oMarquee = document.getElementById("mq"); //滚动对象
+var iLineHeight = 30; //单行高度，像素
+var iLineCount = 7; //实际行数
+var iScrollAmount = 1; //每次滚动高度，像素
+function run() {
+oMarquee.scrollTop += iScrollAmount;
+if ( oMarquee.scrollTop == iLineCount * iLineHeight )
+oMarquee.scrollTop = 0;
+if ( oMarquee.scrollTop % iLineHeight == 0 ) {
+window.setTimeout( "run()", 2000 );
+} else {
+window.setTimeout( "run()", 50 );
+}
+}
+oMarquee.innerHTML += oMarquee.innerHTML;
+window.setTimeout( "run()", 2000 );
+</script>
+<div class="floor_img">
+<h2>
+ 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"14";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
+</h2>
+<dl>
+    <dt> 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"17";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca </dt>
+    <dd> 
+    <span class="Edge"> 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"18";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca </span> 
+<span>
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"19";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca </span> </dd>
+  </dl>
+<ul>
+<li class="brom">
+ 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"23";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca 
+</li>
+<li>
+ 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"22";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca 
+</li>
+</ul>
+<ul>
+<li class="brom">
+ 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"21";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca 
+</li>
+<li>
+ 
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"20";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca 
+</li>
+</ul>
+</div>
+<script>
+var Tday = new Array();
+var daysms = 24 * 60 * 60 * 1000
+var hoursms = 60 * 60 * 1000
+var Secondms = 60 * 1000
+var microsecond = 1000
+var DifferHour = -1
+var DifferMinute = -1
+var DifferSecond = -1
+function clock(key)
+{
+   var time = new Date()
+   var hour = time.getHours()
+   var minute = time.getMinutes()
+   var second = time.getSeconds()
+   var timevalue = ""+((hour > 12) ? hour-12:hour)
+   timevalue +=((minute < 10) ? ":0":":")+minute
+   timevalue +=((second < 10) ? ":0":":")+second
+   timevalue +=((hour >12 ) ? " PM":" AM")
+   var convertHour = DifferHour
+   var convertMinute = DifferMinute
+   var convertSecond = DifferSecond
+   var Diffms = Tday[key].getTime() - time.getTime()
+   DifferHour = Math.floor(Diffms / daysms)
+   Diffms -= DifferHour * daysms
+   DifferMinute = Math.floor(Diffms / hoursms)
+   Diffms -= DifferMinute * hoursms
+   DifferSecond = Math.floor(Diffms / Secondms)
+   Diffms -= DifferSecond * Secondms
+   var dSecs = Math.floor(Diffms / microsecond)
+  
+      if(convertHour != DifferHour) a=DifferHour+":";
+   if(convertMinute != DifferMinute) b=DifferMinute+":";
+   if(convertSecond != DifferSecond) c=DifferSecond+":";
+     d=dSecs;
+     if (DifferHour>0) {a=a}
+     else {a=''}
+   document.getElementById("jstimerBox"+key).innerHTML = a + b + c + d; //显示倒计时信息
+}
+</script>
+<section class="floor_body">
+  <h4><span>促销商品</span><i><a href="search.php?intro=promotion">更多</a></i></h4>
+    <div id="scroll_promotion" style=" background:#eeeeee">
+        <ul>
+                    <li>
+            
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                             <div class="timerBox" id="jstimerBox0">正在加载...</div>
+              
+               <a href="goods.php?id=486" title="监控摄像头红外夜视监控器高清1200线室外防水安防摄像机模拟探头"> <img src="https://img.alicdn.com/bao/uploaded/i1/TB1H1dbKFXXXXa8XVXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></a>
+                </div>
+              <div class="goods_name"><a href="goods.php?id=486" title="监控摄像头红外夜视监控器高清1200线室外防水安防摄像机模拟探头">监控摄像头红外夜视监控器高清1200线室外防水安防摄像机模拟探头</a></div>
+              <div class="price">
+              <a href="javascript:addToCart(486)" class="btns">
+                  <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                  
+                  <span>48.00</span><em>53.00</em>
+              </div>  
+</div>
+<script>
+Tday[0] = new Date("Nov 21, 2017 22:33:00");  
+window.setInterval(function()    
+{clock(0);}, 1000);  
+</script>
+          </li>
+                
+          </div>
+  </section>
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"25";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca 
+ 
+<section class="index_floor">
+  <h4><span>新品上市</span><i><a href="search.php?intro=new">更多</a></i></h4>
+   
+    <div id="scroll_new" class="scroll_hot">
+      <div class="bd">
+        <ul>
+                    <li>
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                                <a href="goods.php?id=33" title="夏装新款修身假两件无袖绣花蕾丝连衣裙">  <img src="./../images/201507/thumb_img/33_thumb_G_1437507221390.jpg"> </a></div>
+              <div class="goods_name">  <a href="goods.php?id=33" title="夏装新款修身假两件无袖绣花蕾丝连衣裙">夏装新款修身假两件无袖绣花蕾丝连衣裙</a></div>
+              <div class="price">
+                 <a href="javascript:addToCart(33)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                <span>279.00</span><em>334.80</em>
+              </div>
+              </div>
+          </li>
+                    <li>
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                                <a href="goods.php?id=35" title="米妮哈鲁童装2015夏装新款女童韩版蕾丝连衣裙碎花公主裙">  <img src="./../images/201507/thumb_img/35_thumb_G_1437508751067.jpg"> </a></div>
+              <div class="goods_name">  <a href="goods.php?id=35" title="米妮哈鲁童装2015夏装新款女童韩版蕾丝连衣裙碎花公主裙">米妮哈鲁童装2015夏装新款女童韩版蕾丝连衣裙碎花公主裙</a></div>
+              <div class="price">
+                 <a href="javascript:addToCart(35)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                <span>149.00</span><em>178.79</em>
+              </div>
+              </div>
+          </li>
+                    <li>
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                                <a href="goods.php?id=232" title="包邮 新款户外军迷阿帕奇T恤 纯棉男款短袖半袖特价宽松">  <img src="./../images/201507/thumb_img/_thumb_P_1438047501681.jpg"> </a></div>
+              <div class="goods_name">  <a href="goods.php?id=232" title="包邮 新款户外军迷阿帕奇T恤 纯棉男款短袖半袖特价宽松">包邮 新款户外军迷阿帕奇T恤 纯棉男款短袖半袖特价宽松</a></div>
+              <div class="price">
+                 <a href="javascript:addToCart(232)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                <span>274.00</span><em>328.80</em>
+              </div>
+              </div>
+          </li>
+           </ul>
+        <ul>
+                    <li>
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                                <a href="goods.php?id=101" title="美的电磁炉Midea/美的 WK2102电磁炉特价家用触摸屏火锅电池炉灶">  <img src="./../images/201507/thumb_img/101_thumb_G_1437523379443.jpg"> </a></div>
+              <div class="goods_name">  <a href="goods.php?id=101" title="美的电磁炉Midea/美的 WK2102电磁炉特价家用触摸屏火锅电池炉灶">美的电磁炉Midea/美的 WK2102电磁炉特价家用触摸屏火锅电池炉灶</a></div>
+              <div class="price">
+                 <a href="javascript:addToCart(101)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                <span>158.00</span><em>189.60</em>
+              </div>
+              </div>
+          </li>
+                    <li>
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                                <a href="goods.php?id=1906" title="DEYEEN仿珍珠Choker项链明星同款女款颈新款锁骨链日韩女士脖颈饰">  <img src="https://img.alicdn.com/imgextra/i2/2781929398/TB2yUXuvwxlpuFjSszgXXcJdpXa_!!2781929398.jpg_300x300.jpg"> </a></div>
+              <div class="goods_name">  <a href="goods.php?id=1906" title="DEYEEN仿珍珠Choker项链明星同款女款颈新款锁骨链日韩女士脖颈饰">DEYEEN仿珍珠Choker项链明星同款女款颈新款锁骨链日韩女士脖颈饰</a></div>
+              <div class="price">
+                 <a href="javascript:addToCart(1906)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                <span>274.80</span><em>329.76</em>
+              </div>
+              </div>
+          </li>
+                    <li>
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                                <a href="goods.php?id=1489" title="棉麻长袖复古T恤男春季薄款V领三粒扣纯色简约上衣亚麻青年打底衫">  <img src="https://img.alicdn.com/imgextra/i3/828165715/TB2COdJm.dnpuFjSZPhXXbChpXa_!!828165715.jpg_300x300.jpg"> </a></div>
+              <div class="goods_name">  <a href="goods.php?id=1489" title="棉麻长袖复古T恤男春季薄款V领三粒扣纯色简约上衣亚麻青年打底衫">棉麻长袖复古T恤男春季薄款V领三粒扣纯色简约上衣亚麻青年打底衫</a></div>
+              <div class="price">
+                 <a href="javascript:addToCart(1489)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                <span>39.00</span><em>39.00</em>
+              </div>
+              </div>
+          </li>
+          </div>
+        <div class="hd">
+          <ul></ul>
+        </div>
+      </div>
+  </section>
+  <script type="text/javascript">
+    TouchSlide({ 
+      slideCell:"#scroll_new",
+      titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+      effect:"leftLoop", 
+      autoPage:true, //自动分页
+      //switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+    });
+  </script>
+<section class="index_floor">
+    <h4><span>热销商品</span><i><a href="search.php?intro=hot">更多</a></i></h4>
+   
+    <div id="scroll_hot" class="scroll_hot">
+      <div class="bd">
+        <ul>
+                    <li>
+           
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                           <a href="goods.php?id=35" title="米妮哈鲁童装2015夏装新款女童韩版蕾丝连衣裙碎花公主裙">
+                <img src="./../images/201507/thumb_img/35_thumb_G_1437508751067.jpg"> </a></div>
+              <div class="goods_name"> <a href="goods.php?id=35" title="米妮哈鲁童装2015夏装新款女童韩版蕾丝连衣裙碎花公主裙">米妮哈鲁童装2015夏装新款女童韩版蕾丝连衣裙碎花公主裙</a></div>
+              <div class="price">
+                   <a href="javascript:addToCart(35)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                 <span>149.00</span><em>178.79</em>
+              </div>
+              </div>
+           
+          </li>
+                    <li>
+           
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                           <a href="goods.php?id=1906" title="DEYEEN仿珍珠Choker项链明星同款女款颈新款锁骨链日韩女士脖颈饰">
+                <img src="https://img.alicdn.com/imgextra/i2/2781929398/TB2yUXuvwxlpuFjSszgXXcJdpXa_!!2781929398.jpg_300x300.jpg"> </a></div>
+              <div class="goods_name"> <a href="goods.php?id=1906" title="DEYEEN仿珍珠Choker项链明星同款女款颈新款锁骨链日韩女士脖颈饰">DEYEEN仿珍珠Choker项链明星同款女款颈新款锁骨链日韩女士脖颈饰</a></div>
+              <div class="price">
+                   <a href="javascript:addToCart(1906)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                 <span>274.80</span><em>329.76</em>
+              </div>
+              </div>
+           
+          </li>
+                    <li>
+           
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                           <a href="goods.php?id=1887" title="（送证书）925纯银哑铃项链健身潮人吊坠运动男士女刻字霸气礼物">
+                <img src="https://img.alicdn.com/imgextra/i2/TB1tfaTOXXXXXaJXXXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"> </a></div>
+              <div class="goods_name"> <a href="goods.php?id=1887" title="（送证书）925纯银哑铃项链健身潮人吊坠运动男士女刻字霸气礼物">（送证书）925纯银哑铃项链健身潮人吊坠运动男士女刻字霸气礼物</a></div>
+              <div class="price">
+                   <a href="javascript:addToCart(1887)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                 <span>166.00</span><em>166.00</em>
+              </div>
+              </div>
+           
+          </li>
+           </ul>
+        <ul>
+                    <li>
+           
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                           <a href="goods.php?id=39" title="斯乃纳至悦精品中童鞋 女童皮鞋高跟蝴蝶结公主鞋">
+                <img src="./../images/201507/thumb_img/39_thumb_G_1437515362083.jpg"> </a></div>
+              <div class="goods_name"> <a href="goods.php?id=39" title="斯乃纳至悦精品中童鞋 女童皮鞋高跟蝴蝶结公主鞋">斯乃纳至悦精品中童鞋 女童皮鞋高跟蝴蝶结公主鞋</a></div>
+              <div class="price">
+                   <a href="javascript:addToCart(39)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                 <span>399.00</span><em>478.79</em>
+              </div>
+              </div>
+           
+          </li>
+                    <li>
+           
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                           <a href="goods.php?id=41" title="小金蛋女宝宝皮鞋夏真皮女童秋鞋公主鞋">
+                <img src="./../images/201507/thumb_img/41_thumb_G_1437515470354.jpg"> </a></div>
+              <div class="goods_name"> <a href="goods.php?id=41" title="小金蛋女宝宝皮鞋夏真皮女童秋鞋公主鞋">小金蛋女宝宝皮鞋夏真皮女童秋鞋公主鞋</a></div>
+              <div class="price">
+                   <a href="javascript:addToCart(41)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                 <span>99.00</span><em>118.80</em>
+              </div>
+              </div>
+           
+          </li>
+                    <li>
+           
+             <div class="index_pro"> 
+              <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                           <a href="goods.php?id=43" title="恩诺童新生儿奶瓶宝宝宽口径ppsu婴儿奶瓶">
+                <img src="./../images/201507/thumb_img/43_thumb_G_1437515785217.jpg"> </a></div>
+              <div class="goods_name"> <a href="goods.php?id=43" title="恩诺童新生儿奶瓶宝宝宽口径ppsu婴儿奶瓶">恩诺童新生儿奶瓶宝宝宽口径ppsu婴儿奶瓶</a></div>
+              <div class="price">
+                   <a href="javascript:addToCart(43)" class="btns">
+                    <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png">
+                </a>
+                 <span>59.00</span><em>70.80</em>
+              </div>
+              </div>
+           
+          </li>
+          </div>
+        <div class="hd">
+          <ul></ul>
+        </div>
+      </div>
+  </section>
+  <script type="text/javascript">
+    TouchSlide({ 
+      slideCell:"#scroll_hot",
+      titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+      effect:"leftLoop", 
+      autoPage:true, //自动分页
+      //switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+    });
+  </script>
+ 
+ 
+<div class="index_img">
+ 
+ 
+</div>
+ 
+<section class="floor_body">         
+      <h4><span>家用电器</span><i><a href="category.php?id=5">更多</a></i></h4>
+        <div style=" background:#eeeeee">
+        <ul>
+                        <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1251" title="Zespri佳沛新西兰金奇异果3.3kg巨无霸原箱(22-25)"><img src="https://img.alicdn.com/imgextra/i1/TB1Nlb2QFXXXXcuaXXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1251" title="Zespri佳沛新西兰金奇异果3.3kg巨无霸原箱(22-25)">Zespri佳沛新西兰金奇异果3.3kg巨无霸原箱(22-25)</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1251)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 188.00</span><em>188.00</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1250" title="智利进口猕猴桃新鲜水果绿心奇异果12颗小果孕妇水果 非眉县徐香"><img src="https://img.alicdn.com/imgextra/i1/2685563400/TB2mKjuAblmpuFjSZFlXXbdQXXa_!!2685563400.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1250" title="智利进口猕猴桃新鲜水果绿心奇异果12颗小果孕妇水果 非眉县徐香">智利进口猕猴桃新鲜水果绿心奇异果12颗小果孕妇水果 非眉县徐香</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1250)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 18.80</span><em>18.80</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1249" title="佳沛金奇异果22号原箱新西兰进口黄肉猕猴桃 礼盒新鲜水果包邮"><img src="https://img.alicdn.com/imgextra/i3/TB1Li6BRXXXXXXNXpXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1249" title="佳沛金奇异果22号原箱新西兰进口黄肉猕猴桃 礼盒新鲜水果包邮">佳沛金奇异果22号原箱新西兰进口黄肉猕猴桃 礼盒新鲜水果包邮</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1249)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 199.00</span><em>199.00</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                 </ul>
+        <ul>
+                    
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1248" title="【天猫超市】佳沛新西兰阳光金奇异果16-18个原箱175-218g/个金果"><img src="https://img.alicdn.com/imgextra/i1/TB1uzUzQFXXXXb6XpXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1248" title="【天猫超市】佳沛新西兰阳光金奇异果16-18个原箱175-218g/个金果">【天猫超市】佳沛新西兰阳光金奇异果16-18个原箱175-218g/个金果</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1248)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 188.00</span><em>188.00</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1247" title="猕猴桃新鲜5斤包邮陕西奇异果绿心当季孕妇水果现摘现卖"><img src="https://img.alicdn.com/imgextra/i1/480906364/TB28hogzrlmpuFjSZFlXXbdQXXa_!!480906364.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1247" title="猕猴桃新鲜5斤包邮陕西奇异果绿心当季孕妇水果现摘现卖">猕猴桃新鲜5斤包邮陕西奇异果绿心当季孕妇水果现摘现卖</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1247)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 11.90</span><em>11.90</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1246" title="领券减10元 佳沛新西兰金奇异果22#原箱 进口猕猴桃 新鲜水果包邮"><img src="https://img.alicdn.com/imgextra/i2/TB1C1QsQFXXXXbKXXXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1246" title="领券减10元 佳沛新西兰金奇异果22#原箱 进口猕猴桃 新鲜水果包邮">领券减10元 佳沛新西兰金奇异果22#原箱 进口猕猴桃 新鲜水果包邮</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1246)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 199.00</span><em>199.00</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                 </ul>
+        <ul>
+                    
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1245" title="【天猫超市】Zespri佳沛新西兰阳光金奇异果3.3kg原箱(27-30个)"><img src="https://img.alicdn.com/imgextra/i2/TB1oJIdQFXXXXb8XVXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1245" title="【天猫超市】Zespri佳沛新西兰阳光金奇异果3.3kg原箱(27-30个)">【天猫超市】Zespri佳沛新西兰阳光金奇异果3.3kg原箱(27-30个)</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1245)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 169.00</span><em>169.00</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1244" title="预售陕西周至猕猴桃新鲜非野生徐香弥猴桃绿心奇异果5斤大果包邮"><img src="https://img.alicdn.com/imgextra/i1/2903632574/TB2F9dQrNtmpuFjSZFqXXbHFpXa_!!2903632574.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1244" title="预售陕西周至猕猴桃新鲜非野生徐香弥猴桃绿心奇异果5斤大果包邮">预售陕西周至猕猴桃新鲜非野生徐香弥猴桃绿心奇异果5斤大果包邮</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1244)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 26.80</span><em>39.80</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+                      <li>
+               
+                <div class="index_pro"> 
+                    <div class="products_kuang" style="width: 100%;height: 0; padding-bottom: 100%;overflow: hidden;">
+                       <a href="goods.php?id=1243" title="预售重庆特产绿心奇异果3斤大果 绿心猕猴桃绿果新鲜时令水果包邮"><img src="https://img.alicdn.com/imgextra/i1/2194375307/TB28HtpzORnpuFjSZFCXXX2DXXa_!!2194375307.jpg_300x300.jpg"></a></div>
+                    <div class="goods_name"> <a href="goods.php?id=1243" title="预售重庆特产绿心奇异果3斤大果 绿心猕猴桃绿果新鲜时令水果包邮">预售重庆特产绿心奇异果3斤大果 绿心猕猴桃绿果新鲜时令水果包邮</a></div>
+                    <div class="price">
+                            <a href="javascript:addToCart(1243)" class="btns">
+                            <img src="themesmobile/prince_jtypmall_mobile/images/index_flow.png"></a>
+                                      <span> 9.80</span><em>9.80</em>
+                                   </div>
+                    </div>
+ 
+            </li>
+            
+                          
+           </div>      
+</section> 
+ 
+<div id="index_banner" class="index_banner">
+<div class="bd">
+<ul>
+								</ul>
+</div>
+<div class="hd">
+					<ul></ul>
+				</div>
+</div>
+<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#index_banner",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});
+			</script>
+   
+ <div class="floor_body2" >
+    <h2>————&nbsp;精品推荐&nbsp;————</h2>
+    <div id="J_ItemList">
+      <ul class="product single_item info">
+      </ul>
+      <a href="javascript:;" class="get_more"> </a> 
+      </div>
+  </div>
+<style>
+.f_mask_wechat_kefu {background-color: #000;opacity: 0.4;height: 100%;width: 100%; position: absolute;top: 0;left: 0;z-index: 111;display: none;}
+#wechat_kefu{position:fixed; bottom:0; left:0; height:0px; z-index:99999999; background:#fff; width:100%;}  
+.callme {width:100%; margin:auto;overflow-y:scroll;background:#ffffff; height:100%;}
+.callme h2{width:100%; text-indent:30px; height:30px; font-size:18px; line-height:30px; color:#fff; font-weight:normal; padding-top:10px; padding-bottom:10px; background:#FF6500}
+.callme ul{width:100%; overflow:hidden; padding-top:10px; padding-bottom:50px;}
+.tell_me_con{width:95%; overflow:hidden; margin:auto}
+.tell_me_con ul{width:95%; overflow:hidden; margin:auto; margin-top:10px;}
+.tell_me_con ul li{width:100%; overflow:hidden; margin:auto;}
+.goods_shut{width:100%; height:45px; background:#FFF; position:absolute; bottom:0px;}
+.shut{display:block; width:100%; height:45px; background:#E71F19; text-align:center; font-size:18px;line-height:45px; color:#FFF;}
+</style>
+<div style="height:50px; line-height:50px; clear:both;"></div>
+<div class="v_nav">
+<div class="vf_nav">
+<ul>
+<li> <a href="./">
+    <i class="vf_1"></i>
+    <span>首页</span></a></li>
+<li><a href="javascript:show_wechat_kefu();"> 
+    <i class="vf_2"></i>
+    <span>客服</span></a></li>
+<li><a href="catalog.php">
+    <i class="vf_3"></i>
+    <span>分类</span></a></li>
+<li>
+<a href="flow.php">
+   <em class="global-nav__nav-shop-cart-num" id="YP_CARTINFO" style="right:9px;">554fcae493e564ee0dc75bdf2ebf94cacart_info|a:1:{s:4:"name";s:9:"cart_info";}554fcae493e564ee0dc75bdf2ebf94ca</em>
+   <i class="vf_4"></i>
+   <span>购物车</span>
+   </a></li>
+<li><a href="user.php">
+    <i class="vf_5"></i>
+    <span>我的</span></a></li>
+</ul>
+</div>
+</div>
+<section class="f_mask_wechat_kefu" style="display: none;"></section>
+<section class="f_block_wechat_kefu" id="wechat_kefu" style="height:0; overflow:hidden;">
+<section class="callme">
+<h2 style="background:#62b900">微信客服</h2>  
+<div id="tell_me_form" >
+  <div class="tell_me_con">
+ <ul >
+      <li style="text-align:center;"><img src="../images/qrcode/1494706706503464054.jpg" alt="客服微信二维码" title="客服微信二维码" style="width:160px; height:auto;"/></li> 
+       
+       
+      <li style="text-align:center;">
+          微信客服:120029121      </li>
+       
+       
+       
+      <li style="text-align:center;">
+          微信客服:309485552      </li>
+       
+       
+ </ul>
+  </div>
+</div>
+</section>
+<div class="goods_shut">
+<a href="javascript:void(0)" onclick="close_wechat_kefu();" class="shut" style=" color:#FFF;font-size:18px;">关闭</a>
+</div>
+</section>
+<script>
+function show_wechat_kefu(){
+	$("#wechat_kefu").animate({height:'80%'},[10000]);
+		var total=0,h=$(window).height(),
+        top =$('.callme').height()||0,
+        con = $('.tell_me_con');
+		total = 0.8*h;
+		con.height(total-top+'px');
+	$(".f_mask_wechat_kefu").show();
+}
+function close_wechat_kefu(){	
+	$(".f_mask_wechat_kefu").hide();
+	$('#wechat_kefu').animate({height:'0'},[10000]);
+}
+</script>
+ 
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.json.js"></script><script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/touchslider.dev.js"></script>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.more.js"></script>
+<script type="text/javascript" src="js/common.js"></script><script type="text/javascript">
+var url = 'index_bestgoods.php?act=ajax';
+$(function(){
+	$('#J_ItemList').more({'address': url});
+});
+</script> 
+<script>
+function goTop(){
+	$('html,body').animate({'scrollTop':0},600);
+}
+</script>
+<a href="javascript:goTop();" class="gotop"><img src="themesmobile/prince_jtypmall_mobile/images/topup.png"></a> 
+<script type="Text/Javascript" language="JavaScript">
+function selectPage(sel)
+{
+   sel.form.submit();
+}
+</script>
+<script type="text/javascript">
+var button_compare = "";
+var exist = "您已经选择了%s";
+var count_limit = "最多只能选择4个商品进行对比";
+var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择商品属性";
+</script>
+</div> 
+</body>
+</html>

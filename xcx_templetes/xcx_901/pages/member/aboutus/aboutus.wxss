@@ -1,0 +1,19 @@
+page {
+	display: flex;
+	flex-direction: column;
+}
+
+.tableviewcell {
+	padding: 40rpx 40rpx;
+	color: #666;
+	background: white;
+	display: flex;
+	align-items: center;
+}
+
+
+.tableviewcell text {
+  width: 100%;
+	font-size: 16px;
+  text-align: center;
+}

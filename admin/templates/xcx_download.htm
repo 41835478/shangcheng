@@ -1,0 +1,50 @@
+<!-- $Id: xcx_settings.htm  prince $ -->
+{include file="pageheader.htm"} {insert_scripts files="../js/utils.js"}
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="./js/validate/messages_zh.js"></script>
+<script type="text/javascript" src="./js/validator.js"></script>
+<style type="text/css">
+label.error {
+	color: red;
+	background: url(./images/warning_small.gif) no-repeat;
+	padding-left: 18px;
+}
+
+label.success {
+	background: url(./images/yes.gif) no-repeat;
+	padding-left: 18px;
+}
+
+#btn_visit{
+	background: #24a0d6 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 7px 15px;
+}
+</style>
+	<div class="main-div">
+		<table id="group-table" cellspacing="1" cellpadding="3" width="100%">
+            {if $xcx.download_url}
+			<tr>
+				<td class="label">下载地址：</td>
+				<td><a href="{$xcx.download_url}" title="点此下载"  >点此下载</a></td>
+			</tr>
+            {else}
+			<tr>
+				<td class="label">温馨提示：</td>
+				<td>您暂未生成小程序</td>
+			</tr>
+            {/if}
+			<tr>
+				<td class="label">客服QQ：</td>
+				<td>{$qq}</td>
+			</tr>
+		</table>
+	</div>
+
+{include file="pagefooter.htm"}

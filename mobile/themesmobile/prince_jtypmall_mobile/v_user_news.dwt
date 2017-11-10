@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/TouchSlide.1.1.js"></script>
+<title>用户中心</title>
+<!--v_shop.css-->
+<link href="themesmobile/prince_jtypmall_mobile/css/v_user.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+
+</head>
+<body >
+<!----------------------------------header----------------------------------->
+<div class="header">
+    <h2><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></h2>
+    <ul>
+    <li>新手必看</li>
+     </ul>
+    <dl>
+      <dd class="top_bar" >
+        <div onClick="show_menu();$('#close_btn').addClass('hid');" id="show_more"><a href="javascript:;"></a> </div>
+      </dd>
+    </dl>
+</div>
+<!-- #BeginLibraryItem "/library/up_menu.lbi" --><!-- #EndLibraryItem --> <!--弹出菜单-->
+<!----------------------------------header----------------------------------->
+
+
+
+
+
+
+<!-- #BeginLibraryItem "/library/user_affiliate_new.lbi" --> <!-- #EndLibraryItem -->
+
+
+</body>
+</html>

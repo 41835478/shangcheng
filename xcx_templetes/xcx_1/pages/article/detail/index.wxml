@@ -1,0 +1,26 @@
+<!--answer.wxml-->
+<import src="../../../wxParse/wxParse.wxml"/> 
+<view class="container">
+    <view class="question" bindtap="toQuestion">
+        <text class="question-title">【{{article.cat_name}}】 {{article.title}}</text>
+    </view>
+    <view class="answerer-wrp">
+        <view class="bg-half"></view>
+        <view class="answerer flex-wrp">
+           
+            <view class="answerer-info flex-item">
+                <text class="answerer-name">摘要：</text>
+                <text class="answerer-des">{{article.description}}</text>
+            </view>
+          
+        </view>
+    </view>
+    
+    <view class="answer-content">
+       <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article_desc.nodes}}"/>
+     </view>
+    </view>
+
+</view>
+

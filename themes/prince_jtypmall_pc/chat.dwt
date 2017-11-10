@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <title>在线客服</title>
+	<script type='text/javascript' src='js/jquery-1.6.2.min.js'></script>
+    </head>
+    <body>
+    <div id="sound"></div>
+    </body>
+ 
+ 
+    <script src="https://g.alicdn.com/aliww/??h5.openim.kit/0.5.0/scripts/kit.js,h5.imsdk/4.0.1/scripts/yw/wsdk.js" charset="utf-8"></script>
+    <script>
+        window.onload = function(){
+            WKIT.init({
+                uid: '{$data.uid}', // 需要登录的用户nick
+                appkey: '{$data.appkey}', // 申请的appkey
+                credential:'{$data.credential}', // 需要登录的用户的密码
+                touid: '{$data.touid}', // 客服nick
+                // 展示效果配置项
+                theme: 'lightgreen',
+                imageZoom: true, // 默认显示小图，点击放大图片
+                avatar: '{$data.avatar}', // 登录用户的头像，移动端推荐[2x2]rem (1rem = 屏幕宽度/320*20)
+                toAvatar: '{$data.toavatar}', // 聊天对象的头像，在移动端推荐[2.5x2.5]rem
+                titleBar: false, // 是否显示顶部title条
+                // customUrl: 'http://www.baidu.com', // 自定义区域url
+                // placeholder: '#666', // 输入框默认文案
+                welcomeMsg: '{$data.welcome_msg}', // 显示在对方消息位置的默认欢迎文案
+                hideLoginSuccess: true, // 隐藏登录成功时的提示文案
+                // 消息相关配置项  
+             	autoMsg:"（{$data.user_name}）来自：【{$data.goods_name}】链接：{$data.url}",
+                autoMsgType: 0, // autoMsg的消息类型；默认：0
+                sendMsgToCustomService: true, // 使用客服模式即给淘宝/千牛客服发送消息, 默认：false，如果是false千牛那边收不到客户发送的信息
+                 groupId: '0', // 客服模式, 可以传入分组id
+                // customData: {} // 上传自定义数据, 在千牛插件中显示
+
+
+           onMsgReceived: function(content){
+         
+	 playSound(2);
+     }, 
+
+
+
+            });
+        }
+
+
+function playSound(type){
+		
+		if($("#sound").size() == 0){
+			$("body").append("<div id='sound'></div>");
+		}
+		
+		if(type == 2){
+			if($.browser.msie && $.browser.version == '8.0'){
+	    		//本来这里用的是<bgsound src="system.wav"/>,结果IE8不播放声音,于是换成了embed
+	    		$("#sound").html('<embed src="sound/msg.wav"/>');
+	    	}else{
+	    		//IE9+,Firefox,Chrome均支持<audio/>
+	    		$("#sound").html('<audio autoplay="autoplay"><source src="sound/msg.wav" type="audio/wav"/></audio>');
+	    	}
+		}else if(type == 3){
+			if($.browser.msie && $.browser.version == '8.0'){
+	    		//本来这里用的是<bgsound src="system.wav"/>,结果IE8不播放声音,于是换成了embed
+	    		$("#sound").html('<embed src="sound/notice.wav"/>');
+	    	}else{
+	    		//IE9+,Firefox,Chrome均支持<audio/>
+	    		$("#sound").html('<audio autoplay="autoplay"><source src="sound/notice.wav" type="audio/wav"/></audio>');
+	    	}
+		}
+	}
+
+
+
+    </script>
+</html>

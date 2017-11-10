@@ -1,0 +1,136 @@
+<!-- $Id: agency_list.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<!-- 供货商搜索 -->
+<div class="form-div">
+    <form action="javascript:searchSupplier()" name="searchForm">
+        <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+
+        {$lang.supplier_name|escape}
+        <input name="supplier_name" type="text" id="supplier_name" size="15">
+        {$lang.supplier_rank}
+        <select name="rank_name" size=1>
+            <option value="0">请选择</option>
+
+            {foreach from=$supplier_rank item=rank}
+
+            <option value="{$rank.rank_id}" {if $supplier.rank_id eq $rank.rank_id}selected{/if}>{$rank.rank_name}</option>
+
+            {/foreach}
+
+        </select>
+        <input type="submit" value="{$lang.button_search}" class="button" />
+        {if $status==1}
+        <input type="button" value="批量导出" class="button" onclick="batch_export()" />
+        {/if}
+    </form>
+</div>
+<form method="post" action="" name="listForm" onsubmit="return confirm(batch_drop_confirm);">
+    <div class="list-div" id="listDiv">
+        {/if}
+
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>编号</th>
+                <th>{$lang.supplier_username}</th>
+                <th>店铺/小程序名</th>
+                <!-- <th>头像</th> -->
+                <th>{$lang.company_name}</th>
+                <th>{$lang.supplier_rank}</th>
+				<th>套餐使用开始时间</th>
+                <th>套餐使用结束时间</th>
+               
+                <th>{$lang.system_fee}</th>
+              
+                <th>商品需要审核</th>
+                <th>状态</th>
+                <th>{$lang.handler}</th>
+            </tr>
+            {foreach from=$supplier_list item=supplier}
+            <tr>
+                <td >{$supplier.supplier_id} </td>
+                <td >{if $supplier.user_name}{$supplier.user_name} {else}系统演示店铺{/if} { if $supplier.nickname}<span style="margin-bottom: 2px; line-height: 14px; display: block;">微信昵称：{$supplier.nickname|escape}</span>{/if}</td>
+                <td class="first-cell" style="padding-left:10px;" >{$supplier.supplier_name}                </td>
+                <!-- <td ><img src="{if $supplier.headimg}{$supplier.headimg}{else}./images/people.gif{/if}" height="50" width="50"> </td> -->
+                <td >{$supplier.company_name} </td>
+                <td >{$supplier.rank_name} </td>
+                <td >{$supplier.start_time} </td>
+                <td >{$supplier.end_time} </td>
+                
+                <td align="center">{$supplier.system_fee}</td>
+                <!-- <td align="center">{$supplier.supplier_bond}</td>
+                <td align="center">{$supplier.supplier_rebate}</td> -->
+               <!--  <td align="center">{$supplier.supplier_remark}</td> -->
+                <td align="center"><img src="images/{if $supplier.need_approve}yes{else}no{/if}.gif" /></td>
+                <td align="center">{$supplier.status_name}</td>
+                <td align="center">
+                <!--{if $supplier.status > 0 }-->
+                <a href="privilege.php?act=allot_sup&id={$supplier.user_id}&user={$supplier.user_name}" title="{$lang.allot_priv}"><img src="images/icon_priv.gif" border="0" height="16" width="16"></a>&nbsp;&nbsp;
+                <!--{/if}--><!--add by prince qq 120029121 20160814-->
+        <a href="supplier.php?act=edit&id={$supplier.supplier_id}&status={$status}" title="{$lang.view}">编辑</a>{if $supplier.status > 0 && $supplier.open > 0}&nbsp;&nbsp;<a href="../supplier.php?suppId={$supplier.supplier_id}" target="_blank" title="查看店铺">查看店铺</a>&nbsp;&nbsp;
+                    <!--<a href="supplier.php?act=view&id={$supplier.supplier_id}" title="查看佣金">查看佣金</a>-->{else}&nbsp;&nbsp;{/if}&nbsp;&nbsp;<a href="javascript:del_supplier({$supplier.supplier_id})" title="删除店铺">删除</a></td>
+            </tr>
+            {foreachelse}
+            <tr><td class="no-records" colspan="15">{$lang.no_records}</td></tr>
+            {/foreach}
+        </table>
+        <table id="page-table" cellspacing="0">
+            <tr>
+                <td>&nbsp;</td>
+                <td align="right" nowrap="true">
+                    {include file="page.htm"}
+                </td>
+            </tr>
+        </table>
+
+        {if $full_page}
+    </div>
+</form>
+
+<script type="text/javascript" language="javascript">
+    <!--
+    listTable.recordCount = {$record_count};
+    listTable.pageCount = {$page_count};
+
+    {foreach from=$filter item=item key=key}
+    listTable.filter.{$key} = '{$item}';
+    {/foreach}
+
+    {literal}
+    onload = function()
+    {
+        // 开始检查订单
+        startCheckOrder();
+    }
+    {/literal}
+    //-->
+    /**
+     * 搜索供货商
+     */
+    function searchSupplier()
+    {
+        listTable.filter['supplier_name'] = Utils.trim(document.forms['searchForm'].elements['supplier_name'].value);
+        listTable.filter['rank_name'] = document.forms['searchForm'].elements['rank_name'].value;
+
+        listTable.filter['page'] = 1;
+        listTable.loadList();
+    }
+
+    function del_supplier(suppid){
+        var url = "supplier.php?act=delete&id="+suppid;
+        if(confirm('删除后，相关商品，佣金及其它店铺信息将永久删除，确定删除？')){
+            self.location.href = url;
+        }
+    }
+
+    function batch_export()
+    {
+        var supplier_name = Utils.trim(document.forms['searchForm'].elements['supplier_name'].value);
+        var rank_id = Utils.trim(document.forms['searchForm'].elements['rank_name'].value);
+        return location.href='supplier.php?act=export&supplier_name='+supplier_name+'&rank_id='+rank_id;
+    }
+</script>
+{include file="pagefooter.htm"}
+{/if}

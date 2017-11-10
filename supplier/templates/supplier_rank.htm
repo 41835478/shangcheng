@@ -1,0 +1,69 @@
+<!-- $Id: user_rank.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+<style type="text/css">
+#taocan {
+  padding: 8px;
+  border-radius:5px;
+  margin:5px; 
+  font-size:14px;
+  background: #F96;
+  text-decoration:none;
+  color:#00F
+}
+#lianxi {
+  padding: 10px 5px;
+}
+
+</style>
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+
+
+<!-- start ads list -->
+<div class="list-div" id="listDiv">
+{/if}
+<span id="taocan"><a href="/user.php?act=account_deposit" style="color:#FF9" title="为当前套餐续费" target="_new"/>账户充值</a></span>
+<br />
+
+<span style=" font-size:14px">您好：您当前使用的套餐是【{$supplier.rank_name}】。{if $is_overdue}套餐已到期{else}到期时间为{$supplier.end_time}{/if}。 您可以</span>
+{if $supplier.price neq 0.00}<span id="taocan"><a href="up_rank.php?act=renew" onClick="return confirm('您确定要花费{$supplier.price}元，为【{$supplier.rank_name}】套餐续费{$supplier.available_days}天吗?');") style="color:#FF9" title="为当前套餐续费"/>续费</a></span>{/if}
+{if $is_max_rank neq 1}<span id="taocan" style="color:#F00"><a href="up_rank.php?act=upgrade" style="color:#FF9">升级套餐</a></span>{/if}
+{if $kfqq}<span style=" font-size:14px">如有问题请联系客服：</span>
+<!-- QQ 号码 {foreach from=$kfqq item=im} -->
+<!-- {if $im} -->
+<span id="lianxi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$im}&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$im}:51" alt="QQ:{$im}" title="点击这里给我发消息"/></a></span>
+<!-- {/if} -->
+<!-- {/foreach} 结束QQ号码 -->
+{/if}
+</br>
+</br>
+<table cellspacing='1' id="list-table">
+  <tr>
+    <th>套餐名称</th> 
+	<th>添加商品数量上限</th>
+	<th>有效期（天数）</th>
+	<th>套餐价格</th>
+	<th>是否可以使用采集功能</th>
+	<th>是否可以使用分销功能</th>
+  <th>是否可以生成小程序</th>
+  </tr>
+  {foreach from=$user_ranks item=rank}
+  <tr>
+    <td class="first-cell" >{$rank.rank_name}</td>
+	<td align="center">{$rank.goods_number}</td>
+	<td align="center">{$rank.available_days}</td>
+	<td align="center">{$rank.price}</td>
+	<td align="center"><img src="images/{if $rank.caiji_status}yes{else}no{/if}.gif" /></td>
+	<td align="center"><img src="images/{if $rank.fenxiao_status}yes{else}no{/if}.gif" /></td>
+  <td align="center"><img src="images/{if $rank.xcx_status}yes{else}no{/if}.gif" /></td>
+  </tr>
+  {/foreach}
+  </table>
+
+{if $full_page}
+</div>
+<!-- end user ranks list -->
+
+{include file="pagefooter.htm"}
+{/if}

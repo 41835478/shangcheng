@@ -1,0 +1,78 @@
+{
+    "pages":[
+        "pages/index/index",
+        "pages/seller/add",
+        
+        "pages/address/list/list",
+        "pages/address/add/add",
+        "pages/address/select/index",
+        "pages/address/edit/index",
+        "pages/order/payment/payment",
+        "pages/member/coupon/index",
+        "pages/member/index/index",
+        "pages/member/aboutus/aboutus",
+        "pages/category/category",
+        "pages/cart/cart",
+        "pages/goods/list/list",
+        "pages/goods/detail/detail",
+        "pages/goods/grouplist/list",
+        "pages/switchcity/switchcity",
+        "pages/goods/groupDetail/detail",
+        "pages/order/checkout/checkout",
+        "pages/member/money/money",
+        "pages/member/money/tixian/index",
+        "pages/member/point/point",
+        "pages/order/list/list",
+        "pages/order/details/index",
+        "pages/order/orderpay/payment",
+        "pages/order/ordersubmit/index",
+        "pages/order/kuaidi/index",        
+        "pages/register/index",
+        "pages/member/evaluate/evaluate",
+        "pages/member/evaluate/addevaluate/index",
+        "pages/member/collect/collect",
+        "pages/search/index",
+        "pages/seller/index",
+        "pages/seller/goods",
+        "pages/member/fenxiao/index",
+        "pages/member/fenxiao/shouyi/index",
+        "pages/member/fenxiao/liushui/index",
+        "pages/member/fenxiao/yongjin/index",
+        "pages/member/fenxiao/xiaji/index",
+        "pages/member/fenxiao/erweima/index",
+        "pages/member/fenxiao/xinshou/index",
+        "pages/member/fenxiao/shezhi/index",
+        "pages/member/fenxiao/shanghuo/index",
+        "pages/member/fenxiao/weidian/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#FF6A6A",
+        "navigationBarTitleText": "今天优品",
+        "navigationBarTextStyle":"white",
+        "enablePullDownRefresh ":true
+    },
+    "tabBar":{
+        "selectedColor": "#3cc51f",
+        "list":[{
+                "pagePath":"pages/index/index",
+                "iconPath":"images/icon_home.png",
+                "selectedIconPath":"images/icon_home_selected.png",
+                "text":"首页"
+            },{
+                "pagePath":"pages/category/category",
+                "iconPath":"images/icon_cate.png",
+                "selectedIconPath":"images/icon_cate_selected.png",
+                "text":"分类"
+            },{
+                "pagePath":"pages/cart/cart",
+                "iconPath":"images/icon_cart.png",
+                "selectedIconPath":"images/icon_cart_selected.png",
+                "text":"购物车"
+            },{
+                "pagePath":"pages/member/index/index",
+                "iconPath":"images/icon_member.png",
+                "selectedIconPath":"images/icon_member_selected.png",
+                "text":"我"
+            }]
+    }
+}

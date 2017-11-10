@@ -1,0 +1,196 @@
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<style>
+#caij_btns a {
+    font-family: '微软雅黑';
+    display: block;
+    width: 117px;
+    height: 35px;
+    text-align: center;
+    background: #FF8800;
+    line-height: 35px;
+    font-size: 16px;
+    color: #FFFFFF;
+    color: #FFFFFF;
+}
+.g_price-highlight span {color: #F40;font-size: 18px;}
+.g_price strong {color: #F40;    font-weight: 700;    font-family: verdana,arial;}
+.row a{color: #3d3d3d!important;text-decoration: none!important;}
+.m-itemlist .pic-box{position:relative}
+.m-itemlist .pic-box-inner{position:relative;overflow:hidden}
+.m-itemlist .pic-link{display:table-cell;text-align:center;vertical-align:middle}
+.m-itemlist .title{overflow:hidden;font-weight:400}
+.m-itemlist .deal-cnt{color:#888}
+.m-itemlist .icon-has-more{height:16px;overflow:hidden}
+.m-itemlist .icon-has-more .icons{float:left}
+.m-itemlist .icon-has-more .icon{float:left;}
+.m-itemlist .icon-has-more .icon a:focus{outline:0}
+.m-itemlist .icon-has-more .more{display:none;float:right;margin-top:2px;font-size:0;width:10px;height:10px;border:1px solid #ddd;overflow:hidden;border-radius:2px;text-align:center;cursor:pointer}
+.m-itemlist .icon-has-more .arrow{display:inline-block;width:0;height:0;line-height:0;border-style:dashed;border-color:transparent;border-width:3px;font-size:0;border-top-style:solid;border-top-color:#666;margin-top:3px}
+.m-itemlist .grid{overflow: hidden; background:#FFFDEA}
+.m-itemlist .grid .item:hover{border-color:#f40}
+.m-itemlist .grid .row{padding:0 10px}
+.m-itemlist .grid .row-1{margin-top:11px;height:22px;line-height:22px;overflow:hidden}
+.m-itemlist .grid .price{float:left;font-size:18px}
+.m-itemlist .grid .price strong{font-weight:700;font-size:16p}
+.m-itemlist .grid .ship{display:inline-block;margin-top:4px;margin-left:2px}
+.m-itemlist .grid .deal-cnt{float:right}
+.m-itemlist .grid .row-2,.m-itemlist .grid .title{margin-top:6px;height:50px}
+.m-itemlist .grid .row-2 .baoyou-intitle,.m-itemlist .grid .title .baoyou-intitle{display:none}
+.m-itemlist .grid .row-4{padding:0 10px 0 6px;margin-top:5px;height:20px;overflow:hidden}
+
+.m-itemlist .grid .feature-icons{float:left;width:180px}
+.m-itemlist .grid .icon{float:left;}
+
+.m-itemlist .grid{padding:10px }
+.m-itemlist .grid .item{margin-right:17px;width:220px;height:360px}
+.m-itemlist .grid .pic,.m-itemlist .grid .pic-box,.m-itemlist .grid .pic-box-inner,.m-itemlist .grid .pic-link{width:220px;height:220px}
+.m-itemlist .grid .pic-link{*font-size:196.46px}
+.m-itemlist .grid .pic{*overflow:hidden}
+.m-itemlist .grid .feature-icons .icons{width:180px}
+.m-itemlist .grid .feature-icons .icons li{list-style-type:none;}
+.icon-service-tianmao {
+    width: 16px;
+    height: 16px;
+	display: inline-block;
+    font-size: 0;
+    background: url(//img.alicdn.com/tps/i1/TB1ZJwjKVXXXXaqXXXX1EEJ4FXX-298-298.png) -225px -5px;
+    background-repeat: no-repeat;
+}
+.m-itemlist .grid .item{margin-right:20px;width:250px;height:305px}
+.m-itemlist .grid .pic,.m-itemlist .grid .pic-box,.m-itemlist .grid .pic-box-inner,.m-itemlist .grid .pic-link{width:250px;height:250px}
+.m-itemlist .grid .pic-link{*font-size:223.25px}
+.m-itemlist .grid .pic{*overflow:hidden}
+.m-itemlist .grid .img{max-width:250px;max-height:250px}
+.m-itemlist .grid .item-p4p{height:300px; background:#FFFFFF}
+.m-itemlist .grid .item-p4p .feature-icons{width:auto}
+.m-itemlist .grid .item-p4p .feature-icons .icons{width:163px; margin:0;padding: 0;}
+.m-itemlist .grid .item{margin-right:20px;width:180px;height:300px;margin-top: 22px;;    float: left;;    border: 1px solid #ededed;}
+.m-itemlist .grid .pic,.m-itemlist .grid .pic-box,.m-itemlist .grid .pic-box-inner,.m-itemlist .grid .pic-link{width:180px;height:180px}
+.m-itemlist .grid .pic-link{*font-size:160.74px}
+.m-itemlist .grid .pic{*overflow:hidden}
+.m-itemlist .grid .ship{display:none}
+.m-itemlist .grid .row-2 .baoyou-intitle,.m-itemlist .grid .title .baoyou-intitle{display:inline-block;*display:inline;*zoom:1;margin:0 2px 0 0;vertical-align:text-top}
+</style>
+<!-- 商品搜索 -->
+<!-- 商品列表 -->
+<form method="post" action="{$shopfile}.php?act=prince_list_colect" name="theForm" onsubmit="return confirmSubmit(this)">
+  <!-- start goods list -->
+  <div class="list-div" id="listDiv"> {/if}
+    <div class="m-itemlist" data-spm="14">
+      <div class="grid">
+        <div style="height:24px;line-height: 24px; border-bottom:1px solid #ccc">
+          <input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox" />
+          全选 &nbsp;&nbsp;&nbsp;&nbsp;(请勾选你要采集的商品）</div>
+        <div class="items g-clearfix" id="J_itemlistCont"> {foreach from=$goods_list item=goods name=no }
+          <div class="item item-p4p " data-category="auctions" data-index="0">
+            <div class="pic-box J_MouseEneterLeave J_PicBox">
+              <div class="pic-box-inner">
+                <div class="pic"> <a  class="pic-link" data-nid="{$goods.num_iid}" href="{$goods.item_url}"  target="_blank" trace="msrp_auction" traceidx="0" trace-index="0" trace-nid="{$goods.num_iid}" > <img id="J_Itemlist_Pic_{$goods.num_iid}" class="J_ItemPic img" style="width:160px!important; height:160px!important;" src="{$goods.pict_url}_160x160.jpg" data-src="" alt="{$goods.title|escape:html}"> </a> </div>
+              </div>
+            </div>
+            <div class="ctx-box J_MouseEneterLeave J_IconMoreNew">
+              <div class="row row-1 g-clearfix">
+                <div class="price g_price g_price-highlight"> <span>¥</span><strong>{if $goods.zk_final_price}{$goods.zk_final_price}{else}{$goods.reserve_price}{/if}</strong> </div>
+                <div class="deal-cnt">{if $goods.volume}总销量：{$goods.volume}{/if}</div>
+                <div class="ship icon-service-free"></div>
+              </div>
+              <div class="row row-2 title"> <a data-nid="{$goods.num_iid}" href="{$goods.item_url}" target="_blank" > <span class="baoyou-intitle icon-service-free"></span>{$goods.title|escape:html}</a> </div>
+              <div class="row row-4 g-clearfix">
+                <div class="feature-icons icon-has-more" id="J_Itemlist_Icons_{$goods.num_iid}">
+                  <ul class="icons">
+                     <li class="icon J_IconPopup J_MouseEneterLeave"> <span class="icon-service-baoxian">
+                     <input type="checkbox" name="checkboxes[]" value="{$goods.num_iid}" />选择</span> </li>
+                    {if $goods.user_type eq 1 }<li class="icon " data-index="1"> <span class="icon-service-tianmao" style="margin-left: 5px;" title="尚天猫，就购了"></span> </li>{/if}
+                     <li class="icon J_IconPopup J_MouseEneterLeave" style="float:right;list-style-type:none;"> <span class="icon-service-baoxian">[{$smarty.foreach.no.iteration}]</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/foreach} </div>
+      </div>
+    </div>
+    <!-- end goods list -->
+    <!-- 分页 -->
+    {if $full_page} </div>
+  <div>
+	<textarea style="display:none" name="content" cols="80" rows="4" wrap="VIRTUAL" >{$data}</textarea>
+    <div id="caij_btns" style="width:100%;padding: 15px;"> <a class="caiji" href="javascript:colltaobao();" >立即采集</a> </div>
+  </div>
+</form>
+<script type="text/javascript">
+function colltaobao()
+{
+ 	document.getElementById('caij_btns').innerHTML = '正在采集：<img src="https://img.alicdn.com/imgextra/i1/619666972/TB2PCZjjVXXXXXxXpXXXXXXXXXX-619666972.gif" />';
+	var targetForm = document.forms[ "theForm" ];
+	targetForm.submit();
+}
+</script>
+<script type="text/javascript">
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+
+  {literal}
+  onload = function()
+  {
+    startCheckOrder(); // 开始检查订单
+    document.forms['listForm'].reset();
+  }
+
+  /**
+   * @param: bool ext 其他条件：用于转移分类
+   */
+  function confirmSubmit(frm, ext)
+  {
+	  if (frm.elements['type'].value == 'trash')
+      {
+          return confirm(batch_trash_confirm);
+      }
+      else if (frm.elements['type'].value == 'not_on_sale')
+      {
+          return confirm(batch_no_on_sale);
+      }
+      else if (frm.elements['type'].value == 'move_to')
+      {
+          ext = (ext == undefined) ? true : ext;
+          return ext && frm.elements['target_cat'].value != 0;
+      }
+      else if (frm.elements['type'].value == '')
+      {
+          return false;
+      }
+      else
+      {
+          return true;
+      }
+  }
+
+  function changeAction()
+  {
+      var frm = document.forms['listForm'];
+	  
+
+      // 切换分类列表的显示
+      frm.elements['target_cat'].style.display = frm.elements['type'].value == 'move_to' ? '' : 'none';
+	  frm.elements['ratenum'].style.display = frm.elements['type'].value == 'get_rate' ? '' : 'none';
+			
+			{if $suppliers_list > 0}
+      frm.elements['suppliers_id'].style.display = frm.elements['type'].value == 'suppliers_move_to' ? '' : 'none';
+			{/if}
+
+      if (!document.getElementById('btnSubmit').disabled &&
+          confirmSubmit(frm, false))
+      {
+		  //frm.submit();
+      }
+  }
+{/literal}
+</script>
+{include file="pagefooter.htm"}
+{/if}

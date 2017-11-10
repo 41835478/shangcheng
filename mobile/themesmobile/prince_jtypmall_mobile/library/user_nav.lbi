@@ -1,0 +1,100 @@
+
+<div class="user_com">
+<!--top-->
+<div class="com_top border_bottm">
+<em>{if $headimg neq ''}<img src="{$headimg}">{else}<img src="themesmobile/prince_jtypmall_mobile/images/user/user_prince.jpg">{/if}</em>
+<a href="user.php?act=user_rank"><i>{$rank_name}<span style="font-size:9px;line-height:25px;height:25px; float:right">(成长值:{if $rank_points}{ $rank_points}{else}0{/if})</span></i></a>
+<dl>
+<dt><a href="user.php?act=profile">设置</a></dt>
+<dd><span>{$info.username}</span></dd>
+{if $info.nickname}
+<dd><span style="background:none; font-size:9px; height:20px;line-height:20px;">微信昵称:{$info.nickname}</span></dd>
+{/if}
+</dl>
+<!--
+<ul>
+<li class="bain"><a href="user.php?act=order_list" ><span>{$order_count.all}</span>我的订单</a></li>
+<li class="bain"><a href="user.php?act=collection_list"><span>{$collect_count}</span>我的收藏</a></li>
+<li style=" border:0"><a href="user.php?act=my_comment"><span>{$comment_count}</span>我的评价</a></li>
+</ul>
+-->
+</div>
+<!--我的订单-->
+<div class="Order">
+<dl><a href="user.php?act=order_list"><dt><strong>全部订单</strong><span>查看全部订单</span></dt></a></dl>
+<ul>
+<li><a href="user.php?act=order_list&composite_status=100"><em class="ordem2"><i>{$order_count.await_pay}</i></em><span>待付款</span></a></li>
+<li><a href="user.php?act=order_list&composite_status=101"><em class="ordem3"><i>{$order_count.await_ship}</i></em><span>待发货</span></a></li>
+<li><a href="user.php?act=order_list&composite_status=105" ><em class="ordem1"><i>{$order_count.await_receipt}</i></em><span>待收货</span></a></li>
+<li><a href="user.php?act=order_list&composite_status=102"><em class="ordem4"><i>{$order_count.finished}</i></em><span>已完成</span></a></li>
+</ul>
+</div>
+<!--我的钱包-->
+<div class="Assets">
+<dl><a href="user.php?act=account_manage"><dt><strong>我的资产</strong><span>全部资产/积分</span></dt></a></dl>
+ {insert name='member_info1'}
+</div>
+<!--我的促销-->
+<div class="Cuxiao">
+<dl><a href="user.php"><dt><strong>我的促销</strong><span>更多促销</span></dt></a></dl>
+<ul>
+{if $is_cut eq 1}
+<li><a href="cut.php?act=userlist"><em class="cuem2"></em><span>砍价活动</span></a></li>
+{/if}
+{if $lucky_buy eq 1}
+<li><a href="lucky_buy.php?act=userlist"><em class="cuem3"></em><span>一元云购</span></a></li>
+{/if}
+{if $is_pintuan eq 1}
+<li><a href="extpintuan.php?act=userlist"><em class="cuem1"></em><span>拼团活动</span></a></li>
+{/if}
+{if $pre_sale eq 1}
+<li><a href="pre_sale.php?"><em class="cuem4"></em><span>手机预售</span></a></li>
+{/if}
+</ul>
+</div>
+<!--菜单-->
+<div class="Wallet main_top">
+<!--微分销菜单-->
+{if $is_distrib eq 1}
+<a href="v_user.php"><em class="Icon8"></em><dl class="border_bottm"><dt>我的分销</dt><dd>查看分销信息</dd></dl></a>
+{/if}
+<a href="user.php?act=my_comment"><em class="Icon1"></em><dl class="border_bottm"><dt>评价/晒单</dt><dd>查看评价/晒单</dd></dl></a>
+<a href="user.php?act=back_list"><em class="Icon4"></em><dl class="border_bottm"><dt>退款/退货</dt><dd>退款/退货</dd></dl></a>
+<a href="user.php?act=collection_list"><em class="Icon2"></em><dl><dt>我的收藏</dt><dd>商品收藏/店铺收藏</dd></dl></a>
+
+</div>
+
+
+
+<div class="Wallet main_top">
+<a href="user.php?act=address_list"><em class="Icon3"></em><dl class="border_bottm"><dt>收货地址</dt><dd>添加/修改</dd></dl></a>
+<a href="user.php?act=message_list"><em class="Icon5"></em><dl><dt>我的留言</dt><dd>&nbsp;</dd></dl></a>
+</div>
+
+<div class="Wallet main_top">
+<a href="security.php?act=password_reset"><em class="Icon14"></em><dl class="border_bottm"><dt>修改密码</dt><dd>修改用户登陆密码</dd></dl></a>
+<a href="{if $info.email eq ''} security.php?act=email_binding {elseif $info.is_validated eq 0} security.php?act=email_validate {else} security.php?act=email_binding {/if}">
+            <em class="Icon15"></em><dl class="border_bottm"><dt>邮箱验证</dt><dd>验证修改邮箱</dd></dl>
+            </a> 
+            <a href="{if $info.mobile_phone eq ''} security.php?act=mobile_binding {elseif $info.validated eq 0} security.php?act=mobile_validate {else} security.php?act=mobile_binding {/if}">
+           <em class="Icon16"></em><dl class="border_bottm"><dt>手机验证</dt><dd>验证修改绑定手机</dd></dl>
+            </a> 
+            <a href="{if $info.is_surplus_open eq 0}security.php?act=payment_password_reset {else} security.php?act=payment_password_close {/if}">
+            <em class="Icon17"></em><dl class="border_bottm"><dt>支付密码</dt><dd>修改余额支付密码</dd></dl>
+            </a>
+</div>
+
+
+<div class="Wallet main_top">
+{if $is_supplier eq 1}
+<a href="supplier/index.php"><em class="Icon10"></em><dl><dt>商户中心</dt><dd>商户订单管理</dd></dl></a>{else}<a href="apply.php?"><em class="Icon10"></em><dl><dt>申请入驻</dt><dd>申请成为入驻商</dd></dl></a>
+{/if}
+</div>
+
+
+<div class="Wallet main_top">
+<a href="javascript:void(0)" onClick="window.location.href='user.php?act=logout'" ><em class="Icon6"></em><dl><dt>注销登录</dt></dl></a>
+</div>
+</div>
+
+		

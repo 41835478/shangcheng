@@ -1,0 +1,31 @@
+
+<!--手机快捷登录模块-->
+<view  class="wx-view_login" style="height:{{height}}px;">
+
+    <view class="view_logup_form">
+        <view class="wx-view_log_item" >
+            <input placeholder-style="color:#999999" class="c-block wx_input" placeholder="请输入11位手机号" type="number" bindinput="getPhoneNum"/>
+            <view class="btn_getnum" catchtap="getnum">
+			{{time}}
+            </view>
+        </view>
+        <view class="wx-view_log_item" style="border-bottom-style: none;">
+            <input placeholder-style="color:#999999" class="c-block c-fullwidth wx_input"  placeholder="请输入验证码" type="number" bindinput="inputNum"/>
+        </view>
+        <view class="line"></view>
+		<view class="wx-view_log_item" style="border-bottom-style: none;">
+            <input placeholder-style="color:#999999" class="c-block c-fullwidth wx_input" password  placeholder="密码" type="number" bindinput="inputPass"/>
+        </view>
+        <view class="line"></view>
+		<view class="wx-view_log_item" style="border-bottom-style: none;">
+            <input placeholder-style="color:#999999" class="c-block c-fullwidth wx_input" password  placeholder="确认密码" type="number" bindinput="inputRemindPass"/>
+        </view>
+
+    </view>
+    <button class="wx-button_logup"  bindtap="quick_register_phone" data-id="{{phoneNum}}" hover-class="button-hover" size="default" type="warn" >
+        注册
+    </button>
+	 
+</view>
+
+

@@ -1,0 +1,212 @@
+<!-- $Id: xcx_settings.htm  prince $ -->
+{include file="pageheader.htm"} {insert_scripts files="../js/utils.js"}
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="./js/validate/messages_zh.js"></script>
+<script type="text/javascript" src="./js/validator.js"></script>
+<style type="text/css">
+label.error {
+	color: red;
+	background: url(./images/warning_small.gif) no-repeat;
+	padding-left: 18px;
+}
+
+label.success {
+	background: url(./images/yes.gif) no-repeat;
+	padding-left: 18px;
+}
+
+#btn_visit{
+	background: #24a0d6 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 7px 15px;
+}
+</style>
+<form  method="post" action="xcx_settings.php" name="theForm" enctype="multipart/form-data" >
+	<input type="hidden" id="act" name="act" value="post">
+	<div class="main-div">
+		<table id="group-table" cellspacing="1" cellpadding="3" width="100%">
+			<tr>
+				<td class="label">小程序标题</td>
+				<td>
+					<input type="text" id="title" name="title" value="{$xcx.title}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序简介</td>
+				<td>
+				   <textarea name="brief" cols="30" rows="3">{$xcx.brief|escape}</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">版权信息</td>
+				<td>
+				   <textarea name="copyright" cols="30" rows="3">{$xcx.copyright|escape}</textarea>(换行请用回车)
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序ID(AppID)</td>
+				<td>
+					<input type="text" id="appid" name="appid" value="{$xcx.appid}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序密钥(AppSecret)</td>
+				<td>
+					<input type="text" id="appsecret" name="appsecret" value="{$xcx.appsecret}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序微信支付商户号</td>
+				<td>
+					<input type="text" id="partnerid" name="partnerid" value="{$xcx.partnerid}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">小程序微信支付API密钥</td>
+				<td>
+					<input type="text" id="partnerkey" name="partnerkey" value="{$xcx.partnerkey}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">接口授权码</td>
+				<td>
+					<input type="text" id="jtypkey" name="jtypkey" value="{$xcx.jtypkey}" class="required" />(今天优品提供，未经允许禁止修改，否则无法使用)
+				</td>
+			</tr>
+            {if $api_url}
+			<tr>
+				<td class="label">商家小程序API入口地址</td>
+				<td>
+					<input type="text" readonly="readonly" value="{$api_url}" class="required" />
+				</td>
+			</tr>
+            {/if}
+			<!--tr>
+				<td class="label">是否可以使用优惠券</td>
+				<td>
+                    <select name="enable_coupon">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.enable_coupon eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr-->
+			<tr>
+				<td class="label">是否可以使用余额</td>
+				<td>
+                    <select name="enable_balance">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.enable_balance eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr>
+			<!--tr>
+				<td class="label">是否可以使用积分</td>
+				<td>
+                    <select name="enable_point">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.enable_point eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr-->
+			<!--tr>
+				<td class="label">会员中心是否显示优惠券菜单</td>
+				<td>
+                    <select name="show_coupon">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.show_coupon eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr-->
+			<tr>
+				<td class="label">会员中心是否显示余额菜单</td>
+				<td>
+                    <select name="show_balance">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.show_balance eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">会员中心是否显示积分菜单</td>
+				<td>
+                    <select name="show_point">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.show_point eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">会员中心是否显示分销菜单</td>
+				<td>
+                    <select name="show_fenxiao">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.show_fenxiao eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">会员中心是否显示评价菜单</td>
+				<td>
+                    <select name="show_evaluate">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.show_evaluate eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">是否显示首页搜索区域</td>
+				<td>
+                    <select name="show_search">
+                        <option value="1" >是</option> 
+                        <option {if $xcx.show_search eq 0} selected="selected" {/if} value="0">否</option> 
+                    </select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">客服电话</td>
+				<td>
+					<input type="text" id="tel" name="tel" value="{$xcx.tel}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">客服微信</td>
+				<td>
+					<input type="text" id="weixin" name="weixin" value="{$xcx.weixin}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">每天分享收益次数</td>
+				<td>
+					<input type="text" id="income_times" name="income_times" value="{$xcx.income_times}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">分享赠送金额</td>
+				<td>
+					<input type="text" id="share_money" name="share_money" value="{$xcx.share_money}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">分享赠送积分</td>
+				<td>
+					<input type="text" id="share_point" name="share_point" value="{$xcx.share_point}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">&nbsp;</td>
+				<td>
+                      <input type="submit" class="button" value="{$lang.button_submit}" />
+                      <input type="reset" class="button" value="{$lang.button_reset}" />
+				</td>
+			</tr>
+		</table>
+	</div>
+</form>
+
+{include file="pagefooter.htm"}

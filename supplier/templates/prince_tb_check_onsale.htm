@@ -1,0 +1,72 @@
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,selectzone.js,colorselector.js"}
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<style>
+input{height: 23px;padding: 0 4px;vertical-align: middle;}
+
+</style>
+<!-- start goods form -->
+ <div class="tab-div">
+
+  <div id="tabbody-div" style="background: #FFFDEA;">
+ <form method='post' id="form" name="form" action="prince_shops.php?act=check_unsale">
+  <table cellpadding="4" cellspacing="0" border="0" class="table-form">
+    <tr>
+	<th align="right">24小时内：</th>
+	<td>已检测商品ID(<font style="color:#FF0000; font-weight:bold">{$min_id}-{$max_id}</font>)共计<font style="color:#FF0000; font-weight:bold">{$total}</font>件， 未检测<font style="color:#FF0000; font-weight:bold">{$total_un}</font>件</td>
+	</tr>
+    <tr>
+      <th align="right">本次检测数量：</th>
+      <td><input type="text" value="100" class="textinput" name="check_num" size="10"></td>
+    </tr>
+<tr style="display:none">
+		<th align="right">产品分类：</th>
+
+          <td><select name="cat_id">
+              <option value="0">产品分类</option>
+              {$cat_list}
+            </select>
+            <span>&nbsp;</span> </td>
+        </tr>	
+	
+    <tr class="act">
+      <th  align="right">功能说明：</th>
+      <td>检测淘宝已下架（删除）商品，每次检测从最小id开始，<br />检测后放入回收站，并记录时间，24小时内不会重复检测</td>
+    </tr>
+
+    <tr class="act">
+      <th>&nbsp;</th>
+      <td>
+        <input type="submit" class="submit_btn" value="开始检测..." />
+        &nbsp;&nbsp; </td>
+    </tr>
+	
+  </table>
+</form>
+
+</div>
+</div>
+<!-- end goods form -->
+{insert_scripts files="validator.js,tab.js"}
+
+<script language="JavaScript">
+  /**
+   * 添加扩展分类
+   */
+  {literal}
+  function testcode()
+  {
+    Ajax.call('clear_desc_ad.php?is_ajax=1&act=test', "", VeriUserResponse, "GET", "JSON");
+  }
+
+  function VeriUserResponse(result)
+  {
+      if (result.error == 0)
+      {
+          alert(result.content);
+      }
+  }
+  {/literal}
+</script>
+{include file="pagefooter.htm"}

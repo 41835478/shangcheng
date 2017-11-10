@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="6e300f12-f1e9-426b-baea-c94b5a829630" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/privilege.php" afterPath="$PROJECT_DIR$/admin/privilege.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/init.php" afterPath="$PROJECT_DIR$/api/init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/index.dwt" afterPath="$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/index.dwt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/goods.php" afterPath="$PROJECT_DIR$/json/goods.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category.php" afterPath="$PROJECT_DIR$/category.php" />
+    </list>
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="shangcheng" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="25" />
+              <folding>
+                <marker date="1510107612537" expanded="true" signature="950:1051" ph="SELECT nav_l... ${$yp-&gt;table('admin_user')}" />
+                <marker date="1510107612537" expanded="true" signature="1524:1640" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="1850:1972" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="2155:2234" ph="SELECT COUNT... ${$yp-&gt;table('comment')}" />
+                <marker date="1510107612537" expanded="true" signature="10929:11083" ph="SELECT SUM(m... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="11308:11442" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="11530:11623" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+                <marker date="1510107612537" expanded="true" signature="11686:11793" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+                <marker date="1510107612537" expanded="true" signature="11859:11923" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+                <marker date="1510107612537" expanded="true" signature="12402:12519" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="12639:12730" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+                <marker date="1510107612537" expanded="true" signature="12785:12876" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+                <marker date="1510107612537" expanded="true" signature="13109:13201" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+                <marker date="1510107612537" expanded="true" signature="14682:14761" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('comment')}" />
+                <marker date="1510107612537" expanded="true" signature="15033:15281" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('shaidan')}" />
+                <marker date="1510107612537" expanded="true" signature="15544:15609" ph="SELECT COUNT... ${$yp-&gt;table('goods_tag')}" />
+                <marker date="1510107612537" expanded="true" signature="15889:15997" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="16043:16185" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="16237:16355" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="16411:16530" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="16601:16730" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="16793:16957" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="17149:17268" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="17316:17469" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="17521:17641" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="17689:17843" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="17897:18016" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="18064:18217" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="18305:18504" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="18552:18783" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="18838:18973" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="19129:19199" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="20204:20280" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="20466:20562" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="21179:21307" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+                <marker date="1510107612537" expanded="true" signature="21634:21762" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+                <marker date="1510107612537" expanded="true" signature="21923:22080" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('booking_goods')}" />
+                <marker date="1510107612537" expanded="true" signature="22437:22679" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="23864:24056" ph="SELECT `from... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="26898:27150" ph="SELECT DATE_... " />
+                <marker date="1510107612537" expanded="true" signature="33522:33630" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="33747:33768" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+                <marker date="1510107612537" expanded="true" signature="33830:33907" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510107612537" expanded="true" signature="33941:34019" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510107612537" expanded="true" signature="35270:35344" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510107612537" expanded="true" signature="35443:35518" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+                <marker date="1510107612537" expanded="true" signature="39924:40010" ph="SELECT shipp... ${$yp-&gt;table('shipping')}" />
+                <marker date="1510107612537" expanded="true" signature="40196:40581" ph="INSERT INTO ${$yp-&gt;table('shipping')}... " />
+                <marker date="1510107612537" expanded="true" signature="40824:40967" ph="SELECT shipp... ${$yp-&gt;table(&quot;shipping_area&quot;)}" />
+                <marker date="1510107612537" expanded="true" signature="41774:41971" ph="INSERT INTO ${$yp-&gt;table('shipping_area')}... " />
+                <marker date="1510107612537" expanded="true" signature="43454:43532" ph="SELECT COUNT... ${$yp-&gt;table('payment')}" />
+                <marker date="1510107612537" expanded="true" signature="44209:44468" ph="INSERT INTO ${$yp-&gt;table('payment')}... " />
+                <marker date="1510107612537" expanded="true" signature="46238:46347" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+                <marker date="1510107612537" expanded="true" signature="46475:46604" ph="INSERT INTO ${$yp-&gt;table('category')}... " />
+                <marker date="1510107612537" expanded="true" signature="46793:46823" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+                <marker date="1510107612537" expanded="true" signature="53230:53753" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+                <marker date="1510107612537" expanded="true" signature="53973:54169" ph="INSERT INTO ${$yp-&gt;table('goods_gallery')}... " />
+                <marker date="1510107612537" expanded="true" signature="55281:55379" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="55472:55545" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+                <marker date="1510107612537" expanded="true" signature="56330:56409" ph="SELECT todol... ${$GLOBALS['yp']-&gt;table('admin_user')}" />
+                <marker date="1510107612537" expanded="true" signature="56693:56784" ph="SELECT * FRO... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510107612537" expanded="true" signature="57024:57094" ph="DELETE FROM " />
+                <marker date="1510107612537" expanded="true" signature="57153:57174" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510107612537" expanded="true" signature="57335:57425" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+                <marker date="1510107612537" expanded="true" signature="57884:57954" ph="DELETE FROM " />
+                <marker date="1510107612537" expanded="true" signature="58042:58063" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510107612537" expanded="true" signature="58792:58862" ph="DELETE FROM " />
+                <marker date="1510107612537" expanded="true" signature="58944:58965" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+                <marker date="1510107612537" expanded="true" signature="59173:59243" ph="DELETE FROM " />
+                <marker date="1510107612537" expanded="true" signature="59302:59323" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inc_menu.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/includes/inc_menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="311" column="110" selection-start-line="311" selection-start-column="110" selection-end-line="311" selection-end-column="110" />
+              <folding>
+                <element signature="e#7#339#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.dwt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/index.dwt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="837">
+              <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+              <folding>
+                <marker date="1510119946752" expanded="true" signature="4765:4790" ph="SELECT guide... ${$GLOBALS['yp']-&gt;table('weixin_config')}" />
+                <marker date="1510119946752" expanded="true" signature="5659:5997" ph="SELECT o.ord... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+                <marker date="1510119946752" expanded="true" signature="11922:12029" ph="SELECT link_... ${$GLOBALS['yp']-&gt;table('friend_link')}" />
+                <marker date="1510119946752" expanded="true" signature="13516:13884" ph="select ap.ad... ${$GLOBALS['yp']-&gt;table( &quot;ypmart_ad_position&quot; )}" />
+                <marker date="1510119946752" expanded="true" signature="14752:14820" ph="select * fro... ${$GLOBALS['yp']-&gt;table('ypmart_menu')}" />
+                <marker date="1510119946752" expanded="true" signature="21851:21932" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('users')}" />
+                <marker date="1510119946752" expanded="true" signature="22209:22375" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+                <marker date="1510119946752" expanded="true" signature="23156:23249" ph="SELECT code,... ${$GLOBALS['yp']-&gt;table(&quot;supplier_shop_config&quot;)}" />
+                <marker date="1510119946752" expanded="true" signature="23703:23779" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+                <marker date="1510119946752" expanded="true" signature="23927:24003" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+                <marker date="1510119946752" expanded="true" signature="24143:24219" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+                <marker date="1510119946752" expanded="true" signature="24282:24514" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table(&quot;goods&quot;)}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/templates/top.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17199">
+              <caret line="637" column="88" selection-start-line="637" selection-start-column="88" selection-end-line="637" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/includes/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
+              <folding>
+                <marker date="1510042606549" expanded="true" signature="3200:3250" ph="..." />
+                <marker date="1510042606549" expanded="true" signature="3621:3749" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table('supplier_shop_config')}" />
+                <marker date="1510042606549" expanded="true" signature="9361:9463" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('users')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handlers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/js/handlers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1053">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/css/index.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/help/zh_cn/goods.xml" />
+        <option value="$PROJECT_DIR$/mobile/index.php" />
+        <option value="$PROJECT_DIR$/admin/includes/inc_menu.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shangcheng" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\张绍森\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e300f12-f1e9-426b-baea-c94b5a829630" name="Default" comment="" />
+      <created>1509936325621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509936325621</updated>
+      <workItem from="1509936329457" duration="4096000" />
+      <workItem from="1510043588864" duration="4187000" />
+      <workItem from="1510104722252" duration="14082000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25067000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1376" height="744" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18014705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/xcx_menu_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/msg_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2926">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/styles/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/xcx_menu_info.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1408">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/transport_bd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="414" column="100" selection-start-line="414" selection-start-column="100" selection-end-line="414" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/headimg/146907594085h.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/headimg/146702276486h.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/headimg/146350322980h.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/headimg/146347927781h.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/headimg/12-00-29-121.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/client/includes/lib_api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding>
+            <marker date="1510042649249" expanded="true" signature="1916:2073" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510042649249" expanded="true" signature="10083:10167" ph="SELECT max(v... ${$GLOBALS['yp']-&gt;table('nav')}" />
+            <marker date="1510042649249" expanded="true" signature="10257:10573" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('nav')}... " />
+            <marker date="1510042649249" expanded="true" signature="12738:12989" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('brand')}... " />
+            <marker date="1510042649249" expanded="true" signature="13383:13517" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510042649249" expanded="true" signature="14948:15081" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510042649249" expanded="true" signature="15307:15475" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510042649249" expanded="true" signature="21671:21701" ph="SELECT MAX(g... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510042649249" expanded="true" signature="24363:24513" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('category')}... " />
+            <marker date="1510042649249" expanded="true" signature="24727:24817" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('brand')}... " />
+            <marker date="1510042649249" expanded="true" signature="25146:26435" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods')}... " />
+            <marker date="1510042649249" expanded="true" signature="26507:27834" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods')}... " />
+            <marker date="1510042649249" expanded="true" signature="31716:31819" ph="SELECT attr_... ${$GLOBALS['yp']-&gt;table('attribute')}" />
+            <marker date="1510042649249" expanded="true" signature="32091:32177" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('goods_attr')}" />
+            <marker date="1510042649249" expanded="true" signature="34291:34492" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_attr')}... " />
+            <marker date="1510042649249" expanded="true" signature="34868:34974" ph="DELETE FROM " />
+            <marker date="1510042649249" expanded="true" signature="35788:35993" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_gallery')}... " />
+            <marker date="1510042649249" expanded="true" signature="37814:38033" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('goods_gallery')}... " />
+            <marker date="1510042649249" expanded="true" signature="39143:39232" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510042649249" expanded="true" signature="42788:42876" ph="SELECT brand... ${$GLOBALS['yp']-&gt;table('brand')}" />
+            <marker date="1510042649249" expanded="true" signature="43619:43702" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510042649249" expanded="true" signature="43778:43864" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510042649249" expanded="true" signature="43942:44022" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('goods')}" />
+            <marker date="1510042649249" expanded="true" signature="44162:44238" ph="DELETE FROM " />
+            <marker date="1510042649249" expanded="true" signature="44339:44452" ph="DELETE FROM " />
+            <marker date="1510042649249" expanded="true" signature="47205:47304" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510042649249" expanded="true" signature="48005:48121" ph="SELECT id FR... ${$GLOBALS['yp']-&gt;table('nav')}" />
+            <marker date="1510042649249" expanded="true" signature="48274:48358" ph="SELECT max(v... ${$GLOBALS['yp']-&gt;table('nav')}" />
+            <marker date="1510042649249" expanded="true" signature="48532:48728" ph="INSERT INTO ${$GLOBALS['yp']-&gt;table('nav')}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/client/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="78" column="0" selection-start-line="77" selection-start-column="36" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="160" column="100" selection-start-line="160" selection-start-column="100" selection-end-line="160" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemaps.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/200-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/200-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/200-3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/201.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/headimg/201706/1498125097583165098.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/headimg/201704/1491948449733651708.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/headimg/201706/1498125097909065693.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/headimg/201704/1491948449130051722.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/packimg/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/bonusimg/qoyeowq.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/205.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/204.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/203.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/afficheimg/202.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_info.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1510042834140" expanded="true" signature="3291:3341" ph="..." />
+            <marker date="1510042834140" expanded="true" signature="3712:3840" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table('supplier_shop_config')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1510107295333" expanded="true" signature="5754:5839" ph="SELECT ad_ty... ${$yp-&gt;table(&quot;ad_custom&quot;)}" />
+            <marker date="1510107295333" expanded="true" signature="6329:6491" ph="SELECT c.cat... ${$yp-&gt;table(&quot;cat_recommend&quot;)}" />
+            <marker date="1510107295333" expanded="true" signature="7002:7092" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('bonus_type')}" />
+            <marker date="1510107295333" expanded="true" signature="7999:8337" ph="SELECT o.ord... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510107295333" expanded="true" signature="14262:14369" ph="SELECT link_... ${$GLOBALS['yp']-&gt;table('friend_link')}" />
+            <marker date="1510107295333" expanded="true" signature="18443:18530" ph="SELECT cat_n... ${$GLOBALS['yp']-&gt;table('category')}" />
+            <marker date="1510107295333" expanded="true" signature="21038:21260" ph="SELECT a.*,a... ${$GLOBALS['yp']-&gt;table('article')}" />
+            <marker date="1510107295333" expanded="true" signature="21351:21765" ph="SELECT DISTI... ${$GLOBALS['yp']-&gt;table('goods')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/help/zh_cn/goods.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/menu.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1361">
+          <caret line="227" column="47" selection-start-line="227" selection-start-column="47" selection-end-line="227" selection-end-column="47" />
+          <folding>
+            <marker date="1510042648395" expanded="true" signature="420:431" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adsense.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <marker date="1510042642957" expanded="true" signature="1326:1442" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510042642957" expanded="true" signature="1543:1702" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510042642957" expanded="true" signature="1956:2077" ph="SELECT from_... ${$yp-&gt;table('adsense')}" />
+            <marker date="1510042642957" expanded="true" signature="2297:2387" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510042642957" expanded="true" signature="2439:2544" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/includes/kindeditor/php/demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/includes/kindeditor/php/file_manager_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/includes/kindeditor/php/JSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1944">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cert/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510042645189" expanded="true" signature="20867:20900" ph="..." />
+            <marker date="1510042645189" expanded="true" signature="153876:153969" ph="..." />
+            <marker date="1510042645189" expanded="true" signature="154002:154095" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/mail_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510042645401" expanded="true" signature="819:836" ph="SELECT code ${$yp-&gt;table('plugins')}" />
+            <marker date="1510042645401" expanded="true" signature="1210:1326" ph="SELECT templ... ${$yp-&gt;table('mail_templates')}" />
+            <marker date="1510042645401" expanded="true" signature="3026:3043" ph="SELECT code ${$yp-&gt;table('plugins')}" />
+            <marker date="1510042645401" expanded="true" signature="3417:3534" ph="SELECT templ... ${$yp-&gt;table('mail_templates')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <marker date="1510107612537" expanded="true" signature="950:1051" ph="SELECT nav_l... ${$yp-&gt;table('admin_user')}" />
+            <marker date="1510107612537" expanded="true" signature="1524:1640" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="1850:1972" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="2155:2234" ph="SELECT COUNT... ${$yp-&gt;table('comment')}" />
+            <marker date="1510107612537" expanded="true" signature="10929:11083" ph="SELECT SUM(m... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="11308:11442" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="11530:11623" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+            <marker date="1510107612537" expanded="true" signature="11686:11793" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510107612537" expanded="true" signature="11859:11923" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510107612537" expanded="true" signature="12402:12519" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="12639:12730" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+            <marker date="1510107612537" expanded="true" signature="12785:12876" ph="SELECT COUNT... ${$yp-&gt;table('user_account')}" />
+            <marker date="1510107612537" expanded="true" signature="13109:13201" ph="SELECT COUNT... ${$yp-&gt;table('supplier')}" />
+            <marker date="1510107612537" expanded="true" signature="14682:14761" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('comment')}" />
+            <marker date="1510107612537" expanded="true" signature="15033:15281" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('shaidan')}" />
+            <marker date="1510107612537" expanded="true" signature="15544:15609" ph="SELECT COUNT... ${$yp-&gt;table('goods_tag')}" />
+            <marker date="1510107612537" expanded="true" signature="15889:15997" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="16043:16185" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="16237:16355" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="16411:16530" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="16601:16730" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="16793:16957" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="17149:17268" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="17316:17469" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="17521:17641" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="17689:17843" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="17897:18016" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="18064:18217" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="18305:18504" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="18552:18783" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="18838:18973" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="19129:19199" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="20204:20280" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="20466:20562" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="21179:21307" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510107612537" expanded="true" signature="21634:21762" ph="SELECT COUNT... ${$yp-&gt;table('back_order')}" />
+            <marker date="1510107612537" expanded="true" signature="21923:22080" ph="SELECT COUNT... ${$GLOBALS['yp']-&gt;table('booking_goods')}" />
+            <marker date="1510107612537" expanded="true" signature="22437:22679" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="23864:24056" ph="SELECT `from... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="26898:27150" ph="SELECT DATE_... " />
+            <marker date="1510107612537" expanded="true" signature="33522:33630" ph="SELECT COUNT... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="33747:33768" ph="SELECT COUNT... ${$yp-&gt;table('users')}" />
+            <marker date="1510107612537" expanded="true" signature="33830:33907" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510107612537" expanded="true" signature="33941:34019" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510107612537" expanded="true" signature="35270:35344" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510107612537" expanded="true" signature="35443:35518" ph="SELECT value... ${$yp-&gt;table('shop_config')}" />
+            <marker date="1510107612537" expanded="true" signature="39924:40010" ph="SELECT shipp... ${$yp-&gt;table('shipping')}" />
+            <marker date="1510107612537" expanded="true" signature="40196:40581" ph="INSERT INTO ${$yp-&gt;table('shipping')}... " />
+            <marker date="1510107612537" expanded="true" signature="40824:40967" ph="SELECT shipp... ${$yp-&gt;table(&quot;shipping_area&quot;)}" />
+            <marker date="1510107612537" expanded="true" signature="41774:41971" ph="INSERT INTO ${$yp-&gt;table('shipping_area')}... " />
+            <marker date="1510107612537" expanded="true" signature="43454:43532" ph="SELECT COUNT... ${$yp-&gt;table('payment')}" />
+            <marker date="1510107612537" expanded="true" signature="44209:44468" ph="INSERT INTO ${$yp-&gt;table('payment')}... " />
+            <marker date="1510107612537" expanded="true" signature="46238:46347" ph="INSERT INTO ${$yp-&gt;table('brand')}... " />
+            <marker date="1510107612537" expanded="true" signature="46475:46604" ph="INSERT INTO ${$yp-&gt;table('category')}... " />
+            <marker date="1510107612537" expanded="true" signature="46793:46823" ph="SELECT MAX(g... ${$yp-&gt;table('goods')}" />
+            <marker date="1510107612537" expanded="true" signature="53230:53753" ph="INSERT INTO ${$yp-&gt;table('goods')}... " />
+            <marker date="1510107612537" expanded="true" signature="53973:54169" ph="INSERT INTO ${$yp-&gt;table('goods_gallery')}... " />
+            <marker date="1510107612537" expanded="true" signature="55281:55379" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="55472:55545" ph="SELECT COUNT... ${$yp-&gt;table('order_info')}" />
+            <marker date="1510107612537" expanded="true" signature="56330:56409" ph="SELECT todol... ${$GLOBALS['yp']-&gt;table('admin_user')}" />
+            <marker date="1510107612537" expanded="true" signature="56693:56784" ph="SELECT * FRO... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510107612537" expanded="true" signature="57024:57094" ph="DELETE FROM " />
+            <marker date="1510107612537" expanded="true" signature="57153:57174" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510107612537" expanded="true" signature="57335:57425" ph="SELECT * FRO... ${$yp-&gt;table('mail_templates')}" />
+            <marker date="1510107612537" expanded="true" signature="57884:57954" ph="DELETE FROM " />
+            <marker date="1510107612537" expanded="true" signature="58042:58063" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510107612537" expanded="true" signature="58792:58862" ph="DELETE FROM " />
+            <marker date="1510107612537" expanded="true" signature="58944:58965" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+            <marker date="1510107612537" expanded="true" signature="59173:59243" ph="DELETE FROM " />
+            <marker date="1510107612537" expanded="true" signature="59302:59323" ph="SELECT COUNT... ${$yp-&gt;table('email_sendlist')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themesmobile/prince_jtypmall_mobile/index.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/top.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17199">
+          <caret line="637" column="88" selection-start-line="637" selection-start-column="88" selection-end-line="637" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
+          <folding>
+            <marker date="1510042606549" expanded="true" signature="3200:3250" ph="..." />
+            <marker date="1510042606549" expanded="true" signature="3621:3749" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table('supplier_shop_config')}" />
+            <marker date="1510042606549" expanded="true" signature="9361:9463" ph="SELECT count... ${$GLOBALS['yp']-&gt;table('users')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/handlers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+          <folding>
+            <marker date="1510119946752" expanded="true" signature="4765:4790" ph="SELECT guide... ${$GLOBALS['yp']-&gt;table('weixin_config')}" />
+            <marker date="1510119946752" expanded="true" signature="5659:5997" ph="SELECT o.ord... ${$GLOBALS['yp']-&gt;table('order_info')}" />
+            <marker date="1510119946752" expanded="true" signature="11922:12029" ph="SELECT link_... ${$GLOBALS['yp']-&gt;table('friend_link')}" />
+            <marker date="1510119946752" expanded="true" signature="13516:13884" ph="select ap.ad... ${$GLOBALS['yp']-&gt;table( &quot;ypmart_ad_position&quot; )}" />
+            <marker date="1510119946752" expanded="true" signature="14752:14820" ph="select * fro... ${$GLOBALS['yp']-&gt;table('ypmart_menu')}" />
+            <marker date="1510119946752" expanded="true" signature="21851:21932" ph="SELECT * FRO... ${$GLOBALS['yp']-&gt;table('users')}" />
+            <marker date="1510119946752" expanded="true" signature="22209:22375" ph="SELECT suppl... ${$GLOBALS['yp']-&gt;table(&quot;supplier&quot;)}" />
+            <marker date="1510119946752" expanded="true" signature="23156:23249" ph="SELECT code,... ${$GLOBALS['yp']-&gt;table(&quot;supplier_shop_config&quot;)}" />
+            <marker date="1510119946752" expanded="true" signature="23703:23779" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510119946752" expanded="true" signature="23927:24003" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510119946752" expanded="true" signature="24143:24219" ph="SELECT regio... ${$GLOBALS['yp']-&gt;table('region')}" />
+            <marker date="1510119946752" expanded="true" signature="24282:24514" ph="SELECT goods... ${$GLOBALS['yp']-&gt;table(&quot;goods&quot;)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/inc_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="311" column="110" selection-start-line="311" selection-start-column="110" selection-end-line="311" selection-end-column="110" />
+          <folding>
+            <element signature="e#7#339#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

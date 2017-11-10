@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+#appdown .appcontent {background-color: rgba(32, 37, 47, 0.95);height:36px;left: 0px;padding: 5px 0px;position: fixed;right: 0px;top: 0px;width: 100%;z-index: 999;}
+#appdown .appcontent a { display: block;}
+#appdown .down_btn { background:#f8830c ; border-radius: 3px; color: #fff; display: inline-block; font-size:12PX; height: 28px; line-height: 28px; padding: 0 8px; position: absolute; right: 8px; top: 10px;}
+#appdown .ffl_icon2 { display: inline-block;float: left; height: 36px; margin: 0 10px; width: 36px; background-color:#fff; border-radius:3px; display:block;}
+#appdown .ffl_icon {
+    border-radius: 3px;
+    display: block;
+    float: left;
+    height: 36px;
+    margin: 0 10px;
+    overflow: hidden;
+    width: 36px;
+    background: url({$head_img}) center center;
+    background-size: 100% 100%;
+}
+
+#appdown .ffl_icon img { height: 36px; width: 36px;}
+#appdown .top_text { color: #fff;display: inline-block; height: 48px; line-height:17px; }
+#appdown .top_text span {font-size:12px; margin-top:2px; display:block; line-height:17px;}
+#appdown .top_text p { font-size: 10px; line-height: 16px; font-family:SimSun;}
+
+</style>
+<script>
+setTimeout(function(){document.getElementById("appdown").style.display="none";},13000);
+//1000是多久被隐藏，单位毫秒
+</script>
+<!--{if $new_order }-->
+<div id="appdown">
+<div class="appcontent">
+<a pos="1" id="dlurl" href="goods.php?id={$new_order_goods.goods_id}">
+<span class="down_btn">去看看</span>
+<span class="ffl_icon"></span>
+<div class="top_text">
+<span>来自<!--{if $is_wxuser  eq  1}-->微信用户<!--{else}-->PC用户<!--{/if}-->【{$new_order_uid|truncate:5}】的订单&nbsp;&nbsp;{$new_order_time}</span>
+<p>{$new_order_goods.goods_name|truncate:20}（数量{$new_order_goods.goods_number}）</p>
+</div>
+</a>
+</div>
+</div>
+<!--{/if}-->

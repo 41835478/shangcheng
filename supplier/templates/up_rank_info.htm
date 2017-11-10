@@ -1,0 +1,109 @@
+<!-- $Id: agency_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,selectzone_bd.js,validator.js"}
+<!-- 修改 by demo.coolhong.com 今 天 优 品 多 商 户 系 统 q q 1 2 0 0 2 9 1 2 1 百度编辑器 end -->
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<script type="text/javascript" src="../js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="../js/category_selecter.js"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+
+<div class="list-div" id="listDiv">
+<span style=" font-size:14px">亲爱的：您当前使用的套餐是【{$supplier.rank_name}】。套餐到期时间为{$supplier.end_time}。</span>
+</div>
+</br>
+<div class="main-div" style="padding:10px;background:#fff;">
+<style type="text/css">
+.store-joinin th{padding:10px;text-align:left;text-indent:10px;font-weight:bold;background:#F7F7F7;color:#1F84B0;margin-bottom:15px;}
+.store-joinin td{padding:5px 1em}
+</style>
+{insert_scripts files='transport.js'}  
+<script type="text/javascript">  
+function changed()  
+{    
+        var rank_id=document.getElementById('rank_id').value; 
+        //var available_day=document.getElementById('available_day').value; 
+       Ajax.call('up_rank.php?act=ajax', 'rank_id=' + rank_id , textres, 'GET','JSON');
+  
+}  
+  
+function textres(result){  
+    document.getElementById("textres").innerHTML=result.content;
+   // alert(result.content);  
+}  
+</script>  
+  <form method="post" action="up_rank.php" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+  
+
+    <table border="0" cellpadding="0" cellspacing="0" class="store-joinin">
+      <tbody>
+        
+      <tr>
+          <td class="label">
+            <a href="javascript:showNotice('supplier_rank_list');" title="{$lang.form_notice}">
+              <img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}">
+            </a>
+            需变更到的系统套餐：
+          </td>
+          <td> 
+           
+             <select name="rank_id" id="rank_id" onchange="changed()">
+                    <option value="">请选择套餐</option>
+                    {html_options options=$supplier_rank_list selected=$rank_id "}
+                </select>
+            <span id="supplier_rank_list"></span>
+            <br />
+            <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="supplier_rank_list">选择您要变更到的系统套餐</span>
+          </td>
+        </tr>
+       
+        
+		  <tr>
+    <td class="label"></td><td style=" font-size:14px;color:red">
+    <span id="textres"></span></td> 
+    </tr>
+      </tbody>
+    </table>
+
+	<table border="0" cellpadding="0" cellspacing="0" class="store-joinin">
+	  <tr>
+		<td align="center">
+		  <input type="submit" class="button" value="{$lang.button_submit}" />
+		  <input type="reset" class="button" value="{$lang.button_reset}" />
+		  <input type="hidden" name="act" value="{$form_action}" />
+		  <input type="hidden" name="id" value="{$supplier.supplier_id}" />
+          <input type="hidden" id="person" value="1">
+		</td>
+	  </tr>
+	</table>
+
+  </form>
+
+</div>
+{literal}
+<script language="JavaScript">
+region.isAdmin = true;// 20161018
+
+
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+    document.forms['theForm'].reset();
+}
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+	var theForm=document.forms['theForm'];
+    validator = new Validator("theForm");
+    validator.isNumber("available_day",  "续费天数需为整数！");
+
+	
+
+    return validator.passed();
+}
+
+</script>
+{/literal}
+{include file="pagefooter.htm"}

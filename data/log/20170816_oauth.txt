@@ -1,0 +1,39 @@
+20170816 00:18:30
+--- http://newdemo.coolhong.com/mobile/lucky_buy.php?act=calculate&u=0
+
+20170816 04:50:14
+--- http://newdemo.coolhong.com/mobile/
+
+20170816 04:50:14
+---0218G0wi1wRZJz0WP3wi1yqTvi18G0w- http://newdemo.coolhong.com/mobile/?code=0218G0wi1wRZJz0WP3wi1yqTvi18G0w-&state=1
+
+20170816 04:50:16
+--o86iDsyduxh-_zpL-VB1XuwB6bXg-011EB9ub1BAUzs0NyWrb1h67ub1EB9uc http://newdemo.coolhong.com/mobile/?code=0218G0wi1wRZJz0WP3wi1yqTvi18G0w-&state=1&code=011EB9ub1BAUzs0NyWrb1h67ub1EB9uc&state=1
+
+20170816 13:47:59
+--- http://newdemo.coolhong.com/mobile/
+
+20170816 13:48:02
+---021kfa2x1azWub05Ua3x1XQ62x1kfa2- http://newdemo.coolhong.com/mobile/?code=021kfa2x1azWub05Ua3x1XQ62x1kfa2-&state=1
+
+20170816 13:48:06
+--o86iDs5kJkiiJhvEWwN0y7sXo3Dk-071yMtgz1ZLBSd0iiEfz197Ggz1yMtg5 http://newdemo.coolhong.com/mobile/?code=021kfa2x1azWub05Ua3x1XQ62x1kfa2-&state=1&code=071yMtgz1ZLBSd0iiEfz197Ggz1yMtg5&state=1
+
+20170816 13:48:09
+983-VIP1708983-o86iDs5kJkiiJhvEWwN0y7sXo3Dk- http://newdemo.coolhong.com/mobile/index_bestgoods.php?act=ajax
+
+20170816 13:48:12
+983-VIP1708983-o86iDs5kJkiiJhvEWwN0y7sXo3Dk- http://newdemo.coolhong.com/mobile/login_act_ajax_top.php?1502862491879879
+
+20170816 13:48:34
+983-VIP1708983-o86iDs5kJkiiJhvEWwN0y7sXo3Dk- http://newdemo.coolhong.com/mobile/index_bestgoods.php?act=ajax
+
+20170816 13:48:47
+983-VIP1708983-o86iDs5kJkiiJhvEWwN0y7sXo3Dk-071yMtgz1ZLBSd0iiEfz197Ggz1yMtg5 http://newdemo.coolhong.com/mobile/?code=021kfa2x1azWub05Ua3x1XQ62x1kfa2-&state=1&code=071yMtgz1ZLBSd0iiEfz197Ggz1yMtg5&state=1&u=983
+
+20170816 13:48:48
+983-VIP1708983-o86iDs5kJkiiJhvEWwN0y7sXo3Dk- http://newdemo.coolhong.com/mobile/index_bestgoods.php?act=ajax
+
+20170816 13:48:48
+983-VIP1708983-o86iDs5kJkiiJhvEWwN0y7sXo3Dk- http://newdemo.coolhong.com/mobile/login_act_ajax_top.php?1502862528647647
+

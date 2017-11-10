@@ -1,0 +1,244 @@
+<!-- $Id: goods_info.htm 17126 2010-04-23 10:30:26Z Prince $ -->
+
+{include file="pageheader.htm"}
+<link href="styles/prince_style.css" rel="stylesheet" type="text/css" />
+<div class="tab-div">
+  <div id="tabbody-div" class="tbbg" >
+    <form enctype="multipart/form-data" action="prince_shops.php?act=prince_tbk_api_colect" method="post" name="theForm" >
+      <table width="90%" id="general-table" >
+        <div class="shuoming"> 1、可输入要采集的商品关键词（如：女装）<br />
+          2、可输入商品的链接（如：https://item.taobao.com/item.htm?id=530236398454）<br />
+          3、如需指定特定条件的商品，可设置“价格范围”等采集参数，输入采集商品的数量</div>
+        <tr>
+          <th width="150">采集关键词或商品链接：</th>
+          <td><textarea style="display:none" name="keyword2" cols="80" rows="2" wrap="VIRTUAL"></textarea>
+            <input type="text" value="{$user_setting.q}" class="textinput" name="keyword" onclick="select();" size="40">
+            <span  style="color:#FF0000">(必填，关键字或商品链接。)</span> </td>
+        </tr>
+        <tr>
+          <th>数据排序：</th>
+          <td><select name="sort">
+              <option value="" {if $user_setting.sort eq ''} selected="selected" {/if}>综合排序 </option>
+              <option value="tk_rate_des" {if $user_setting.sort eq 'tk_rate_des'} selected="selected" {/if}>佣金比率从高到低 </option>
+              <option value="tk_rate_asc" {if $user_setting.sort eq 'tk_rate_asc'} selected="selected" {/if}>佣金比率从低到高 </option>
+              <option value="total_sales_des" {if $user_setting.sort eq 'total_sales_des'} selected="selected" {/if}>成交量从高到低 </option>
+              <option value="total_sales_asc" {if $user_setting.sort eq 'total_sales_asc'} selected="selected" {/if}>成交量从低到高 </option>
+              <option value="tk_total_commi_des" {if $user_setting.sort eq 'tk_total_commi_des'} selected="selected" {/if}>总支出佣金从高到低 </option>
+              <option value="tk_total_commi_asc" {if $user_setting.sort eq 'tk_total_commi_asc'} selected="selected" {/if}>总支出佣金从低到高 </option>
+              <option value="tk_total_sales_des" {if $user_setting.sort eq 'tk_total_sales_des'} selected="selected" {/if}>累计推广量从高到低 </option>
+              <option value="tk_total_sales_asc" {if $user_setting.sort eq 'tk_total_sales_asc'} selected="selected" {/if}>累计推广量 </option>
+            </select>
+          </td>
+        </tr>
+        <tr style="display:none">
+          <th>卖家信用：</th>
+          <td><select name="start_credit" style="width:40">
+              <option value=""  {if $user_setting.start_credit eq ''} selected="selected" {/if}>不限 </option>
+              <option value="1heart" {if $user_setting.start_credit eq '1heart'} selected="selected" {/if}>一心 </option>
+              <option value="2heart" {if $user_setting.start_credit eq '2heart'} selected="selected" {/if}>两心 </option>
+              <option value="3heart" {if $user_setting.start_credit eq '3heart'} selected="selected" {/if}>三心 </option>
+              <option value="4heart" {if $user_setting.start_credit eq '4heart'} selected="selected" {/if}>四心 </option>
+              <option value="5heart" {if $user_setting.start_credit eq '5heart'} selected="selected" {/if}>五心 </option>
+              <option value="1diamond" {if $user_setting.start_credit eq '1diamond'} selected="selected" {/if}>一钻 </option>
+              <option value="2diamond" {if $user_setting.start_credit eq '2diamond'} selected="selected" {/if}>两钻 </option>
+              <option value="3diamond" {if $user_setting.start_credit eq '3diamond'} selected="selected" {/if}>三钻 </option>
+              <option value="4diamond" {if $user_setting.start_credit eq '4diamond'} selected="selected" {/if}>四钻 </option>
+              <option value="5diamond" {if $user_setting.start_credit eq '5diamond'} selected="selected" {/if}>五钻 </option>
+              <option value="1crown" {if $user_setting.start_credit eq '1crown'} selected="selected" {/if}>一冠 </option>
+              <option value="2crown" {if $user_setting.start_credit eq '2crown'} selected="selected" {/if}>两冠 </option>
+              <option value="3crown" {if $user_setting.start_credit eq '3crown'} selected="selected" {/if}>三冠 </option>
+              <option value="4crown" {if $user_setting.start_credit eq '4crown'} selected="selected" {/if}>四冠 </option>
+              <option value="5crown" {if $user_setting.start_credit eq '5crown'} selected="selected" {/if}>五冠 </option>
+              <option value="1goldencrown" {if $user_setting.start_credit eq '1goldencrown'} selected="selected" {/if}>一皇冠 </option>
+              <option value="2goldencrown" {if $user_setting.start_credit eq '2goldencrown'} selected="selected" {/if}>二皇冠 </option>
+              <option value="3goldencrown" {if $user_setting.start_credit eq '3goldencrown'} selected="selected" {/if}>三皇冠 </option>
+              <option value="4goldencrown" {if $user_setting.start_credit eq '4goldencrown'} selected="selected" {/if}>四皇冠 </option>
+              <option value="5goldencrown" {if $user_setting.start_credit eq '5goldencrown'} selected="selected" {/if}>五皇冠 </option>
+            </select>
+            -
+            <select name="end_credit" style="width:40">
+              <option value=""  {if $user_setting.end_credit eq ''} selected="selected" {/if}>不限 </option>
+              <option value="1heart" {if $user_setting.end_credit eq '1heart'} selected="selected" {/if}>一心 </option>
+              <option value="2heart" {if $user_setting.end_credit eq '2heart'} selected="selected" {/if}>两心 </option>
+              <option value="3heart" {if $user_setting.end_credit eq '3heart'} selected="selected" {/if}>三心 </option>
+              <option value="4heart" {if $user_setting.end_credit eq '4heart'} selected="selected" {/if}>四心 </option>
+              <option value="5heart" {if $user_setting.end_credit eq '5heart'} selected="selected" {/if}>五心 </option>
+              <option value="1diamond" {if $user_setting.end_credit eq '1diamond'} selected="selected" {/if}>一钻 </option>
+              <option value="2diamond" {if $user_setting.end_credit eq '2diamond'} selected="selected" {/if}>两钻 </option>
+              <option value="3diamond" {if $user_setting.end_credit eq '3diamond'} selected="selected" {/if}>三钻 </option>
+              <option value="4diamond" {if $user_setting.end_credit eq '4diamond'} selected="selected" {/if}>四钻 </option>
+              <option value="5diamond" {if $user_setting.end_credit eq '5diamond'} selected="selected" {/if}>五钻 </option>
+              <option value="1crown" {if $user_setting.end_credit eq '1crown'} selected="selected" {/if}>一冠 </option>
+              <option value="2crown" {if $user_setting.end_credit eq '2crown'} selected="selected" {/if}>两冠 </option>
+              <option value="3crown" {if $user_setting.end_credit eq '3crown'} selected="selected" {/if}>三冠 </option>
+              <option value="4crown" {if $user_setting.end_credit eq '4crown'} selected="selected" {/if}>四冠 </option>
+              <option value="5crown" {if $user_setting.end_credit eq '5crown'} selected="selected" {/if}>五冠 </option>
+              <option value="1goldencrown" {if $user_setting.end_credit eq '1goldencrown'} selected="selected" {/if}>一皇冠 </option>
+              <option value="2goldencrown" {if $user_setting.end_credit eq '2goldencrown'} selected="selected" {/if}>二皇冠 </option>
+              <option value="3goldencrown" {if $user_setting.end_credit eq '3goldencrown'} selected="selected" {/if}>三皇冠 </option>
+              <option value="4goldencrown" {if $user_setting.end_credit eq '4goldencrown'} selected="selected" {/if}>四皇冠 </option>
+              <option value="5goldencrown" {if $user_setting.end_credit eq '5goldencrown'} selected="selected" {/if}>五皇冠 </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>价格范围：</th>
+          <td><input type="text" value="{$user_setting.start_price}" class="textinput" name="start_price" size="10">
+            -
+            <input type="text" value="{$user_setting.end_price}" class="textinput" name="end_price" size="10">
+            (元) </td>
+        </tr>
+        <tr>
+          <th>佣金比例：</th>
+          <td><input type="text" id="apiParam_start_tk_rate" name="start_tk_rate" value="{$user_setting.start_tk_rate}" size="10" >
+            -
+            <input type="text" id="apiParam_end_tk_rate" name="end_tk_rate" value="{$user_setting.end_tk_rate}" size="10">
+            (%)</td>
+        </tr>
+        <tr style="display:none">
+          <th>30天累计推广量：</th>
+          <td><input type="text" id="apiParam_start_total_sales" name="start_total_sales" value="{$user_setting.start_total_sales}" size="10">
+            -
+            <input type="text" id="apiParam_end_total_sales" name="end_total_sales" value="{$user_setting.end_total_sales}" size="10">
+            (件) </td>
+        </tr>
+        <tr style="display:none">
+          <th>商品总成交量：</th>
+          <td><input type="text" id="apiParam_start_totalnum" name="start_totalnum" value="{$user_setting.start_totalnum}" size="10">
+            -
+            <input type="text" id="apiParam_end_totalnum" name="end_totalnum" value="{$user_setting.end_totalnum}" size="10">
+            (件) </td>
+        </tr>
+         <tr>
+          <th>采集数量：</th>
+          <td><input type="text" value="{$user_setting.conum}" class="textinput" name="conum" size="4"></td>
+        </tr>
+       <tr>
+          <th>采集评论：</th>
+          <td><input name="checkbox" type="checkbox" value="1" {if $user_setting.ratetag} checked="checked" {/if} />
+            <span>&nbsp;(评论为10~50间的随机数)</span> </td>
+        </tr>
+        <tr style="height:30px; display:none">
+          <td align="right" >cid：
+            </th>
+          <td ><span class="l">
+            <input type="text" id="apiParam_cid" name="cid" value="{$user_setting.cid}" size="10">
+            </span><span class="point-blue">*</span><span class="l"><a href="javascript:void(0);" title="标准商品后台类目id。" class="explain">说明</a></span></td>
+        </tr>
+        <tr>
+          <th>放到产品分类：</th>
+          <td><select name="cat_id" id="cat_id">
+              <option value="0">产品分类</option>
+              {$cat_list}
+            </select>
+            <span>&nbsp;(平台产品分类，必选)</span> </td>
+        </tr>
+
+
+		{if $is_sup eq 'supplier'}
+		<tr>
+          <th>放到店内分类：</th>
+          <td><select name="seller_cat_id" id="seller_cat_id">
+              <option value="0">店内分类</option>
+              {$seller_cat_list}
+            </select>
+            <span>&nbsp;(您的店内分类，必选)</span> </td>
+        </tr>
+		{/if}
+        <tr>
+          <th>放到属性类型：</th>
+          <td><select name="goods_type_id">
+              
+              
+					    {foreach from=$goods_type_arr item=goods_type}
+						
+              
+              <option value="{$goods_type.cat_id}" {if $goods_type_id eq $goods_type.cat_id} selected="selected"{/if}>{$goods_type.cat_name}</option>
+              
+              
+					    {/foreach}
+
+					
+            
+            </select>
+            <span>&nbsp;(选择商品属性的类型，自动采集商品属性放入此类型中，默认类型：采集属性)</span> </td>
+        </tr>
+		{if $supplier_list and $is_sup neq 'supplier'}
+		<tr>
+          <th>分配入驻商：</th>
+          <td>
+		  <select name="supplier_id" id="supplier_id" onchange="changed_sup()">
+			<option value="">请选择入驻商</option>
+			{foreach name=sln from=$supplier_list item=sl}
+			  <option value="{$sl.supplier_id}">{$sl.supplier_name}</option>
+			{/foreach}
+		  </select>
+		  <select name="sup_cat_id" id="sup_cat_id">
+              {$cat_list_sup}
+            </select>
+            <span>&nbsp;(入驻商店内分类，默认为第一个类别)</span> </td>
+        </tr>
+		{/if}
+		{if $priv_ru eq 1}
+		<tr>
+          <th>商家品牌：</th>
+          <td>
+            <input style="display:none" name="search_brand" type="button" id="search_brand" value=" 搜索 " class="button" onclick="searchBrand()">
+            <select name="mbt_brand_id" id="mbt_brand_id" onchange="hideBrandDiv()" >
+              {html_options options=$mbt_brand_id_list selected=$user_setting.mbt_brand_id}
+            </select>
+          </td>
+        </tr>
+		{/if}
+        <tr>
+          <th>天猫商城：</th>
+          <td><input name="is_tmall" type="checkbox" value="1" {if $user_setting.is_tmall eq 'true'} checked="checked" {/if}/><span>&nbsp;(只采集天猫商品)</span></td>
+        </tr>
+        <tr class="act">
+          <th>&nbsp;</th>
+          <td><input name="itemlist" type="checkbox" value="1" {if $user_setting.itemlist} checked="checked" {/if}/>
+            <font color="#FF0000">选择性采集</font></td>
+        </tr>
+        <tr class="act">
+          <th>&nbsp;</th>
+          <td><div id="caij_btns" style="width:100%;"> <a class="caiji" href="javascript:colltaobao();" >立即采集</a> </div></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+function colltaobao()
+{
+	cat_id=document.getElementById('cat_id').value;
+	if(cat_id==0){
+		alert('请选择平台分类！');
+	}
+	seller_cat_id=document.getElementById('seller_cat_id').value;
+	if(seller_cat_id==0){
+		alert('请选择店内分类！');
+	}
+	if(cat_id >0 && seller_cat_id>0 ){
+		document.getElementById('caij_btns').innerHTML = '正在采集：<img src="https://img.alicdn.com/imgextra/i1/619666972/TB2PCZjjVXXXXXxXpXXXXXXXXXX-619666972.gif" />';
+		var targetForm = document.forms[ "theForm" ];
+		targetForm.submit();
+	}
+}
+
+function changed_sup()
+{
+	supplier_id=document.forms['theForm'].elements['supplier_id'].value;
+	if(supplier_id=='')
+	{
+		alert('请选择入驻商！');
+		return false;
+	}
+	Ajax.call('prince_shops.php?is_ajax=1&act=changed_sup', "supplier_id="+supplier_id, changed_supResponse, "GET", "JSON");
+}
+function changed_supResponse(result)
+{
+	  document.forms[ "theForm" ].elements['sup_cat_id'].innerHTML=result.content.cat_list_sup
+}
+
+</script>
+{include file="pagefooter.htm"} 

@@ -1,0 +1,86 @@
+<style>
+.f_mask_wechat_kefu {background-color: #000;opacity: 0.4;height: 100%;width: 100%; position: absolute;top: 0;left: 0;z-index: 111;display: none;}
+#wechat_kefu{position:fixed; bottom:0; left:0; height:0px; z-index:99999999; background:#fff; width:100%;}  
+.callme { width:100%; margin:auto;overflow-y:scroll;background:#ffffff; height:100%; }
+.callme h2{ width:100%; text-indent:30px; height:30px; font-size:18px; line-height:30px; color:#fff; font-weight:normal; padding-top:10px; padding-bottom:10px; background:#FF6500}
+.callme ul{ width:100%; overflow:hidden; padding-top:10px; padding-bottom:50px;}
+.tell_me_con{ width:95%; overflow:hidden; margin:auto}
+.tell_me_con ul{ width:95%; overflow:hidden; margin:auto; margin-top:10px;}
+.tell_me_con ul li{ width:100%; overflow:hidden; margin:auto;}
+.goods_shut{ width:100%; height:45px; background:#FFF; position:absolute; bottom:0px;}
+.shut{ display:block; width:100%; height:45px; background:#E71F19; text-align:center; font-size:18px;line-height:45px; color:#FFF; }
+
+</style>
+
+<!--全局导航-Start-->
+<div style="height:50px; line-height:50px; clear:both;"></div>
+<div class="v_nav">
+<div class="vf_nav">
+<ul>
+<li> <a href="./">
+    <i class="vf_1"></i>
+    <span>首页</span></a></li>
+<li>{if $had_im}<a href="javascript:chat_online();">{elseif $wechat}<a href="javascript:show_wechat_kefu();">{else}<a href="tel:{insert name='ypmart_tel'}">{/if} <!--20170905 IM修改 by prince-->
+    <i class="vf_2"></i>
+    <span>客服</span></a></li>
+<li><a href="catalog.php">
+    <i class="vf_3"></i>
+    <span>分类</span></a></li>
+<li>
+<a href="flow.php">
+   <em class="global-nav__nav-shop-cart-num" id="YP_CARTINFO" style="right:9px;">{insert name='cart_info'}</em>
+   <i class="vf_4"></i>
+   <span>购物车</span>
+
+   </a></li>
+<li><a href="user.php">
+    <i class="vf_5"></i>
+    <span>我的</span></a></li>
+</ul>
+</div>
+</div>
+
+<!-- 微信客服弹出代码-->
+<section class="f_mask_wechat_kefu" style="display: none;"></section>
+<section class="f_block_wechat_kefu" id="wechat_kefu" style="height:0; overflow:hidden;">
+<section class="callme">
+<h2 style="background:#62b900">微信客服</h2>  
+
+<div id="tell_me_form" >
+  <div class="tell_me_con">
+ <ul >
+      { if $wechat && $wechat_qrcode}<li style="text-align:center;"><img src="{$wechat_qrcode}" alt="客服微信二维码" title="客服微信二维码" style="width:160px; height:auto;"/></li>{/if}
+ 
+      <!-- 微信号码 {foreach from=$wechat item=im} --> 
+      <!-- {if $im} --> 
+      <li style="text-align:center;">
+          微信客服:{$im}
+      </li>
+      <!-- {/if} --> 
+      <!-- {/foreach} 结束微信号码 --> 
+ </ul>
+  </div>
+</div>
+</section>
+<div class="goods_shut">
+<a href="javascript:void(0)" onclick="close_wechat_kefu();" class="shut" style=" color:#FFF;font-size:18px;">关闭</a>
+</div>
+</section>
+<!-- {literal} -->
+<script>
+function show_wechat_kefu(){
+	$("#wechat_kefu").animate({height:'80%'},[10000]);
+		var total=0,h=$(window).height(),
+        top =$('.callme').height()||0,
+        con = $('.tell_me_con');
+		total = 0.8*h;
+		con.height(total-top+'px');
+
+	$(".f_mask_wechat_kefu").show();
+}
+function close_wechat_kefu(){	
+	$(".f_mask_wechat_kefu").hide();
+	$('#wechat_kefu').animate({height:'0'},[10000]);
+}
+</script>
+<!-- {/literal} -->

@@ -1,0 +1,3 @@
+<view class="tableviewcell"><text >电话:{{aboutus.tel}}</text></view>
+<view class="tableviewcell"><text >微信:{{aboutus.weixin}}</text></view>
+<image src="{{aboutus.weixin_qrcode}}" style="width: 70%; margin: 0 auto;" mode="widthFix" />

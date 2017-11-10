@@ -1,0 +1,69 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>{$page_title}</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css">
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/user.css">
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+{insert_scripts files='jquery.json.js,transport.js'}
+{insert_scripts files='common.js,utils.js'}
+</head>
+<body class="body_bj">
+<!----------------------------------header----------------------------------->
+<div class="header">
+    <h2><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></h2>
+    <ul>
+    <li>物流详情</li>
+     </ul>
+    <dl>
+      <dd class="top_bar" >
+        <div onClick="show_menu();$('#close_btn').addClass('hid');" id="show_more"><a href="javascript:;"></a> </div>
+      </dd>
+    </dl>
+</div>
+<!-- #BeginLibraryItem "/library/up_menu.lbi" --><!-- #EndLibraryItem --> <!--弹出菜单-->
+<!----------------------------------header----------------------------------->
+
+
+<!--物流信息-->
+
+{if $kuaidi_list}
+{foreach from=$kuaidi_list item=kuaidi}
+<div class="kd">
+<div class="detail_top">
+<dl>
+<dd><span>{$kuaidi.shipping_name}</span>
+    <em>运单编码：{$kuaidi.invoice_no}</em>
+</dd>
+</dl>
+</div>
+<div class="kd_wl">
+
+
+{foreach from=$kuaidi.data item=data key=i}
+<dl {if $i eq '0'}style=" margin-top:10px;"{/if}>
+<dt {if $i neq '0'}style=" background:#ccc;"{/if}></dt>
+<dd><p {if $i neq '0'}style=" color:#666"{/if}> {$data.context}</p>
+<strong>{if $data.ftime}{$data.ftime}{else}{$data.time}{/if}</strong>
+</dd>
+</dl>
+{/foreach}
+</div>
+</div>
+{/foreach}
+{else}
+<div class="dotm_no">
+  <dl>
+    <dd>还没有物流的信息</dd>
+  </dl>
+</div>
+{/if}
+
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

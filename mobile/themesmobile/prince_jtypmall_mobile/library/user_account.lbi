@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="Funds">
+<table width="100%">
+<tr>
+<td>
+<h2><span >&nbsp;&nbsp;可用余额</span><em>&nbsp;&nbsp;￥{$user_info.user_money}</em></h2>
+</td>
+{if $user_info.frozen_money gt 0}
+<td>
+<h2><span>&nbsp;&nbsp;冻结资金</span><em>&nbsp;&nbsp;￥{$user_info.frozen_money}</em></h2>
+</td>
+{/if}
+</tr>
+</table>
+<h3>积分：{if $user_info.pay_points}{$user_info.pay_points}{else}0{/if}&nbsp;&nbsp;&nbsp;成长值：{if $user_info.rank_points}{$user_info.rank_points}{else}0{/if}</h3>
+</div>
+
+<div class="Funds_dom">
+<ul>
+<li  class="border_left"><a href="user.php?act=account_detail"><i class="ac5"></i><span>账户明细</span></a></li>
+
+<li><a href="user.php?act=account_deposit"><i class="ac2"></i><span>在线充值</span></a></li>
+
+<li  class="border_left"><a href="user.php?act=bonus"><i class="ac1"><em>{$user_info.bonus_count}</em></i><span>红包</span></a></li>
+<li  class="border_left"><a href="user.php?act=vc_login"><i class="ac3"></i><span>储值卡充值</span></a></li>
+<li><a href="user.php?act=account_raply"><i class="ac4"></i><span>提现</span></a></li>
+<li><a href="user.php?act=account_log"><i class="ac6"></i><span>提现记录</span></a></li>
+</ul>
+</div>
+
+
+

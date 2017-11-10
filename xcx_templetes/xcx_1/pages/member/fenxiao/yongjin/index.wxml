@@ -1,0 +1,31 @@
+<!--pages/member/fenxiao/yongjin/index.wxml-->
+
+<view  class="userinfo">
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" ></image>
+	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+
+<view class="parent">
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+<view class="view-row">
+<text >结算金额：</text>
+<input name="money" type="digit" placeholder="请输入结算金额" />
+</view>
+
+<view class="class-line"></view>
+<view class="view-row">
+<text> 佣金余额：</text>
+<view class="view-yongjin">￥{{result.summoney}}</view>
+
+</view>
+
+<view class="class-line"></view>
+
+
+  <button class="tijiao" style=" color:#FFF" form-type="submit" > 提交数据 </button>
+ 
+  </form>
+
+
+</view>

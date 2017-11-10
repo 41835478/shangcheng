@@ -1,0 +1,22 @@
+<!--view class="tc">
+	<image style="width:548rpx;height:215rpx;" mode="" src="/images/contact.png"></image>
+</view-->
+<view class="p15 f16 infolist">
+	<view class="wraperh weui-flex" bindtap="address">
+		<image src="/images/address.png" class="ico34 iblock mr5"></image>
+		<view class="weui-flex__item">地址：{{aboutus.shop_province}}{{aboutus.shop_city}}{{aboutus.shop_district}}{{aboutus.shop_address}}</view>
+	</view>
+	<view class="wraperh weui-flex">
+		<image src="/images/email.png" class="ico34 iblock mr5"></image>
+		<view class="weui-flex__item">邮箱：{{aboutus.service_email}}</view>
+	</view>
+	<view class="wraperh weui-flex" bindtap="tel" id="{{aboutus.service_phone}}">
+		<image src="/images/tel.png" class="ico34 iblock mr5"></image>
+		<view class="weui-flex__item">电话：{{aboutus.service_phone}}</view>
+	</view>
+	<view class="wraperh weui-flex">
+		<image src="/images/wechat.png" class="ico34 iblock mr5"></image>
+		<view class="weui-flex__item">微信：{{aboutus.wechat}}</view>
+	</view>
+  <button wx:if="{{aboutus.show_wxkf == 1}}" type="primary" open-type="contact" class="t20">联系在线客服</button>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/member/fenxiao/shezhi/index.wxml-->
+<view class="view-tint">
+<image src="/images/kaifa.png"></image>
+<text>亲,功能开发中.....</text>
+</view>

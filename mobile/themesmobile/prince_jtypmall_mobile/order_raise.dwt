@@ -1,0 +1,411 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>订单众筹</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/user.css"/> 
+<link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/extpt.css" />
+<link href="themesmobile/prince_jtypmall_mobile/css/v_user.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.more.js"></script>
+{insert_scripts files='jquery-1.6.2.min.js '}
+{insert_scripts files='jquery.json.js,transport.js'}
+{insert_scripts files='common.js,shopping_flow.js'}
+
+<!--微信支付js-->
+{insert_scripts files='transport.js'} 
+<script type="text/javascript">
+
+		//调用微信JS api 支付
+		function jsApiCall(jsApiParameters)
+		{   
+			       WeixinJSBridge.invoke(
+											'getBrandWCPayRequest',
+											jsApiParameters,
+											function(res){
+												WeixinJSBridge.log(res.err_msg);
+										if(res.err_msg == 'get_brand_wcpay_request:ok'){
+									   //alert(res.err_code+res.err_desc+res.err_msg);
+									  //window.location.href='{$dourl}&pay_status=1';
+									window.location='order_raise.php?order_id={$order_id}&act=payok&key={$key}';
+										 }else{
+									   //返回跳转到订单详情页面
+									   alert(支付失败);
+										}
+			
+			
+					 }
+				   );
+			
+						
+     }
+
+		function callpay()
+		{   
+			var jsApiParameters={$jsApiParameters};
+		    var reward_money= document.getElementById('reward_money').value;
+		    var reward_meg= document.getElementById('reward_meg').value;
+		    //var anonymous_reward= $('input[id="anonymous_reward"]').filter(':checked').val();	
+			$.post("order_raise.php?order_id={$order_id}&act=reward",{'reward_money':reward_money,'reward_meg':reward_meg},function(data,status){
+				data= eval('(' + data + ')');
+				jsApiParameters=data;	
+				if (typeof WeixinJSBridge == "undefined"){
+					if( document.addEventListener ){
+						document.addEventListener('WeixinJSBridgeReady', jsApiCall(jsApiParameters), false);
+					}else if (document.attachEvent){
+						document.attachEvent('WeixinJSBridgeReady', jsApiCall(jsApiParameters)); 
+						document.attachEvent('onWeixinJSBridgeReady', jsApiCall(jsApiParameters));
+					}
+				}else{
+					jsApiCall(jsApiParameters);
+				}		
+			});
+			
+		}
+		
+		
+		
+	</script>
+
+<style>
+.apply{width: 100%; padding-top:0px; background: #ffffff;padding-bottom:10px;}
+.apply p{text-align: center;color: #333;font-size: 23px;line-height: 45px; margin:0;height: 45px;background-color:#f6f6f6;  margin-top:50px;}
+.apply dl{width: calc(100% - 20px);padding: 0 10px;color: #111111;font-size: 16px;line-height: 34px;margin-bottom: 15px;}
+.apply dl dt{float: left;display: inline-block;width: 85px;}
+.apply dl dd{float: left;display: inline-block;width: calc(100% - 0px);}
+.apply dl dd .input_txt,.apply dl dd .textarea{width:calc(100% - 22px);padding:0 10px;border:1px solid #cccccc;border-radius: 3px;font-size: 16px;}
+.apply dl dd .input_txt{height: 40px;line-height:38px;border:#ddd 1px solid;}
+.apply dl .inptmain{border:#1bbbbb 1px solid; width:100%; margin-top:20px;}
+
+.apply dl dd  .btn input{height:40px;line-height:40px; border:0; background:#ddd; width:30%; display:block; float:right}
+.apply dl dd .textarea{padding:5px 10px;line-height:24px;height:80px}
+.apply dl dd  .sel{ width:100%; border:#1bbbbb 1px solid;}
+.apply .upload{}
+.apply .upload dt{line-height: 24px;}
+.apply .btn_box{padding: 0 10px;display: block;}
+.apply .btn_box .button{height: 50px;line-height: 50px;cursor: pointer;color: #fff;font-size: 20px;text-align: center;border-radius: 5px;width:100%;background-color: #09B1B9;border:none;border-bottom: 0px solid #a40000;margin: 0 auto;}
+.apply .btn_boxx{padding: 0 10px;display: block;}
+.apply .btn_boxx .button{height: 50px;line-height: 50px;cursor: pointer;color: #fff;font-size: 20px;text-align: center;border-radius: 5px;width:100%;background-color: #f1901f;border:none;border-bottom: 0px solid #a40000;margin: 0 auto;}
+
+.project-detail-box {
+    background: #fff;
+    border: 1px solid #e1e5e7;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.project-detail_title {
+    border-top: none;
+    color: #2b3845;
+    padding: 15px 15px 10px;
+    /*border-bottom: 1px solid #e1e5e7;*/
+}
+.tz{ min-height:90px; border-top:1px solid #D0D0D0; padding-top:15px;}	
+.tz img{width:100%;height:100%; border-radius:50%; border:1px solid #cccccc; padding:2px;}	
+.tz .imgbox{position:relative;width:50px; height:50px; float:left; margin-left:10px;margin-top:10px; }
+.tz .sfbox{position:absolute; width:20px; height:20px; line-height:20px; border:2px solid #FFFFFF; font-size:8px; color:#FFFFFF; text-align:center;border-radius:50%; right:-10px; top:-3px; background:red;}
+.tz .bdbox{position:absolute; width:20px; height:20px; line-height:20px; border:2px solid #FFFFFF; font-size:8px; color:#FFFFFF; text-align:center;border-radius:50%; right:-10px; top:-3px; background:#ff9c00;}
+
+.mod-project-support_item__detail {
+    width:250px;
+    padding: 0 0 1px 0;
+   /* border-bottom: 1px solid #e1e5e7;*/
+    float: left;
+    margin-left: 30px;
+	
+   
+}
+.project-support_item__detail__user {
+ 
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1;
+}
+.project-support_item__detail__time {
+   
+    font-size: 12px;
+    color: #999;
+    position: relative;
+}
+.project-support_item__detail__content {
+   
+    font-size: 15px;
+    margin: 3px 0;
+    color: #222;
+}
+</style>
+
+</head>
+
+
+
+
+<body class="body_bj">
+{insert name='share'}{insert name='add_url_uid'} 
+<script type="text/javascript"> 
+var process_request = "{$lang.process_request}";
+</script> 
+<script language="javascript"> 
+<!--
+/*屏蔽所有的js错误*/
+function killerrors() { 
+return true; 
+} 
+window.onerror = killerrors; 
+//-->
+function tiaozhuan()
+{ 
+//var thisurl = window.location.href;
+document.getElementById("share_form").submit();
+}
+</script> 
+<script type="text/javascript">
+				/*第一种形式 第二种形式 更换显示样式*/
+				function setGoodsTab(name,cursel,n){
+					$('html,body').animate({'scrollTop':0},600);
+				for(i=1;i<=n;i++){
+				var menu=document.getElementById(name+i);
+				var con=document.getElementById("user_"+name+"_"+i);
+				menu.className=i==cursel?"on":"";
+				con.style.display=i==cursel?"block":"none";
+				}
+				}
+				</script> 		
+<!--header-->
+<div class="head">
+
+<dl>
+<dt>{if $user_info.headimg}
+<img src="{$user_info.headimg}" alt="头像"/>
+{else}
+<img src="themesmobile/prince_jtypmall_mobile/images/v-shop/userportrait.jpg" alt="头像"/>
+{/if}
+</dt>
+<dd><span>筹款人：{if $user_info.nickname}{$user_info.nickname}{else}{$info.username}{/if}</span>
+<em>我盼您如寒冬盼暖气！</em></dd>
+</dl>
+<ul>
+<li style=" border-right:1px solid #191c27; margin-left:-1px;"><span class="v_1">已筹资金：￥{$money_pay}</span></li>
+<li><span class="v_2">还需：￥{$order.formated_order_amount}</span></li>
+</ul>
+</div>		
+		
+		
+<div class="ord_list1">
+<h2><span>订单详情</span></h2>
+{foreach from=$goods_list item=goods name=goods_list}
+<div class="good_list">
+        <a {if $goods.goods_id gt 0 && $goods.extension_code neq 'package_buy'}href="goods.php?id={$goods.goods_id}"{/if}>
+          <dl>
+          <dt><img src="{if $goods.goods_id gt 0 && $goods.extension_code neq 'package_buy'}{$goods.goods_thumb}{else}./themesmobile/prince_jtypmall_mobile/images/flow/libao.png{/if}"></dt>
+          <dd class="good_name"><strong>{$goods.goods_name}</strong>
+           
+         {if $goods.goods_attr} <span>{$goods.goods_attr}</span>{/if}
+								{if $goods.is_shipping} <span>{$lang.carriage_free}</span>{/if}
+								{if $goods.parent_id gt 0} <span>{$lang.accessories}</span>{/if}
+								{if $goods.is_gift gt 0} <span>{$lang.largess}</span>{/if}
+           {if $goods.extension_code eq 'package_buy'}<a onClick="choose_attrone(0)" class="mingxi">查看明细</a>{/if}
+             </dd>
+          <dd class="good_pice"><strong>{$goods.goods_price}</strong><em>x{$goods.goods_number}</em></dd>
+          </dl>
+          </a>
+          
+          <div class="pic"><span>小计：</span><strong>{$goods.subtotal}</strong></div>
+</div>
+    
+    
+{/foreach}
+
+
+<!--价格信息--->
+<div class="jiage">
+<ul>
+<li>{$lang.goods_all_price}
+						{if $order.extension_code eq "group_buy"}{$lang.gb_deposit}{/if}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_goods_amount}</span>
+                        {if $order.discount gt 0}<br>
+						- {$lang.discount}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_discount}</span>
+						{/if}
+						{if $order.tax gt 0}<br>
+						+ {$lang.tax}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_tax}</span>
+						{/if}
+						{if $order.shipping_fee > 0}<br>
+						+ {$lang.shipping_fee}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_shipping_fee}</span>
+						{/if}
+						{if $order.insure_fee > 0}<br>
+						+ {$lang.insure_fee}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_insure_fee}</span>
+						{/if}
+						{if $order.pay_fee > 0}<br>
+						+ {$lang.pay_fee}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_pay_fee}</span>
+						{/if}
+						{if $order.pack_fee > 0}<br>
+						+ {$lang.pack_fee}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_pack_fee}</span>
+						{/if}
+						{if $order.card_fee > 0}<br>
+						+ {$lang.card_fee}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_card_fee}</span>
+						{/if}
+						{if $order.surplus > 0}<br> - {$lang.use_surplus}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_surplus}</span>{/if}
+						{if $order.integral_money > 0}<br> - {$lang.use_integral}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_integral_money}</span>{/if}
+						{if $order.bonus > 0}<br> - {$lang.use_bonus}{$lang.colon}&nbsp;:&nbsp;<span>{$order.formated_bonus}</span>{/if}
+						{if $money_pay > 0}<br> - 已筹得资金&nbsp;:&nbsp;<span>{$money_pay}</span>{/if}</li>
+						<li>{$lang.order_amount}{$lang.colon}&nbsp;:&nbsp;<span style=" color:#EE0A3B; font-weight:bold">{$order.formated_order_amount}</span>{if $order.extension_code eq "group_buy"}{$lang.notice_gb_order_amount}{/if}</li>
+                                                
+</ul>					
+</div>
+</div>
+
+<div style=" height:20px;"></div>
+
+
+<div class="project-detail-box">
+<div class="project-detail_title">TA的支持者<small  style=" float:right;">共得到<strong style=" color:#EE0A3B; font-weight:bold" >{$Total}</strong> 人支持，筹得资金￥<strong style=" color:#EE0A3B; font-weight:bold" >{$money_pay}</strong>元</small></div>
+         <!--{if $Total}-->
+           <div class="tz">
+		            <div class="imgbox">
+                      <div class="sfbox">沙发</div>	
+					       <img src="{$shafa.headimg}">
+					</div>     
+						 <div class="mod-project-support_item__detail">
+					          <div class="project-support_item__detail__user">{$shafa.nickname}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>支持了<strong>{$shafa.reward_money}</strong> 元</small></div>            
+						      <div class="project-support_item__detail__time">{$shafa.rewardtimeymd}</div>             
+						      <div class="project-support_item__detail__content">{$shafa.reward_meg}</div>   
+						 </div>   
+			 </div> 
+			 <!-- {foreach from=$bandeng item=co }-->
+			  <div class="tz">
+		            <div class="imgbox">
+                      <div class="bdbox">板凳</div>	
+					        <img src="{$co.headimg}">
+					</div>     
+						 <div class="mod-project-support_item__detail">
+					          <div class="project-support_item__detail__user">{$co.nickname}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>支持了<strong>{$co.reward_money}</strong> 元</small></div>            
+						      <div class="project-support_item__detail__time">{$co.rewardtimeymd}</div>             
+						      <div class="project-support_item__detail__content">{$co.reward_meg}</div>   
+						 </div>   
+			 </div>  
+			   <!--{/foreach}-->  
+			   <!--{else}-->
+			    <div class="tz">
+                <div class="more_loader_spinner" style="display: block;"><div class="jiazai"><em></em><span>亲，还没有人支持哦！</span><em></em></div></div>
+				</div>
+            <!--{/if}-->                
+		 </div>
+										
+
+
+<div style=" height:20px;"></div>
+<!--底部 S  PRINCE 120029121-->  
+<div class="activity_nav">
+     <ul> 
+         <li class="activity_bian"><a href="index.php"><em class="goods_nav1"></em><span>首页</span></a> </li>
+         <li style=" width:66%; line-height:51px; text-align:center; color:#FF0000; margin-top:-2px" >
+ 		 <a  href="user.php?" style="color:#FF0000; font-size:15px;;">会员中心</a>
+         </li>
+     </ul>
+ <dl>
+     <!--{if $menu}-->
+	 <dd class="flow"><a class="button active_button" onclick="showFDiv();">发起众筹</a> </dd>
+     <dd class="goumai"><a style="display:block;" href="user.php?act=order_detail&order_id={$order_id}">查看订单</a> </dd>
+  <!--{else}--> 
+   <!--{if $order_amount eq 0}-->
+       <dd class="flow"><a class="button active_button" onclick="showFDiv();">替Ta筹款</a> </dd>
+      <dd class="goumai"><a style="display:block;" class="button active_button" onClick="showZADiv();">表表心意</a> </dd>
+	  <!--{else}-->
+	  <dd class="flow"><a class="button active_button" onclick="showFDiv();">分享订单</a> </dd>
+      <dd class="goumai"><a style="display:block;" >众筹结束</a> </dd>
+	  <!--{/if}-->
+  <!--{/if}-->
+ </dl>                
+</div>
+<!--底部 E  PRINCE 120029121-->  
+    
+   
+  <!--  分享-->     
+   <div class="tipMask" id="hidDiv" style="display:none; z-index:9000; background-color:#000; opacity:0.5;" ></div>
+        <div class="popGeneral" id="popDiv" style="background:none; top:0px; ">
+        <img src="themesmobile/prince_jtypmall_mobile/images/share_guide.png" onClick="closeFDiv()"  width="100%" height="100%"/>
+        </div>  
+		
+  
+		<!--赞赏弹出-->
+			  
+   <div class="tipMask" id="zidADiv" style="display:none; z-index:9000; background-color:#000; opacity:0.5;" ></div>
+    <div  class="popGeneral" id="zopADiv" style="background:none; top:0px; ">
+       <div class="apply" id="apply">
+	        <a style="float:right;font-size:14px;margin-right:15px;margin-top:15px" onClick="closeZADiv()">关闭</a>
+	     <div style=" height:30px;"></div>
+		  <dd style="color:#F1901F; font-size:12px;line-height:30px;  margin-top:6px; height:30px; border-top:#ccc 1px solid;"></dd>
+	<form id="signupok" method="post" name="reward" >
+	    <dl class="clearfix">
+			
+			<dd>表下心意：</dd>
+			<dd><input type="tel" class="input_txt" value="" name="reward_money" id="reward_money" placeholder="请输入支持金额" style="width:92%;height:40px;" onpropertychange="if(isNaN(value)) value=value.substring(0,value.length-1);"  maxlength="5" ></dd>
+        </dl>
+       
+		<dl class="clearfix">
+			
+			<dd>说句悄悄话：</dd>
+			<dd><input type="text" class="input_txt" value="" name="reward_meg"  id="reward_meg" placeholder="跟Ta说一句悄悄话" style="width:92%;height:40px;"></dd>
+        </dl>
+   
+           <div class="btn_box" style="margin-bottom:20px;">
+			<input type="button" name="signup" class="button"  onClick="callpay()" value="确认提交">
+			
+		</div>
+            <dd style="color:#F1901F; margin:0 auto; font-size:11px;line-height:30px;  margin-top:6px; height:30px; border-top:#ccc 1px solid;">大爷！别人都给了，就差您了。给个钢蹦吧？！(⊙0⊙)</dd>
+		
+		</form>
+		</div>
+        </div> 
+    <!--关注+分享+返回顶部-Start  PRINCE 120029121-->
+         <!--弹出层 S-->
+        <script type="text/javascript">
+            function showFDiv(){
+                document.getElementById('popDiv').style.display = 'block';
+				document.getElementById('hidDiv').style.display = 'block';
+				document.getElementById('cartNum').innerHTML = document.getElementById('goods_number').value;
+				document.getElementById('cartPrice').innerHTML = document.getElementById('YP_GOODS_AMOUNT').innerHTML;
+            }
+            function closeFDiv(){
+                document.getElementById('popDiv').style.display = 'none';
+				document.getElementById('hidDiv').style.display = 'none';
+				document.getElementById('joinDiv').style.display = 'none';
+            }
+			   
+			   function showFADiv(){
+                document.getElementById('popADiv').style.display = 'block';
+				document.getElementById('hidADiv').style.display = 'block';
+				
+            }
+			  function showZADiv(){
+                document.getElementById('zopADiv').style.display = 'block';
+				document.getElementById('zidADiv').style.display = 'block';
+				
+            }
+            function closeFADiv(){
+                document.getElementById('popADiv').style.display = 'none';
+				document.getElementById('hidADiv').style.display = 'none';
+				
+            }   
+			function closeZADiv(){
+                document.getElementById('zopADiv').style.display = 'none';
+				document.getElementById('zidADiv').style.display = 'none';
+				
+            }  
+			
+            function showReg(){
+                document.getElementById('popReg').style.display = 'block';
+				document.getElementById('hidReg').style.display = 'block';
+            }
+            function closeReg(){
+                document.getElementById('popReg').style.display = 'none';
+				document.getElementById('hidReg').style.display = 'none';
+            }
+         </script>
+	   
+</body>
+</html>

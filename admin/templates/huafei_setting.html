@@ -1,0 +1,138 @@
+{include file="pageheader.htm"}
+
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+
+
+<form name="theForm" method="post" action="huafei.php?act=setting" enctype="multipart/form-data">
+
+  <table width="100%" cellpadding="3" cellspacing="1">
+
+  <tbody>
+
+  <tr>
+
+    <td class="label">充值接口appid :</td>
+
+    <td><input type="text " name="appid" size="50" value="{$appid}">&nbsp;&nbsp;&nbsp;&nbsp;<span style=" color:#F30;">*&nbsp;注:&nbsp;第三方充值接口提供的接口appid</span></td>
+
+  </tr>
+   <tr>
+
+    <td class="label">充值接口appkey :</td>
+
+    <td><input type="text " name="appkey" size="50" value="{$appkey}">&nbsp;&nbsp;&nbsp;&nbsp;<span style=" color:#F30;">*&nbsp;注:&nbsp;第三方充值接口提供的接口appkey</span></td>
+
+  </tr>
+   <tr>
+
+    <td class="label">充值平台当前余额 :</td>
+
+    <td><input type="text " name="banlance" size="20" value="{$banlance}">&nbsp;&nbsp;&nbsp;&nbsp;<span style=" color:#F30;">*&nbsp;注:&nbsp;请填写充值平台上面的余额，以便作充值前校验。每充值一次，余额会减少</span></td>
+
+  </tr>
+   <tr>
+
+    <td class="label">允许使用充值的会员等级 :</td>
+
+    <td><input type="checkbox" name="all_rank[]" value="-1" {if $ranks eq '-1'}checked="true"{/if} onClick="doCheck()"/>全部会员
+
+            	{foreach from=$user_rank_list item=user_rank}<input type="checkbox" name="user_rank[]" value="{$user_rank.rank_id}" {if $user_rank.checked}checked="true"{/if} onClick="doCheck()" {if $ranks eq '-1'} disabled="disabled"{/if}/>{$user_rank.rank_name} {/foreach}</td>
+
+  </tr>
+
+
+   <tr>
+
+    <td class="label">
+	
+	<a href="javascript:showNotice('account_zhekou');" title="{$lang.form_notice}">
+							<img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}">
+						</a>
+	充值折扣 :</td>
+     
+    <td>
+	<input type="text " name="account_zhekou" size="20" value="{$account_zhekou}">%
+	 <br />
+ <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="account_zhekou">用户实际支付金额=充值金额*充值折扣百分比</span>
+	</td>
+
+  </tr>
+  
+  <tr>
+
+    <td class="label">
+	<a href="javascript:showNotice('account_cycle');" title="{$lang.form_notice}">
+							<img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}">
+						</a>
+						充值周期 :
+	</td>
+
+    <td><input type="text " name="account_cycle" size="20" value="{$account_cycle}">(天) 
+	 <br />
+ <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="account_cycle">配合充值限额使用</span>
+
+	</td>
+
+  </tr>
+    
+	<tr>
+    <td class="label">
+	<a href="javascript:showNotice('account_money');" title="{$lang.form_notice}">
+							<img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}">
+						</a>
+	充值限额 :
+	</td>
+
+     <td><input type="text " name="account_money" size="20" value="{$account_money}">
+	 
+	  <br />
+ <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="account_money">以第一次充值时间起算，充值周期内最多允许累计充值额度。充值周期过期，将生成循环新的周期。</span>
+
+	 </td>
+
+  </tr>
+ 
+  <tr>
+
+    <td colspan="2" align="center">
+
+      <input type="submit" value="{$lang.button_submit}" class="button" />
+
+    <input type="reset" value="{$lang.button_reset}" class="button" />
+
+    </td>
+
+  </tr>
+<SCRIPT  LANGUAGE="JavaScript"> 
+function  doCheck()
+{ 
+	var r=document.getElementsByName("user_rank[]");
+	var j=document.getElementsByName("all_rank[]");
+	
+	for(var i = 0; i < r.length; i++)
+	{
+		if(j[0].checked)
+		{
+			r[i].checked = false;
+			r[i].disabled = true;
+		}
+		else
+		{
+			r[i].disabled = 0; 
+		}
+	}
+}
+
+</SCRIPT>
+</tbody></table>
+
+</form>
+
+
+
+{/literal}
+
+{include file="pagefooter.htm"}
+
+

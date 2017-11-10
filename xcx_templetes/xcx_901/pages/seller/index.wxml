@@ -1,0 +1,64 @@
+<scroll-view scroll-x="true" class="sc-header">
+    <view class="view-header">
+       <view wx:for="{{store_class}}">
+       <text bindtap="onClickClass" wx:if="{{item.select == 1}}" style="color:red" data-id="{{item.str_id}}">{{item.str_name}}</text>
+       <text bindtap="onClickClass" wx:else data-id="{{item.str_id}}">{{item.str_name}}</text>
+       </view>
+       
+    </view>
+</scroll-view>
+
+<view class="seller-item" wx:for="{{supplier}}" wx:key="">
+  <view wx:if="{{item.goods_num != 0}}">
+   <view class="seller-info">
+       <image mode="aspectFill" src="{{item.supplier_logo}}"></image>
+       <view class="seller-info-right">
+           <text>店铺:{{item.supplier_name}}</text>
+           <text style="color:#666;">地址:{{item.address}}</text>
+       </view>
+   </view>
+
+   <view class="seller-mark">
+       <view class="seller-mark-item">
+       <text class="text-marktitle">宝贝描述</text>
+       <text class="text-mark">{{item.supplier_desccredit}}</text>
+   </view>
+   
+   <view class="seller-mark-item">
+       <text class="text-marktitle">卖家服务</text>
+       <text class="text-mark">{{item.supplier_servicecredit}}</text>
+   </view>
+   <view class="seller-mark-item">
+      <text class="text-marktitle">物流服务</text>
+       <text class="text-mark">{{item.supplier_deliverycredit}}</text>
+   </view>
+</view>
+ 
+   
+  
+  <text class="text-title">共有宝贝{{item.goods_num}}件</text>
+   
+   <view class="seller-goods">
+   <view class="seller-goods-item" wx:for="{{item.goods}}" wx:for-item="good">
+      <image bindtap="showDetail" data-index="{{index}}" data-goods-id="{{good.goods_id}}" src="{{good.original_img}}"></image>
+      <view class="view-price">
+      <text>{{good.shop_price}}</text>
+      </view>
+   </view>
+
+   </view>
+  
+
+   <view class="seller-goods-title" >
+   <text wx:for="{{item.goods}}" wx:for-item="good">{{good.goods_name}}</text>
+   </view>
+
+  <view class="seller-btns">
+  <text data-phone="{{item.contacts_phone}}" bindtap="take">联系客服</text>
+  <text data-id="{{item.supplier_id}}" bindtap="goods">进入店铺</text>
+  </view>
+
+
+ </view>
+</view>
+

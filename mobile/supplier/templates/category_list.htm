@@ -1,0 +1,181 @@
+{if $full_page eq 1}
+<!DOCTYPE HTML>
+<html>
+  <head>
+    {include file='html_header.htm'}
+	{insert_scripts files="../js/utils.js,jquery-1.6.2.min.js,jquery.json.js,transport_bd.js,listtable.js"}
+	<script src='js/touch.js'></script>
+
+
+  </head>
+  <body>
+	<form method="post" action="" name="listForm">
+    <div class="list-div" id="listDiv">
+    <div id='container'>
+      {/if}
+      {include file='page_header.htm'}
+      <section>
+
+        <ul class="order_tab" style="position:relative">
+          <li id="order_manage1" class="first" onclick="toggle_menu();" style="border-bottom:#F0605B 1px solid;">{$ur_here}
+          </li>
+          
+          <li id="order_manage2" onclick="toggle_search();"><span class="line"></span><a href="category.php?act=add" >添加分类</a></li>
+        
+        </ul>
+
+
+
+
+        <div class="order_con" id="con_order_manage_2" style="display:none">
+          <div class="query_stock">
+            <div class='order_search'>
+
+            </div>
+          </div>
+        </div>
+        <div class="order_con" id="con_order_manage_1" style="padding:10px; background:#FFF; margin-bottom:88px;">
+            <table width="100%"  cellspacing="1" cellpadding="1" id="list-table">
+              <tr>
+                <th align="left" >名称&nbsp;&nbsp;<a href="javascript:;" onclick="expandAll(this)">{$lang.cat_collect}</a></th>
+                <th align="left" >商品</th>
+                <th align="right" >{$lang.handler}</th>
+              </tr>
+              {foreach from=$cat_info item=cat}
+              <tr align="center" class="{$cat.level}" id="{$cat.level}_{$cat.cat_id}" style="border-bottom:#EEE 1px solid">
+                <td align="left" class="first-cell" >
+                  {if $cat.is_leaf neq 1}
+                  <img src="images/menu_minus.gif" id="icon_{$cat.level}_{$cat.cat_id}" width="9" height="9" border="0" style="margin-left:{$cat.level}em" onclick="rowClicked(this)" />
+                  {else}
+                  <img src="images/menu_arrow.gif" width="9" height="9" border="0" style="margin-left:{$cat.level}em" />
+                  {/if}
+                  <span><a href="goods.php?act=list&cat_id={$cat.cat_id}">{$cat.cat_name}</a></span>
+                {if $cat.cat_image}
+                  <img src="../{$cat.cat_image}" border="0" style="vertical-align:middle;" width="60px" height="21px">
+                {/if}
+                </td>
+                <td align="left" >{$cat.goods_num}</td>
+                <td align="right">
+                  <a href="category.php?act=edit&amp;cat_id={$cat.cat_id}">{$lang.edit}</a><br />
+                  <a href="javascript:;" onclick="listTable.remove({$cat.cat_id}, '{$lang.drop_confirm}')" title="{$lang.remove}">{$lang.remove}</a>
+                </td>
+              </tr>
+              {/foreach}
+            </table>
+        </div>
+      </section>
+      {include file='page_footer.htm'}
+      {if $full_page eq 1}
+    </div>
+    </div>
+    </form>
+  </body>
+</html>
+{/if}
+
+
+
+{literal}
+<script language="JavaScript">
+<!--
+
+
+
+var imgPlus = new Image();
+imgPlus.src = "images/menu_plus.gif";
+
+/**
+ * 折叠分类列表
+ */
+function rowClicked(obj)
+{
+  // 当前图像
+  img = obj;
+  // 取得上二级tr>td>img对象
+  obj = obj.parentNode.parentNode;
+  // 整个分类列表表格
+  var tbl = document.getElementById("list-table");
+  // 当前分类级别
+  var lvl = parseInt(obj.className);
+  // 是否找到元素
+  var fnd = false;
+  var sub_display = img.src.indexOf('menu_minus.gif') > 0 ? 'none' : (Browser.isIE) ? 'block' : 'table-row' ;
+  // 遍历所有的分类
+  for (i = 0; i < tbl.rows.length; i++)
+  {
+      var row = tbl.rows[i];
+      if (row == obj)
+      {
+          // 找到当前行
+          fnd = true;
+          //document.getElementById('result').innerHTML += 'Find row at ' + i +"<br/>";
+      }
+      else
+      {
+          if (fnd == true)
+          {
+              var cur = parseInt(row.className);
+              var icon = 'icon_' + row.id;
+              if (cur > lvl)
+              {
+                  row.style.display = sub_display;
+                  if (sub_display != 'none')
+                  {
+                      var iconimg = document.getElementById(icon);
+                      iconimg.src = iconimg.src.replace('plus.gif', 'minus.gif');
+                  }
+              }
+              else
+              {
+                  fnd = false;
+                  break;
+              }
+          }
+      }
+  }
+
+  for (i = 0; i < obj.cells[0].childNodes.length; i++)
+  {
+      var imgObj = obj.cells[0].childNodes[i];
+      if (imgObj.tagName == "IMG" && imgObj.src != 'images/menu_arrow.gif')
+      {
+          imgObj.src = (imgObj.src == imgPlus.src) ? 'images/menu_minus.gif' : imgPlus.src;
+      }
+  }
+}
+
+/**
+ * 展开或折叠所有分类
+ * 直接调用了rowClicked()函数，由于其函数内每次都会扫描整张表所以效率会比较低，数据量大会出现卡顿现象
+ */
+var expand = true;
+function expandAll(obj)
+{
+	
+	var selecter;
+	
+	if(expand)
+	{
+		// 收缩
+		selecter = "img[src*='menu_minus.gif'],img[src*='menu_plus.gif']";
+		$(obj).html("{$lang.cat_expand}");
+		$(selecter).parents("tr[class!='0']").hide();
+		$(selecter).attr("src", "images/menu_plus.gif");
+	}
+	else
+	{
+		// 展开
+		selecter = "img[src*='menu_plus.gif'],img[src*='menu_minus.gif']";
+		$(obj).html("{$lang.cat_collect}");
+		$(selecter).parents("tr").show();
+		$(selecter).attr("src", "images/menu_minus.gif");
+	}
+	
+	// 标识展开/收缩状态
+	expand = !expand;
+}
+//-->
+</script>
+{/literal}
+
+

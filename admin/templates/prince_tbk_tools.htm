@@ -1,0 +1,43 @@
+{include file="pageheader.htm"}
+<link href="styles/prince_style.css" rel="stylesheet" type="text/css" />
+<style>
+input, select{height: 23px;padding: 0 4px;vertical-align: middle;}
+.submenu{
+color: #fff!important;
+font-size: 14px;
+font-weight: 400;
+text-decoration: none;
+display:block;
+width:100px;
+float:left;
+margin-right:20px;
+padding: 5px;
+border: 1px solid #2A6FBD;
+background: #19AEC8;
+text-align: center;
+}
+.submenu:hover{
+text-decoration: none;
+background: #FF6100;
+}
+tr{height: 42px;}
+th{width: 60px;}
+</style>
+
+<div class="tab-div">  <div id="tabbody-div" class="tbbg" >
+      <table width="90%" id="general-table" >
+
+        <tr class="act">
+          <th>&nbsp;</th>
+          <td>
+			<a href="prince_shops.php?act=check_bh_Only" class="submenu">重复商品检测</a>
+			<a href="prince_shops.php?act=check" class="submenu">淘宝下架检测</a>
+          </td>
+
+        </tr>
+      </table>
+  </div>
+</div>
+
+
+{include file="pagefooter.htm"} 

@@ -1,0 +1,112 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{$page_title}</title>
+  <meta name="Keywords" content="{$keywords}" />
+  <meta name="Description" content="{$description}" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+  <link rel="stylesheet" href="themesmobile/prince_jtypmall_mobile/css/article.css">
+  <link rel="stylesheet" href="themesmobile/prince_jtypmall_mobile/css/article_extend.css?v=1.0.2">
+  <script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+
+</head>
+<body class="body_bj">
+<!----------------------------------header----------------------------------->
+<div class="header">
+    <h2><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></h2>
+    <ul>
+    <li>文章列表</li>
+     </ul>
+    <dl>
+      <dd class="top_bar" >
+        <div onClick="show_menu();$('#close_btn').addClass('hid');" id="show_more"><a href="javascript:;"></a> </div>
+      </dd>
+    </dl>
+</div>
+<!-- #BeginLibraryItem "/library/up_menu.lbi" --><!-- #EndLibraryItem --> <!--弹出菜单-->
+<!----------------------------------header----------------------------------->
+  <!--弹出菜单-->
+  <div class="wrapper aoyunlan-wrapper">
+    <div class="module-cleft8 top5">
+      
+      <ul class="nav-toplist">
+      <!--{foreach from=$article_categories item=cat}-->
+        <li><a href="{$cat.url}">{$cat.name|escape:html}</a></li>
+      <!-- {/foreach} -->
+      </ul>
+
+    </div>
+
+    <div class="search-box">
+      <form action="{$search_url}" method="post">
+        <div class="search">
+          <div class="search-input">
+            <div class="ui-suggestion-mask">
+              <input type="text" id="input" name="keywords" value="{$search_value}" placeholder="" autocomplete="off"></div>
+          </div>
+          <div class="search-button">
+            <button class="submit">搜索</button>
+          </div>
+        </div>
+        <input type="hidden" name="id" value="{$cat_id}">
+        <input type="hidden" name="cur_url" value=""></form>
+    </div>
+    <script>
+   function setHelpTab(name,cursel,n){
+    for(i=1;i<=n;i++){
+    var menu=document.getElementById(name+i);
+    var con=document.getElementById("user_"+name+"_"+i);
+    menu.className=i==cursel?"brand-nav-a brand-nav-a-on":"brand-nav-a";
+    con.style.display=i==cursel?"block":"none";
+    }
+  } 
+</script>
+
+<div class="module module-margin module-padding">
+  <div class="module-t">
+          <h3><a href="#" >{$cat_name}</a>
+          </h3>
+
+  
+  </div>
+
+  <div class="module-cleft8 top5">
+  <ul class="pic-list">
+
+    <!--{foreach from=$artciles_list item=article}-->
+        <li>
+          <div class="news-link">
+            <a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title}</a>
+          
+            <div class="news-des">
+              <p >{$article.description}{$article.add_time}</p>
+              <!-- {if $article.img.0} -->
+              <a href="{$article.url}" class="img">
+              <img src="{$article.img.0}" alt="" border="0" width="96" ></a>
+              <!-- {/if} -->
+ 
+            </div>
+          </div>
+        </li>
+      <!-- {/foreach} -->
+    </ul>
+  </div>
+  <!--{if $artciles_list}-->
+            <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem --> 
+            <!--{/if}-->
+</div>
+
+
+
+
+
+
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->
+</body>
+    <script type="text/javascript">
+document.getElementById('cur_url').value = window.location.href;
+</script>
+  </html>

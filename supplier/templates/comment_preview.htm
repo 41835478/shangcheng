@@ -1,0 +1,70 @@
+﻿{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="POST" action="comment_collect.php?act=comment_batch_import&goods_id={$goods_id}" name="listForm" onsubmit="return confirm_bath()">
+
+<!-- 评论列表 开始 -->
+<div class="list-div" id="listDiv">
+
+
+<table cellpadding="3" cellspacing="1">
+<tr>
+<th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">编号</th>
+<th>用户名</th>
+<th>评论内容</th>
+<th>评论时间</th>
+<th>评分等级</th>
+<th>显示/隐藏</th>
+</tr>
+
+{foreach from=$comment_list item=comment}
+<tr>
+<td><input value="{$comment.id}" name="checkboxes[]" type="checkbox">{$comment.show_id}</td>
+
+<td><input type='text' name='user_name[]' size='20' value="{if $comment.user_name}{$comment.user_name}{else}{$lang.anonymous}{/if}" /></td>
+<td><input type='text' name='content[]' size='50' value="{$comment.content}" /></td>
+<td align="center"><input type='text' name='add_time[]' size='20' value="{$comment.format_time}" /></td>
+<td align="center"><input type='text' name='comment_rank[]' size='3' value="{$comment.comment_rank}" /></td>
+<td align="center"><input value="1" name="is_show[]" type="checkbox" checked="checked"></td>
+</tr>
+
+{foreachelse}
+<tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>
+{/foreach}
+</table>
+
+
+<!--table cellpadding="4" cellspacing="0">
+<tr>
+	<th colspan="4"><strong>生成订单信息项设置（为保证真实性，请把评论随机隐藏掉几个,并且把评论的日期改到不同时间段）</strong></th>
+</tr>
+<tr>
+<td>购买数量设置</td><td><input type='text' name='buy_num' size='20' value="5" />（默认为5，表示数量随机1-5件，可更改）</td>
+<td>购买时间设置</td><td><input type='text' name='buy_time' size='20' value="5" />（默认为5，表示订单购买时间在评论时间前5天，可更改）<input type='hidden' name='goods_id' size='20' value="{$goods_id}" /></td>
+</tr>
+</table-->
+
+
+<table cellpadding="4" cellspacing="0">
+<tr>
+<th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">编号</th>
+
+<td>
+批量导入所有评论
+<input type="submit" name="drop" id="btnSubmit" value="批量导入" class="button" disabled="true" />
+</td>
+</tr>
+</table>
+
+</div>
+<!-- 评论列表 结束 -->
+</form>
+
+
+<script type="text/javascript" language="JavaScript">
+function confirm_bath()
+{
+return confirm("确定将所选评论导入数据库？");
+}
+</script>
+{include file="pagefooter.htm"}

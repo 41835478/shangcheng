@@ -1,0 +1,287 @@
+page {
+	background: #eee;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280rpx;
+  background: #ffd338;
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #ffffff;
+}
+
+.getPhoneNumber-button{
+  	font-size: 14px;
+    line-height: 25px;
+    border: none;
+}
+
+/*menu list*/
+.tableviewcell {
+	padding: 20rpx 40rpx;
+	border-bottom: 1rpx solid #ddd;
+	color: #666;
+	background: white;
+	display: flex;
+
+	align-items: center;
+}
+
+/*icon*/
+.tableviewcell image {
+	width: 60rpx;
+	height: 60rpx;
+}
+
+/*text*/
+.tableviewcell text {
+	font-size: 16px;
+    margin-left: 14rpx;
+}
+
+/*button*/
+.logout {
+	margin: 30rpx;
+}
+
+/*order*/
+.order-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  margin: 20rpx 0;
+  padding: 20rpx 0;
+}
+
+.order {
+	width: 33.3%;
+	text-align: center;
+}
+
+.order image {
+	width: 90rpx;
+	height: 90rpx;
+}
+
+.order text{
+	display: block;
+	font-size: 30rpx;
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+/* page/login/login.wxss */
+.wx-view_login{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+	height: 100%;
+	background:transparent;
+	background-size: cover;
+    align-items: stretch;
+    
+  }
+
+
+.view_logup_form{
+    margin-top: 40rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    background-color: rgba(255,255,255,0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border-radius:16rpx;
+    border-style: solid;
+    border-color: rgba(235,235,235,0.8);
+    border-width: 2rpx;
+    
+}
+.wx-view_log_item{
+    
+    height: 100rpx;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    border-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-width: 2rpx;
+    border-bottom-color: rgb(235,235,235);
+    background-color: rgba(255, 255, 255,0.3);
+    padding-left: 22rpx;
+}
+
+
+.view_login_splide{
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    justify-content:space-between; 
+    align-items: center; 
+    float: none; 
+    padding-top: 20rpx;
+    background-size: cover;
+}
+
+.wx-view_log_button{
+    display: flex; 
+    align-items: flex-end; 
+    width: 90%; 
+    align-self: center; 
+    flex: 0 1 auto; 
+    order: 1; 
+    flex-wrap: nowrap; 
+    align-content: flex-end; 
+    justify-content: center; 
+    }
+
+.wx-button_logup{
+    font-size:34rpx; 
+    width: 86%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    flex: 0 1 auto; 
+    align-self: center; 
+    margin-top: 24rpx;
+}
+/*登录*/
+.view_forgetOrLogup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+}
+
+/*第三方登录*/
+.view_otherAccount_column{
+    width: 90%;
+    margin-bottom: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+.view_accounts{
+    width: 90%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+}
+
+.img_account{
+    width: 60rpx;
+    height: 60rpx;
+    border: none;
+    border-radius: 60rpx;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.3);
+}
+/*手机快捷登陆*/
+
+/*字体*/
+.btn_getnum{
+    font-size: 30rpx;
+    font-weight: 550;
+    font-family: 宋体;
+    color: #3AA0B7;
+    background-color: rgba(255,255,255,0.7);
+    border:solid;
+    border-color: #3AA0B7;
+    border-width: 2rpx;
+    border-radius: 8rpx;
+    width: 172rpx;
+    height: 60rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50rpx;
+}
+.wx_input{
+    font-size: 34rpx;
+    font-weight: 550;
+    font-family: 宋体;
+    background:transparent;
+    color: #3AA0B7;
+}
+.wx-text_logup{
+    width: 170rpx; 
+    flex: 0 0 auto; 
+    font-size: 34rpx;
+    font-weight: 550;
+    font-family: 宋体;
+    background:transparent;    
+    color: rgb(35,35,35);
+}
+.wx-text_logup_to{
+    font-size: 26rpx; 
+    text-align: left; 
+    color: rgb(241, 1, 25); 
+    text-decoration: underline; 
+    align-self: flex-end; 
+    margin-top: 30rpx; 
+    margin-bottom: 2rpx;
+}
+.text_title{
+    font-family: 宋体;
+    font-size:30rpx;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+}
+.my_toast_title{
+    font-size: 32rpx;
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    font-family: 宋体;
+    text-align: center;
+    }
+
+    .wx-button_register{
+    font-size:34rpx; 
+    width: 86%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    flex: 0 1 auto; 
+    align-self: center; 
+    margin-top: 24rpx;
+    background: #f8e9e4;
+    color: #3AA0B7;
+
+}
+

@@ -1,0 +1,29 @@
+.page_footer {
+  text-align: center;
+  height: 100rpx;
+  color: #999;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  
+}
+.view-tint{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70rpx;
+}
+.view-tint image{
+   width: 412rpx;
+   height: 312rpx;
+   margin-left: 20rpx;
+}
+
+.view-tint text{
+   color: #888888;
+   font-size: 33rpx;
+   margin-top: 30rpx;
+}

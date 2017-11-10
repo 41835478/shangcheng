@@ -1,0 +1,95 @@
+/* pages/member/fenxiao/liushui/index.wxss */
+.main{ width:100%; margin:auto; overflow:hidden;}
+/*账单*/
+.Bill{ 
+  width:90%; 
+  height:100rpx; 
+  margin:auto; 
+  font-size:28rpx; 
+  color:#333; 
+  line-height:100rpx; 
+  font-weight:normal;
+  }
+.Bill i{ 
+  display:inline-block; 
+  width:10px; height:20rpx; 
+  background:#DD1019;
+  border-radius: 50%;
+   margin-right:20rpx;
+   }
+.Bill strong{
+   display:inline-block; 
+   color:#F30; 
+   font-size:36rpx; 
+   text-indent:20rpx;
+   }
+
+.Funds{ 
+  background:#fff; 
+  margin:20rpx 20rpx 20rpx; 
+  padding:0rpx 20rpx 0rpx; 
+  border-left: 2rpx solid #ccc;
+  }
+
+.Funds ul{ 
+  margin:auto; 
+  padding-top:18rpx; 
+  padding-bottom:16rpx;
+  }
+.Funds ul .Funds_li{ 
+  position: relative; 
+  padding: 30rpx 20rpx; 
+  border-bottom: 2rpx dotted #ccc;
+  }
+.Funds ul .Funds_li .icon{ 
+  display:block;width:9px; 
+  height:18rpx; 
+  background:#666;
+   position:absolute;
+   top:42%;
+   left:-30rpx;
+   border-radius:10rpx;
+   }
+.Funds ul .Funds_li .icon.on{ 
+  background:#e41735;
+  }
+.Funds ul li strong{ 
+  display:inline-block; 
+  width:30%;
+  }
+.Funds ul li span{ 
+  display:block; 
+  font-size:28rpx; 
+  color:#666; 
+  line-height:48rpx;
+  }
+.Funds ul li span em{ 
+  color:#e41735; 
+  font-style:normal;
+  }
+
+
+
+
+
+.view-tint{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70rpx;
+}
+.view-tint image{
+   width: 412rpx;
+   height: 312rpx;
+   margin-left: 100rpx;
+}
+
+.view-tint text{
+   color: #888888;
+   font-size: 33rpx;
+   margin-top: 30rpx;
+}

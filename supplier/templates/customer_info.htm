@@ -1,0 +1,83 @@
+<!-- $Id: group_buy_info.htm 14216 2015-02-10 02:27:21Z prince $ -->
+{include file="pageheader.htm"} {insert_scripts files="../js/utils.js, ../js/validate/jquery.validate.js, ../js/validate/messages_zh.js"}
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="./js/validate/messages_zh.js"></script>
+<script type="text/javascript" src="./js/validator.js"></script>
+<style type="text/css">
+label.error {
+	color: red;
+	background: url(./images/warning_small.gif) no-repeat;
+	padding-left: 18px;
+}
+
+label.success {
+	background: url(./images/yes.gif) no-repeat;
+	padding-left: 18px;
+}
+</style>
+
+<!--  onsubmit="return validate()" -->
+<form id="form1" method="post" action="customer.php?act=update&XDEBUG_SESSION_START=ECLIPSE_DBGP" name="theForm" enctype="multipart/form-data">
+	<input type="hidden" id="cus_id" name="cus_id" value="{$customer.cus_id}">
+	<div class="main-div">
+		<table id="group-table" cellspacing="1" cellpadding="3" width="100%">
+			<tr>
+				<td class="label">云旺appkey</td>
+				<td>
+					<input type="text" id="user_id" name="user_id" size="36" value="{$customer.user_id}" class="required" />
+				</td>
+			</tr>			<tr>
+				<td class="label">云旺secretkey</td>
+				<td>
+					<input type="text" id="of_username" name="of_username" size="36" value="{$customer.of_username}" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td class="label">云旺客服账号</td>
+				<td>
+					<input type="text" id="cus_name" name="cus_name" size="36" value="{$customer.cus_name}" class="required" />
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label">首次咨询自动回复欢迎语</td>
+				<td>
+					<textarea name="cus_desc" cols="40" rows="3">{$customer.cus_desc}</textarea>
+				</td>
+			</tr>
+			<tr>
+                <td class="label">客服头像</td>
+            
+                <td><input type="file" name="cus_degree"  />{if $customer.cus_degree}&nbsp;&nbsp;<b style="color:#F00;">√已上传</b>{/if}&nbsp;&nbsp;
+                {if $customer.cus_degree}<br /><img src="../../{$customer.cus_degree}" style="width:100px; height:auto;" />{/if}</td>
+			</tr>
+			<tr>
+				<td class="label">&nbsp;</td>
+				<td>
+					<input type="button" id="btn_submit" name="btn_submit" value="{$lang.button_submit}" class="button" />
+				</td>
+			</tr>
+		</table>
+	</div>
+</form>
+<script language="JavaScript">{literal}
+
+$().ready(function(){
+	
+	
+	
+	$("#btn_submit").click(function(){
+		
+		$("#form1").submit();
+		return false;
+	});
+	
+	
+});
+
+
+</script>
+{include file="pagefooter.htm"}

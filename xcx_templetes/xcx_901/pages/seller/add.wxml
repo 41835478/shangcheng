@@ -1,0 +1,37 @@
+<image class="image-ad" src="/images/apply_ad.png"></image>
+
+<view class="view-item">
+<text>商户名称</text>
+<input bindchange="sellerName" placeholder-class="place-input" placeholder="请为您的店铺起一个闪亮的名字吧" value="{{apply.sellername}}"/>
+</view>
+
+<view class="view-item">
+<text>主营项目</text>
+<input bindchange="sellerXM" placeholder-class="place-input" placeholder="比如水果蛋糕等" value="{{apply.sellerxm}}" />
+</view>
+
+<view class="view-item">
+<text>简单介绍</text>
+<input bindchange="sellerDesc" placeholder-class="place-input" placeholder="简单介绍您的铺子" value="{{apply.sellerdesc}}"/>
+</view>
+
+<view class="view-item">
+<text>联系人</text>
+<input bindchange="sellercContactName"  placeholder-class="place-input" placeholder="您的姓名" value="{{apply.sellerccontactname}}"/>
+</view>
+
+<view class="view-item">
+<text>电话</text>
+<input bindchange="sellercContactPhone"  placeholder-class="place-input" placeholder="您的电话" value="{{apply.sellerccontactphone}}"/>
+</view>
+<view class="classname"  style="width:100%;">
+<text class="hint"  style="margin-left:25rpx;font-size:30rpx;color:#aaa">请仔细填写您的联系方式,保证我们能尽快联系您。</text>
+</view>
+<view class="vrz"  style="width:100%;">
+<text wx:if="{{apply.status == 2}}" bindtap="sumbit" class="rz" class="rz">重新申请入驻</text>
+
+<text wx:elif="{{apply.status == 0}}"  class="rz">审核中</text>
+
+<text wx:elif="{{apply.status == 1}}"  class="rz">审核成功</text>
+<text wx:else bindtap="sumbit" class="rz">申请入驻</text>
+</view>

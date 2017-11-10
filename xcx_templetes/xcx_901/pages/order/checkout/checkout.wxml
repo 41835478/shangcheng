@@ -1,0 +1,26 @@
+<!--<picker bindchange="bindPickerChange" value="{{index}}" range="{{addressList}}">
+	<view class="picker">
+		地址：{{addressList[addressIndex]}}
+	</view>
+</picker>
+<view>实付款: {{amount}}</view>
+<button bindtap="confirmOrder">提交订单</button>-->
+
+
+<!--手机快捷登录模块-->
+<!--view  class="parent" style="height:{{height - 100}}px;">
+
+    <image src="/images/load.gif" style="width:50px; height:50px;"></image>
+	 
+</view-->
+
+<view  class="parent" style="height:{{height - 100}}px;">
+
+    <loading hidden="{{hidden}}">
+        处理中...
+    </loading>
+	 
+</view>
+
+
+

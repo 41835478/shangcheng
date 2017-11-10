@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{$page_title}</title>
+  <meta name="Keywords" content="{$keywords}" />
+  <meta name="Description" content="{$description}" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="stylesheet" type="text/css" href="themesmobile/prince_jtypmall_mobile/css/public.css"/>
+<link rel="stylesheet" href="themesmobile/prince_jtypmall_mobile/css/article.css">
+<script type="text/javascript" src="themesmobile/prince_jtypmall_mobile/js/jquery.js"></script>
+
+	</head>
+<body >
+<!----------------------------------header----------------------------------->
+<div class="header">
+    <h2><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></h2>
+    <ul>
+    <li>文章详情</li>
+     </ul>
+    <dl>
+      <dd class="top_bar" style="background:none; line-height:40px;font-size:14px;" >
+        <a style="background:none; line-height:40px;font-size:14px;"  href="article_cat_list.php" class="list">列表</a>
+      </dd>
+    </dl>
+</div>
+<!----------------------------------header----------------------------------->
+
+<div class="page-service-exchange wrapper aoyunlan-wrapper">
+  <div class="page-header">
+      <h2 class='title'>{$article.title|escape:html} </h2>
+      <div class="from">
+        <span class="author">{$article.author}</span>
+        <span class="addtime">{$article.add_time}</span>
+      </div>
+  </div>
+  <style>
+  .pagecontent img{ width:100%!important; height:auto!important;}
+  </style>
+  <div class="pagecontent">
+               {if $article.content}
+        {$article.content}
+        {else}
+        {$lang.content_empty}
+        {/if}
+  </div>
+
+ <div class="module module-margin module-padding">
+  <div class="module-t">
+          <h3 ><a href="javascript:void(0);">相关文章</a></a>
+            
+          </h3>
+        </div>
+      
+        <div class="module-cleft8 top5">
+        <ul class="pic-list">
+
+          <!--{foreach from=$article_link item=article}-->
+              <li>
+                <div class="news-link">
+                  <a href="{$article.url}">{$article.title}</a>
+
+                  <div class="news-des">
+                    <p >{$article.description}</p>
+                  </div>
+                </div>
+              </li>
+            <!-- {/foreach} -->
+          </ul>
+        </div>
+    </div>
+  </div>
+
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->
+</body>
+
+</html>

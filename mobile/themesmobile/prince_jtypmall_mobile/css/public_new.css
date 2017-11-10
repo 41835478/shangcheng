@@ -1,0 +1,52 @@
+/*页面body的背景色*/
+.body_bg{ background:#E5E5E5}
+.body_bj{ background:#EEEEEE}
+/*iphone手机的input的样式问题*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+-webkit-appearance: none;
+}
+/*css初始值*/
+body {margin:0px;font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;font-size: 14px;line-height: 180%;color: #333333; min-width:320px;}
+
+
+.main{ width:100%; overflow:hidden; margin:0; padding:0;}
+
+/*合并图片css引用*/
+.top_bt,.user_btn,.show_cart{background:url(../images/pub_flow.png) no-repeat;background-size: auto 160px; }
+.menu1,.menu2,.menu3,.menu4{background:url(../images/goods/pub_goods.png) no-repeat;background-size: auto 200px;}
+.dingdan_1,.dingdan_2,.dingdan_3,.dingdan_4{background:url(../images/pub_main.png) no-repeat;background-size: auto 450px;}
+.vf_1,.vf_2,.vf_3,.vf_4,.vf_5{background:url(../images/footer_navimg.png) no-repeat;background-size: auto 180px;}
+.h-left a,#show_more{background:url(../images/top.png) no-repeat;background-size: auto 230px;}
+/*头部弹出菜单*/
+.goods_nav{ width:27%; float:right; right:0px; overflow:hidden; position:fixed; z-index:9999999; top:26px;}
+.hid{ display:none;}
+.Triangle{ width:100%; height:20px; }
+.Triangle h2{ 
+width: 0;height: 0;border-style: solid;border-color: transparent transparent #565553 transparent;border-width: 10px;transition: 0.6s;float:right;
+  margin-right:10px; padding:0px;}
+.goods_nav ul{ width:100%; overflow:hidden;background-color:rgba(27,27,27,0.9);border-radius:2px;}
+.goods_nav li{ width:100%; height:40px; border-bottom:1px solid #626262;}
+.nl5{ background:#2D2D2D}
+.goods_nav li span{display: block;width:25px;height:25px; float:left; margin-top:5px; margin-left:5px;}
+.goods_nav li i{ font-style:normal; color:#f3f1f1; font-size:14px; display:block; float:left; line-height:40px;}
+.menu1{ background-position:0 4px;}
+.menu2{ background-position:0 -19px;}
+.menu3{ background-position:0 -41px;}
+.menu4{ background-position:0 -64px;}
+
+/* 页面头部  */
+.header { width:100%; height:45px; background:#ffffff;top:0; z-index:9999; border:0; border-bottom:1px solid #fff}
+.h-left{float:left;width:15%; height:45px;}
+
+.h-left a{ display:block; width:45px; height:45px; margin:auto; background: url(../images/category/arrow_left.png) no-repeat 15px center; background-size: auto 16px; }
+
+.h-right{float:left; width:15%;height:45px;}
+.top_bar{float:right; display:block; width:30px; height:45px;}
+#show_more{width:30px; height:45px;background-position:5px -28px;}
+
+.h-mid { width:70%; height:45px; float:left; text-align:center; color:#333; font-size:16px; line-height:45px; position:relative;font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;}
+
+.h-mid h6 { color:#fff; font-size:16px; font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif; font-weight:normal;}

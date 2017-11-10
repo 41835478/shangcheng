@@ -1,0 +1,143 @@
+<!--orderinfo{{cartIds}}{{amount}}-->
+
+<view class="parent">
+<view class="view-address" bindtap="addressSelect">
+<view class="view-addressleft">
+<image src="/images/white_loc.png"></image>
+<view class="view-addressleft-info">
+<text class="text-name">收货人:{{address.consignee}}</text>
+<text class="text-address">收货地址:{{address.address}}</text>
+</view>
+
+</view>
+
+<view class="view-addressright">
+<text class="text-mobile">{{address.mobile}}</text>
+<image src="/images/white_hint.png"></image>
+</view>
+
+</view>
+
+
+
+
+<view wx:for="{{cartList}}" wx:key="index" class="container carts-list">
+
+  <!--view wx:if="{{item.show == 1}}" class="view-title">
+<image src="/images/icon_order.png"></image>
+<text>供应商:{{item.store_name}}</text>
+</view-->
+
+<view wx:if="{{item.show == 1}}" class="class-line"></view>
+  <view  class="carts-item">
+
+    
+    <view>
+
+      <!-- 缩略图 -->
+      <image class="carts-image" src="{{item.image}}" mode="aspectFill" />
+    </view>
+    <view class="carts-text">
+
+      <!-- 商品标题 -->
+      <text class="carts-title">{{item.goods_name}}</text>
+      <text class="carts-key-name">{{item.goods_attr}}</text>
+      <view class="carts-subtitle">
+
+        <!-- 价格 -->
+
+        <!--<text class="carts-price">{{item.goods_price}}</text>
+-->
+
+        <!-- 数量加减 -->
+        
+      </view>
+    </view>
+    <view class="carts-right">
+      
+      <text class="text-red">￥{{item.goods_price}}</text>
+      <text class="text-price">x{{item.goods_number}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="class-line1"></view>
+
+<view class="view-freemoney" wx:if="{{enable_coupon}}">
+<!--
+<text class="text-hint">优   惠   劵:</text>
+
+<input bindchange="bindChange" placeholder-style="color:#999999" class="input-money" placeholder="输入余额"/>
+-->
+
+<radio bindtap="check1" color="red" class="radio-style" value="0" checked="{{check[0]}}"/> 
+
+<picker  bindchange="bindPickerChange" value="{{index}}" range="{{coupon}}">
+   <view class="view-picker">
+      {{cv}}
+   </view>
+</picker>
+
+
+
+<text class="text-hint">或者</text>
+
+<radio bindtap="check2" color="red" class="radio-style" value="1" checked="{{check[1]}}"/> 
+<input bindchange="bindChangeOfcoupon" placeholder-style="color:#999999" class="input-money" placeholder="直接输入优惠劵" style="width:200rpx"/>
+
+</view>
+
+
+<view class="view-freemoney" wx:if="{{enable_balance}}">
+<text class="text-hint">使用余额:</text>
+
+<input type="digit" bindchange="bindChange" placeholder-style="color:#999999" class="input-money" placeholder="输入余额" value="{{use_money}}"/>
+<text bindtap="use" class="btn-use">使用</text>
+<text class="text-hint1">您的可用余额{{freemoney}}</text>
+</view>
+
+<view class="view-freemoney" wx:if="{{enable_point}}">
+<text class="text-hint">使用积分:</text>
+
+<input bindchange="bindChangeOfPoint" placeholder-style="color:#999999" class="input-money" placeholder="输入积分"/>
+<text bindtap="use_point" class="btn-use">使用</text>
+<text class="text-hint1">您的可用积分{{pay_points}}</text>
+</view>
+
+<view class="class-line1"></view>
+
+
+
+<view class="view-price">
+  <view class="view-price1">
+    <text class="text-price1">商品总额:</text>
+    <text class="text-red">￥{{totalPrice.goods_amount}}元</text>
+  </view>
+  <view class="view-price1">
+    <text class="text-price1">运费:</text>
+    <text class="text-red">￥{{totalPrice.shipping_fee}}元</text>
+  </view>
+  <view class="view-price1" wx:if="{{totalPrice.coupon_money}}">
+    <text class="text-price1">优惠券抵扣:</text>
+    <text class="text-red">-￥{{totalPrice.coupon_money}}元</text>
+  </view>
+  <view class="view-price1" wx:if="{{totalPrice.user_money}}">
+    <text class="text-price1">使用余额:</text>
+    <text class="text-red">-￥{{totalPrice.user_money}}元</text>
+  </view>
+  <view class="view-price1">
+    <text class="text-price1">应付总金额:</text>
+    <text class="text-red">￥{{totalPrice.total_fee}}元</text>
+  </view>
+</view>
+
+
+
+<text bindtap="formSubmit" class="text-save">提交订单</text>
+
+
+
+
+</view>

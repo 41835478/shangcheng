@@ -1,0 +1,115 @@
+<swiper wx:if="{{banner[0].ad_link}}" indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" style="height:{{bannerHeight}}px;">
+  <block wx:for="{{banner}}" wx:key="">
+    <swiper-item>
+      <image src="{{item.ad_code}}" data-url="{{item.ad_link}}" mode="aspectFill" class="swiper-image" bindtap="clickBanner"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="view_search" wx:if="{{xcxconfig.show_search == 1}}" >
+  <!--text bindtap="select">{{address}}</text-->
+  <text >搜索</text>
+  <view class="view_searchbg" bindtap="search" >
+    <text placeholder-style="color:#999999" class="input_search" placeholder="请输入您所搜索的商品">请输入您所搜索的商品</text>
+    <view  class="view1">
+      <view  class="line"></view>
+      <image src="/images/search.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="func-area">
+   <view  wx:for="{{menu_list}}" wx:key="" >
+  	 <image  src="{{item.menu_img}}"   mode="aspectFill" class="orange" bindtap="showMenu" data-url="{{item.menu_url}}" data-is_tabbar="{{item.is_tabbar}}"  />
+		 <text>{{item.menu_name}}</text>
+   </view>
+</view>
+<!--新闻咨询-->
+<view class="hot"  wx:if="{{supplier_article}}">
+  <view class="hot_left"></view>
+  <view class="hot_ul">
+    <swiper  vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{supplier_article}}">
+        <navigator url="/pages/article/detail/index?objectId={{item.article_id}}" open-type="navigate">
+        <swiper-item>
+            <view class="hot_first">
+            <text class="hot_span">热点</text>
+            <text class="hot_name">{{item.title}}</text>
+            </view>
+          </swiper-item>
+        </navigator>   
+      </block>
+    </swiper>
+  </view>
+</view>
+
+
+<!-- 红包优惠券 -->
+<scroll-view scroll-x="true" class="sc-header" wx:if="{{bonus}}">
+<view class="view-header">
+  <view class="coupon-area" wx:for="{{bonus}}" wx:key=""  >
+    <view class="coupon-item" bindtap="addBonus" data-id="{{item.type_id}}">
+        <view class="item-left">
+            <text class="text-value">￥{{item.type_money}}</text>
+            <text class="text-name">{{item.type_name}}</text>
+        </view>
+        <view class="item-right">
+            <text class="text-hint">消费满</text>
+            <text class="text-hint">{{item.min_amount}}</text>
+            <text class="text-hint">元使用</text>
+        </view>
+    </view>
+    <view class="view-date" >
+      <text class="text-date">有效期:{{item.use_end_time}}</text> 
+    </view>
+  </view>
+</view>
+</scroll-view>
+
+<!-- ads start -->
+<view class="view-ad" wx:if="{{ad[0].ad_link}}">
+<view class="ad-header" >
+<image data-url="{{ad[0].ad_link}}" bindtap="clickBanner" class="ad1" src="{{ad[0].ad_code}}"></image>
+<view class="header-right">
+<image  wx:if="{{ad[1].ad_link}}" data-url="{{ad[1].ad_link}}" bindtap="clickBanner"  src="{{ad[1].ad_code}}"></image>
+<image  wx:if="{{ad[2].ad_link}}" data-url="{{ad[2].ad_link}}" bindtap="clickBanner"  src="{{ad[2].ad_code}}"></image>
+</view>
+</view>
+<view class="ad-footer" wx:if="{{ad[3].ad_id}}">
+<image  wx:if="{{ad[3].ad_link}}" data-url="{{ad[3].ad_link}}" bindtap="clickBanner"  src="{{ad[3].ad_code}}"></image>
+<image  wx:if="{{ad[4].ad_link}}" data-url="{{ad[4].ad_link}}" bindtap="clickBanner"  src="{{ad[4].ad_code}}"></image>
+</view>
+</view>
+<!-- ads end -->
+
+<!--goods start -->
+<view class="container-class"  wx:for="{{goods}}" wx:key=""  data-index="{{index}}">
+  <view class="container-goods">
+    <view class="category_title">
+      <view class="redline"></view>
+      <text class="caption">{{item.name}}</text>
+    </view>
+    <view class="cont">
+        <view class="pr"  wx:for="{{item.goods_list}}" wx:key="" bindtap="showDetail" data-index="{{index}}" data-goods-id="{{item.goods_id}}">
+          <image class="photo" src="{{item.original_img}}"></image>
+          <view class="title">{{item.goods_name}}</view>
+          <view style="display:flex;line-height:50rpx;padding:10rpx 0;">
+            <view class="gmxx" style="  color: red;">¥ {{item.shop_price}}</view>
+            <view class="sold">销量：{{item.sales_sum}}</view>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
+<!--goods end -->
+
+
+
+
+
+
+<view class="page_footer" wx:if="{{copyright}}">
+      <text>{{copyright}}</text>
+</view>
+

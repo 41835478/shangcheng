@@ -1,0 +1,26 @@
+<div class="user_com">
+<div class="com_top border_bottm">
+<em>{if $headimg neq ''}<img src="{$headimg}">{else}<img src="themesmobile/prince_jtypmall_mobile/images/user/user_prince.jpg">{/if}</em>
+
+<dl>
+<dt style="height:25px;"></dt>
+<dd><span style="background:none;" >成长值:{if $rank_points}{ $rank_points}{else}0{/if}</span></dd>
+{if $info.nickname}
+<dd><span style="background:none; font-size:9px; height:20px;line-height:20px;">当前等级:{$rank_name}<br />在商城消费或者分享商品给好友等互动可以提升成长值</span></dd>
+{/if}
+</dl>
+</div>
+</div>
+
+{foreach from=$user_rank item=user_rank}
+<div class="Order">
+<dl><dt><strong>{$user_rank.rank_name}{if $user_rank.special_rank}(特殊会员组){/if}</strong><span style="background:none">{if $user_rank.discount eq 10 }购物不打折{else}{ $user_rank.discount}折{/if}</span></dt></dl>
+<span style="width:100%; height:50px; line-height:50px; margin-left:20px; color:#666;">成长值：{$user_rank.min_points} ~ {$user_rank.max_points}</span>
+</div>
+{/foreach}
+
+<div class="Order" style="width:100%;text-align:center; ">
+<span style="width:100%; height:50px; font-size:12px; text-align:center; line-height:50px; margin-left:20px; color:#666;">以上折扣适用于一般商品，特殊商品请以实际折扣为准。</span>
+</div>
+
+		
